@@ -1,0 +1,96 @@
+{
+  "id": "q-i02",
+  "nivel": "intermediario",
+  "titulo": "Quiz — El orden de las jugadas",
+  "subtitulo": "Bonjour primero, y el mostrador se abre",
+  "introAudioKey": "fr-i02-q-i",
+  "introPt": "Un viajero resuelve todo el mostrador en cuatro jugadas, del saludo a la puerta.",
+  "cenario": "Tres de fondo en una barra de zinc, a media mañana.",
+  "dialogo": [
+    {
+      "audioKey": "fr-i02-q01",
+      "voz": "target_fr_m",
+      "es": "Bonjour ! Je vous écoute.",
+      "pt": "¡Hola! Dígame.",
+      "tts": "Bonjour ! Je vous écoute."
+    },
+    {
+      "audioKey": "fr-i02-q02",
+      "voz": "target_fr_f",
+      "es": "Bonjour, un café, s'il vous plaît.",
+      "pt": "Hola, un café, por favor.",
+      "tts": "Bonjour, un café, s'il vous plaît."
+    },
+    {
+      "audioKey": "fr-i02-q03",
+      "voz": "target_fr_m",
+      "es": "Sur place ou à emporter ?",
+      "pt": "¿Para tomar aquí o para llevar?",
+      "tts": "Sur place ou à emporter ?"
+    },
+    {
+      "audioKey": "fr-i02-q04",
+      "voz": "target_fr_f",
+      "es": "Sur place, s'il vous plaît. Merci, bonne journée.",
+      "pt": "Aquí, por favor. Gracias, buen día.",
+      "tts": "Sur place, s'il vous plaît. Merci, bonne journée."
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "La primera jugada en un mostrador es:",
+      "opcoes": [
+        "Tu pedido",
+        "El saludo",
+        "Preguntar si hablan inglés",
+        "Señalar lo que quieres"
+      ],
+      "correta": 1,
+      "explica": "Bonjour va antes que el café, antes que la pregunta, y antes que cualquier inglés."
+    },
+    {
+      "pergunta": "Sur place ou à emporter es una pregunta sobre:",
+      "opcoes": [
+        "Solo dónde te sientas",
+        "Dónde te sientas y lo que pagas",
+        "Si quieres azúcar",
+        "Si pagas con tarjeta"
+      ],
+      "correta": 1,
+      "explica": "Barra, sala y terraza pueden legalmente tener precios distintos exhibidos para la misma taza."
+    },
+    {
+      "pergunta": "Una frase larga, cuidada y con disculpas en inglés en un mostrador con prisa:",
+      "opcoes": [
+        "Suena más educada",
+        "Suena a un turno más largo — la cortesía ya está en bonjour y s'il vous plaît",
+        "Es siempre obligatoria",
+        "Hace que te sirvan primero"
+      ],
+      "correta": 1,
+      "explica": "Ser breve no es grosero. El saludo y el s'il vous plaît la sostienen."
+    },
+    {
+      "pergunta": "Abres en inglés sin saludar y recibes una respuesta corta y neutra. La lectura defendible es:",
+      "opcoes": [
+        "Una negativa a hablar inglés",
+        "Se saltó un paso de la secuencia de apertura",
+        "Una actitud nacional medida",
+        "Una señal de que deberías irte"
+      ],
+      "correta": 1,
+      "explica": "Es una interpretación basada en la investigación pragmática sobre rituales de saludo, no un hecho medido — y es sobre la que puedes actuar."
+    },
+    {
+      "pergunta": "La secuencia se cierra con:",
+      "opcoes": [
+        "Nada — simplemente te vas",
+        "Merci y au revoir al salir",
+        "Una propina en el mostrador",
+        "Un apretón de manos"
+      ],
+      "correta": 1,
+      "explica": "Se cierra como se abrió. Dicho a la sala, al pasar por la puerta."
+    }
+  ]
+}

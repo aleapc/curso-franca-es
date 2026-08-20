@@ -1,0 +1,307 @@
+{
+  "versao": 1,
+  "sku": "ES → França",
+  "_regras": {
+    "vocabulario_molde": {
+      "termo": "the frame",
+      "porque": "Termo canônico da linha EN, idêntico ao do EN → Itália e ao do EN → México. Não muda entre SKUs da mesma língua-guia: é o que faz o aluno que comprou dois cursos reconhecer a mesma peça."
+    },
+    "criterio": "Um molde entra se, e só se: (1) o buraco é uma COISA DO MUNDO que o aluno escolhe sob pressão, nunca uma categoria gramatical que ele teria que calcular; (2) o abridor é invariável, ou seja, o aluno nunca conjuga nada para usá-lo; (3) ele atravessa a jornada — nasce numa casa e volta em pelo menos duas outras partes. Molde que aparece numa parte só é inventário fixo com outro nome.",
+    "recusados": [
+      {
+        "candidato": "tu / vous",
+        "porque": "É a recusa mais importante deste roster, e é a mesma que fiz com lei/tu na Itália. O buraco não se preenche com uma coisa do mundo: preenche-se com uma LEITURA SOCIAL do interlocutor feita sob pressão, que é exatamente o que o aluno não consegue fazer em tempo real. Além disso a escolha muda a conjugação, o que viola o critério do abridor invariável. Vai para A07 como sinal RECEPTIVO — reconhecer que passaram a te tutear é útil e barato; decidir quando tutear não é."
+      },
+      {
+        "candidato": "il y a",
+        "porque": "Parecia o equivalente do C'È italiano e não é. No balcão francês a pergunta natural de existência é «vous avez…?» — o que o comerciante TEM, não o que existe no mundo. «Il y a une pharmacie près d'ici ?» é correto mas é fala de quem já mora lá. Fica como reconhecimento, não como produção."
+      },
+      {
+        "candidato": "est-ce que",
+        "porque": "É marcador de pergunta, não molde: o buraco dele é uma frase inteira, não uma coisa. Ensinar a inverter ou a prefixar est-ce que dá ao aluno uma REGRA para aplicar sob pressão, que é o oposto do método. O curso ensina a entonação ascendente, que faz o mesmo trabalho e custa zero."
+      },
+      {
+        "candidato": "il faut",
+        "porque": "Tentador porque cobre obrigação («il faut valider ?»), mas o buraco dele é um verbo impessoal que o aluno não escolhe — ele CALCULA se a situação pede obrigação. Vira regra, não escolha. O trabalho dele é feito por JE-DOIS dentro de B09, sem status de molde."
+      }
+    ]
+  },
+  "moldes": [
+    {
+      "id": "VOUS-AVEZ",
+      "categoria": "operacional",
+      "forma": "Vous avez + [coisa] ?",
+      "encaixe": "qualquer coisa que o outro possa TER",
+      "tipo": "aberto",
+      "tipoBuraco": "coisa",
+      "casa": "B06",
+      "redisparos": [
+        "B08",
+        "B11",
+        "B15",
+        "B16",
+        "I03"
+      ],
+      "tiles": [
+        "comprar",
+        "comer",
+        "quarto",
+        "chegar"
+      ],
+      "exemplos": [
+        "une table",
+        "la carte",
+        "une chambre plus calme",
+        "ma taille",
+        "du pain",
+        "le wifi"
+      ],
+      "nota": "O de maior alcance do SKU, e ele substitui o C'È italiano com uma torção que importa: o francês de balcão pergunta o que o INTERLOCUTOR tem, não o que existe no mundo. Por isso nasce em B06, junto com a primeira hora, e não na parte de comer."
+    },
+    {
+      "id": "JE-PEUX",
+      "categoria": "operacional",
+      "forma": "Je peux + [infinitivo] ?",
+      "encaixe": "qualquer coisa que EU quero fazer",
+      "tipo": "aberto",
+      "tipoBuraco": "acao",
+      "casa": "B07",
+      "redisparos": [
+        "B10",
+        "B15",
+        "B16",
+        "B18",
+        "I09"
+      ],
+      "tiles": [
+        "pagar",
+        "compras",
+        "quarto",
+        "chegar"
+      ],
+      "exemplos": [
+        "payer par carte",
+        "laisser ma valise",
+        "essayer",
+        "m'asseoir ici",
+        "recharger mon téléphone"
+      ],
+      "nota": "Cobre a categoria de improviso mais comum do viajante — «isso aqui pode?» — que existe porque a regra muda de estabelecimento para estabelecimento. Deliberadamente «je peux» e não «puis-je»: a inversão é mais formal, mais difícil de dizer e não compra nada no balcão."
+    },
+    {
+      "id": "OU-EST",
+      "categoria": "operacional",
+      "forma": "Où est + [lugar] ?",
+      "encaixe": "qualquer lugar que ele precisa alcançar",
+      "tipo": "aberto",
+      "tipoBuraco": "lugar",
+      "casa": "B08",
+      "redisparos": [
+        "B09",
+        "B10",
+        "B17"
+      ],
+      "tiles": [
+        "chegar",
+        "transporte",
+        "cidade"
+      ],
+      "exemplos": [
+        "la station de taxis",
+        "la sortie",
+        "la gare",
+        "les toilettes",
+        "l'entrée"
+      ],
+      "nota": "O que move os pés. «Où est» e não «où se trouve» pelo mesmo motivo do je peux: a forma curta é a que sai sob pressão, e a longa é a que o aluno abandona no meio."
+    },
+    {
+      "id": "JE-VOUDRAIS",
+      "categoria": "operacional",
+      "forma": "Je voudrais + [coisa / infinitivo]",
+      "encaixe": "o que ele quer pedir ou fazer, dito com a delicadeza que o balcão francês espera",
+      "tipo": "aberto",
+      "tipoBuraco": "coisa",
+      "casa": "B11",
+      "redisparos": [
+        "B14",
+        "B15",
+        "I01"
+      ],
+      "tiles": [
+        "comer",
+        "pagar",
+        "compras"
+      ],
+      "exemplos": [
+        "un café",
+        "l'addition",
+        "réserver une table",
+        "essayer celui-là",
+        "un ticket"
+      ],
+      "nota": "Medido na jornada, o encaixe dele não é só produto: é produto E infinitivo, e ele carrega a reserva, o pedido e a conta. O que ele não pode fazer é ocupar o lugar do VOUS-AVEZ na primeira hora — daí a casa ser B11 e não B06."
+    },
+    {
+      "id": "SANS",
+      "categoria": "operacional",
+      "forma": "Sans + [coisa]",
+      "encaixe": "qualquer ingrediente ou elemento que ele não quer",
+      "tipo": "aberto",
+      "tipoBuraco": "coisa",
+      "casa": "B12",
+      "redisparos": [
+        "B13",
+        "B17"
+      ],
+      "tiles": [
+        "comer",
+        "saude"
+      ],
+      "exemplos": [
+        "oignon",
+        "gluten",
+        "lactose",
+        "glace",
+        "sauce"
+      ],
+      "nota": "Subtrair em vez de descrever. É o núcleo gerador mais denso do módulo básico e o que transforma a carta num objeto editável em vez de uma lista fixa."
+    },
+    {
+      "id": "COMBIEN",
+      "categoria": "operacional",
+      "forma": "C'est combien, + [coisa] ?",
+      "encaixe": "qualquer coisa antes de se comprometer com ela",
+      "tipo": "aberto",
+      "tipoBuraco": "coisa",
+      "casa": "B15",
+      "redisparos": [
+        "B18",
+        "I10"
+      ],
+      "tiles": [
+        "pagar",
+        "compras",
+        "transporte"
+      ],
+      "exemplos": [
+        "en terrasse",
+        "le menu",
+        "ça",
+        "la course",
+        "en tout"
+      ],
+      "nota": "Nasce onde o erro custa dinheiro, e o encaixe mais valioso não é um produto, é um LUGAR — «en terrasse» — porque a diferença de preço entre comptoir, salle e terrasse é lícita desde que afixada, e é a pergunta que o comprador anglófono não pensa em fazer. B14 usa «c'est combien, en tout ?» ANTES desta casa e por isso não é redisparo: ali ainda é fórmula fixa. Não se redispara o que ainda não foi ensinado."
+    },
+    {
+      "id": "JE-CHERCHE",
+      "categoria": "operacional",
+      "forma": "Je cherche + [coisa / lugar]",
+      "encaixe": "o que ele está procurando, quando ainda não sabe se existe ali",
+      "tipo": "aberto",
+      "tipoBuraco": "coisa",
+      "casa": "B10",
+      "redisparos": [
+        "B16",
+        "B17",
+        "I09"
+      ],
+      "tiles": [
+        "compras",
+        "chegar",
+        "cidade"
+      ],
+      "exemplos": [
+        "une pharmacie",
+        "un distributeur",
+        "quelque chose pour la toux",
+        "la sortie",
+        "un souvenir"
+      ],
+      "nota": "Cobre o buraco que o OÙ-EST deixa: OÙ-EST pergunta por um lugar conhecido, JE-CHERCHE abre a busca de algo que talvez não exista ali. A casa é B10, e não a recepção do hotel, por uma razão medida: é em B10 que ele nasce junto com o falso amigo, e «je cherche une librairie» ensina o abridor e a armadilha na mesma frase. É também o abridor que faz o vendedor francês assumir a conversa em vez de responder e virar as costas."
+    },
+    {
+      "id": "PARDON",
+      "categoria": "social",
+      "forma": "Pardon / Excusez-moi, + [pedido]",
+      "encaixe": "o que ele precisa de um estranho",
+      "tipo": "aberto",
+      "tipoBuraco": "acao",
+      "casa": "B03",
+      "redisparos": [
+        "B05",
+        "B08",
+        "B10",
+        "I02",
+        "I07",
+        "A07",
+        "A08"
+      ],
+      "tiles": [
+        "reparo",
+        "chegar",
+        "conversa"
+      ],
+      "exemplos": [
+        "je n'ai pas compris",
+        "vous pouvez répéter",
+        "je peux passer",
+        "vous avez l'heure"
+      ],
+      "nota": "Molde social, e neste par ele pesa mais que em qualquer outro SKU do catálogo: a abertura ritual é a condição de a conversa acontecer, e o anglófono que abre em inglês sem ela lê a frieza resultante como recusa de falar inglês. A pesquisa sustenta a leitura ritual (Kerbrat-Orecchioni) e NÃO sustenta a leitura de recusa."
+    },
+    {
+      "id": "A-QUELLE-HEURE",
+      "categoria": "operacional",
+      "forma": "… à quelle heure ?",
+      "encaixe": "qualquer coisa que abre, fecha, começa ou é servida",
+      "tipo": "aberto",
+      "tipoBuraco": "acao",
+      "casa": "I01",
+      "redisparos": [
+        "I09",
+        "A03",
+        "A06"
+      ],
+      "tiles": [
+        "comer",
+        "transporte",
+        "cidade",
+        "compras"
+      ],
+      "exemplos": [
+        "la cuisine ferme",
+        "le service commence",
+        "vous ouvrez",
+        "ça ferme le dimanche",
+        "vous mangez"
+      ],
+      "nota": "O horário é a única variável que o aluno não consegue adivinhar e que reorganiza o resto do dia. A casa é I01 porque é ali que ele deixa de ser pergunta avulsa e vira leitura do relógio deles — a janela de almoço francesa é estreita e coletiva, e é o INSEE que sustenta isso, não folclore. Os usos de B01 e B10 vêm ANTES e por isso não são redisparo: ali ainda é fórmula fixa."
+    },
+    {
+      "id": "J-AI-FAIT",
+      "categoria": "operacional",
+      "forma": "J'ai / Je suis + [particípio]",
+      "encaixe": "qualquer coisa que ele fez ontem",
+      "tipo": "aberto",
+      "tipoBuraco": "acao",
+      "casa": "I06",
+      "redisparos": [
+        "I08"
+      ],
+      "tiles": [
+        "conversa",
+        "comer",
+        "cidade"
+      ],
+      "exemplos": [
+        "je suis allé à Lyon",
+        "j'ai mangé dans un petit restaurant",
+        "j'ai pris le train",
+        "on a marché toute la journée",
+        "j'ai apporté un dessert"
+      ],
+      "nota": "O passado não entra como tempo verbal, entra como um punhado de verbos que carregam qualquer dia. É o molde que tira o aluno do presente permanente e o transforma de alguém que pede coisas em alguém que tem uma viagem para contar."
+    }
+  ]
+}

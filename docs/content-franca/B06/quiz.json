@@ -1,0 +1,96 @@
+{
+  "id": "q-b06",
+  "nivel": "basico",
+  "titulo": "Quiz — Vous avez, y luego lo que necesites",
+  "subtitulo": "Una misma estructura en cuatro mostradores",
+  "introAudioKey": "fr-b06-q-i",
+  "introPt": "Un viajero cruza la sala de llegadas con una sola apertura y siete necesidades distintas.",
+  "cenario": "Sala de llegadas, la primera hora.",
+  "dialogo": [
+    {
+      "audioKey": "fr-b06-q01",
+      "voz": "target_fr_f",
+      "es": "Bonjour, vous avez du wifi ?",
+      "pt": "Hola, ¿tienen wifi?",
+      "tts": "Bonjour, vous avez du wifi ?"
+    },
+    {
+      "audioKey": "fr-b06-q02",
+      "voz": "target_fr_m",
+      "es": "Bonjour ! Oui, le code est sur le ticket.",
+      "pt": "¡Hola! Sí, el código está en el recibo.",
+      "tts": "Bonjour ! Oui, le code est sur le ticket."
+    },
+    {
+      "audioKey": "fr-b06-q03",
+      "voz": "target_fr_f",
+      "es": "Vous avez de la monnaie ?",
+      "pt": "¿Tiene cambio?",
+      "tts": "Vous avez de la monnaie ?"
+    },
+    {
+      "audioKey": "fr-b06-q04",
+      "voz": "target_fr_m",
+      "es": "Non, pas ici, mais il y en a au niveau deux.",
+      "pt": "No, aquí no, pero hay en la planta dos.",
+      "tts": "Non, pas ici, mais il y en a au niveau deux."
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "¿Qué va después de «vous avez»?",
+      "opcoes": [
+        "Un verbo en infinitivo",
+        "La cosa que quieres que tengan",
+        "Un número",
+        "Tu nombre"
+      ],
+      "correta": 1,
+      "explica": "La estructura es vous avez más una cosa: du wifi, une carte SIM, un chargeur, un plan, de la monnaie. Nada cambia de forma."
+    },
+    {
+      "pergunta": "¿Por qué preguntar qué TIENEN en vez de si algo existe cerca?",
+      "opcoes": [
+        "La otra versión es gramaticalmente incorrecta",
+        "En un mostrador, la pregunta natural en francés es sobre la persona que tienes delante",
+        "Es más corta",
+        "Es más formal"
+      ],
+      "correta": 1,
+      "explica": "Preguntar qué existe en el mundo está bien, pero es el habla de quien ya vive ahí. En un mostrador, la pregunta útil es qué tiene esta persona."
+    },
+    {
+      "pergunta": "«Non, pas ici, mais il y en a au niveau deux.» ¿Qué deberías hacer?",
+      "opcoes": [
+        "Darles las gracias y marcharte",
+        "Volver a preguntar más despacio",
+        "Aguantar un momento — el no lleva la dirección del sí",
+        "Probar con otro idioma"
+      ],
+      "correta": 2,
+      "explica": "La primera palabra es solo la primera mitad. La parte útil es la planta, la otra terminal, la máquina que sí acepta billetes."
+    },
+    {
+      "pergunta": "La caja de un café muestra un logo de tarjeta y ningún mínimo escrito en ninguna parte. ¿Qué significa eso?",
+      "opcoes": [
+        "Aún pueden rechazar la tarjeta para un importe pequeño",
+        "Se han comprometido a aceptar la tarjeta por cualquier importe",
+        "Solo se acepta tarjeta por encima de diez euros",
+        "Solo efectivo"
+      ],
+      "correta": 1,
+      "explica": "Nada obliga a un comerciante francés a aceptar tarjetas, pero un rechazo o un mínimo debe mostrarse por adelantado. Un logo sin un mínimo al lado es el compromiso."
+    },
+    {
+      "pergunta": "¿Qué va delante de la estructura en cada mostrador?",
+      "opcoes": [
+        "S'il vous plaît",
+        "Pardon",
+        "Bonjour",
+        "Merci"
+      ],
+      "correta": 2,
+      "explica": "Bonjour es la apertura ritual. Llegar con la petición y sin saludo es entrar sin llamar, y la respuesta seca que sigue es fácil de malinterpretar."
+    }
+  ]
+}

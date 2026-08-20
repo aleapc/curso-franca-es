@@ -1,0 +1,96 @@
+{
+  "id": "q-i01",
+  "nivel": "intermediario",
+  "titulo": "Quiz — Su reloj",
+  "subtitulo": "Dos números y un hueco",
+  "introAudioKey": "fr-i01-q-i",
+  "introPt": "Un viajero averigua cuánto queda de la ventana de la comida, y reserva la cena allí mismo, de pie.",
+  "cenario": "En la puerta de un pequeño restaurante, a las dos menos diez de la tarde.",
+  "dialogo": [
+    {
+      "audioKey": "fr-i01-q01",
+      "voz": "target_fr_f",
+      "es": "La cuisine ferme à quelle heure ?",
+      "pt": "¿A qué hora cierra la cocina?",
+      "tts": "La cuisine ferme à quelle heure ?"
+    },
+    {
+      "audioKey": "fr-i01-q02",
+      "voz": "target_fr_m",
+      "es": "On sert jusqu'à quatorze heures. Le soir, à partir de dix-neuf heures trente.",
+      "pt": "Servimos hasta las dos. Por la noche, a partir de las siete y media.",
+      "tts": "On sert jusqu'à quatorze heures. Le soir, à partir de dix-neuf heures trente."
+    },
+    {
+      "audioKey": "fr-i01-q03",
+      "voz": "target_fr_f",
+      "es": "Je voudrais réserver une table pour ce soir.",
+      "pt": "Quisiera reservar una mesa para esta noche.",
+      "tts": "Je voudrais réserver une table pour ce soir."
+    },
+    {
+      "audioKey": "fr-i01-q04",
+      "voz": "target_fr_m",
+      "es": "Vingt heures ou vingt et une heures ?",
+      "pt": "¿A las ocho o a las nueve?",
+      "tts": "Vingt heures ou vingt et une heures ?"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "A la una de la tarde, ¿qué parte del país está comiendo?",
+      "opcoes": [
+        "Alrededor de una décima parte",
+        "Alrededor de una cuarta parte",
+        "Alrededor de la mitad",
+        "Casi nadie — la comida es más tarde"
+      ],
+      "correta": 2,
+      "explica": "La mitad, según la encuesta de uso del tiempo del INSEE. Por eso la ventana se siente concurrida y corta."
+    },
+    {
+      "pergunta": "El pico de la cena se sitúa en torno a:",
+      "opcoes": [
+        "Las siete y cuarto",
+        "Las ocho y cuarto",
+        "Las nueve y media",
+        "Varía sin patrón"
+      ],
+      "correta": 1,
+      "explica": "Hacia las 20h15, y se ha desplazado unos quince minutos más tarde en veinticuatro años."
+    },
+    {
+      "pergunta": "Llegas a las dos y veinte y en la sala todavía hay gente comiendo. ¿Qué pasa?",
+      "opcoes": [
+        "La cocina ha dejado de tomar comandas; esos platos se pidieron antes",
+        "Se niegan a servirte",
+        "La cocina simplemente va lenta hoy",
+        "El servicio es continuo, así que puedes pedir"
+      ],
+      "correta": 0,
+      "explica": "Entre servicios la cocina está cerrada, no lenta. Las brasseries con service continu son la excepción."
+    },
+    {
+      "pergunta": "¿Qué frase te da la respuesta útil en la puerta?",
+      "opcoes": [
+        "C'est bon ici ?",
+        "La cuisine ferme à quelle heure ?",
+        "Vous êtes ouverts ?",
+        "C'est cher ?"
+      ],
+      "correta": 1,
+      "explica": "Preguntar por la cuisine, no por el restaurante. La sala puede estar abierta mucho después de que pare la cocina."
+    },
+    {
+      "pergunta": "Un comedor que parece vacío a las siete de la tarde te dice:",
+      "opcoes": [
+        "Que ningún local come ahí",
+        "Que es pronto — la sala se llena más tarde",
+        "Que la cocina está cerrada",
+        "Que ha abierto esta misma semana"
+      ],
+      "correta": 1,
+      "explica": "Las siete es antes del pico. Juzgar una sala a esa hora selecciona los sitios pensados para horarios extranjeros."
+    }
+  ]
+}

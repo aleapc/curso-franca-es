@@ -1,0 +1,96 @@
+{
+  "id": "q-b04",
+  "nivel": "basico",
+  "titulo": "Quiz — Cuatro cosas que caducan antes de volar",
+  "subtitulo": "La llamada previa al vuelo y los tres plazos que hay detrás",
+  "introAudioKey": "fr-b04-q-i",
+  "introPt": "Un viajero cierra los cabos sueltos de una reserva una semana antes de salir.",
+  "cenario": "Una llamada al hotel, desde la mesa de la cocina.",
+  "dialogo": [
+    {
+      "audioKey": "fr-b04-q01",
+      "voz": "target_fr_f",
+      "es": "Bonjour, j'appelle pour confirmer ma réservation.",
+      "pt": "Hola, llamo para confirmar mi reserva.",
+      "tts": "Bonjour, j'appelle pour confirmer ma réservation."
+    },
+    {
+      "audioKey": "fr-b04-q02",
+      "voz": "target_fr_m",
+      "es": "Très bien. Douze rue Saint-Antoine, troisième étage.",
+      "pt": "Muy bien. Doce rue Saint-Antoine, tercer piso.",
+      "tts": "Très bien. Douze rue Saint-Antoine, troisième étage."
+    },
+    {
+      "audioKey": "fr-b04-q03",
+      "voz": "target_fr_f",
+      "es": "Vous pouvez me l'écrire ?",
+      "pt": "¿Me lo puede escribir?",
+      "tts": "Vous pouvez me l'écrire ?"
+    },
+    {
+      "audioKey": "fr-b04-q04",
+      "voz": "target_fr_m",
+      "es": "Bien sûr, je vous envoie ça par mail.",
+      "pt": "Claro, se lo envío por correo.",
+      "tts": "Bien sûr, je vous envoie ça par mail."
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "¿Qué te da realmente una GHIC o una EHIC en Francia?",
+      "opcoes": [
+        "Cobertura total, igual que un seguro de viaje",
+        "Atención pública en las mismas condiciones que un residente",
+        "Una clínica privada gratuita",
+        "El vuelo de vuelta si te encuentras mal"
+      ],
+      "correta": 1,
+      "explica": "Te pone en condiciones de residente dentro del sistema público. El ticket modérateur, del veinte al treinta por ciento, sigue siendo tuyo — por eso el seguro es una compra aparte, no una alternativa."
+    },
+    {
+      "pergunta": "Encuentras un puñado de billetes de metro de papel viejos en un cajón. ¿Y ahora?",
+      "opcoes": [
+        "Siguen funcionando en el torno",
+        "Nada — no valen nada",
+        "Una taquilla los canjea a una Navigo Easy, hasta cinco al día, hasta enero de 2027",
+        "Cualquier máquina los convierte"
+      ],
+      "correta": 2,
+      "explica": "París acabó con el carnet de papel en 2025. El canje se hace en una taquilla atendida, no en una máquina, y la ventana cierra el 14 de enero de 2027."
+    },
+    {
+      "pergunta": "¿Por qué preguntar «Quelle est l'adresse exacte ?» antes de volar?",
+      "opcoes": [
+        "Es más educado que preguntar al llegar",
+        "El nombre de un hotel no sirve para orientarse — un taxista o un mapa sin conexión necesitan la calle y el número",
+        "Los hoteles cobran menos si confirmas",
+        "Lo exige la web de reservas"
+      ],
+      "correta": 1,
+      "explica": "El nombre es una marca. La calle y el número son lo que un desconocido, un taxista o un mapa en caché pueden usar sin señal."
+    },
+    {
+      "pergunta": "¿Para qué sirve «Vous pouvez me l'écrire ?»?",
+      "opcoes": [
+        "Para pedir la cuenta",
+        "Para pedir que hablen más despacio",
+        "Para pedirlo por escrito de modo que sobreviva a tu memoria",
+        "Para pedir otra habitación"
+      ],
+      "correta": 2,
+      "explica": "Una dirección dicha por teléfono no sobrevive al trayecto hasta la parada de taxi. Escrita, sí."
+    },
+    {
+      "pergunta": "Los pagos en efectivo a un negocio en Francia tienen tope. ¿Qué techo corresponde a un visitante que puede justificar no ser residente fiscal allí?",
+      "opcoes": [
+        "1 000 €",
+        "3 000 €",
+        "15 000 €",
+        "No hay ningún techo"
+      ],
+      "correta": 2,
+      "explica": "Artículo D112-3: 1 000 € para quien sea residente fiscal en Francia, 15 000 € para un no residente que no actúe con fines profesionales. El techo más alto es del no residente, no del «turista»."
+    }
+  ]
+}

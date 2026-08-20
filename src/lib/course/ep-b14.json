@@ -1,0 +1,411 @@
+{
+  "id": "b14",
+  "nivel": "basico",
+  "numero": 14,
+  "parte": "B14",
+  "titulo": "L'addition — el número que oyes ya es el número entero",
+  "subtitulo": "El servicio va dentro del precio por ley francesa, el tique impreso sigue siendo tuyo en un restaurante, y la tarjeta es lo único que conviene comprobar en la puerta",
+  "cena": "Han retirado los platos, la terraza está llena detrás de ti, y nadie va a traerte nada hasta que lo pidas.",
+  "moldura": "ganha",
+  "frasePiso": "Pedirás la cuenta, elegirás cómo pagar y saldrás con el tique impreso, todo en francés. La mayoría de la gente en esa mesa hace el gesto de escribir en el aire.",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-service-compris",
+      "afirmacao": "En Francia el servicio va dentro del precio por ley. Un establecimiento que cobra servicio tiene que mostrar «Prix service compris» con el porcentaje entre paréntesis, y la lista de precios tiene que estar expuesta de forma legible fuera, en caracteres de al menos 1,5 cm de alto.",
+      "fonte": "Arrêté du 27 mars 1987 (Légifrance, consolidado, mod. 29/06/1990), art. 1º e art. 2",
+      "ano": 1987,
+      "revisarAte": "2028-08-01",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b14-n03"
+      ]
+    },
+    {
+      "id": "fr-note-25-euros",
+      "afirmacao": "Para un servicio de 25 € o más con impuestos incluidos, el establecimiento tiene que entregarte una nota escrita antes de pagar.",
+      "fonte": "Arrêté 83-50/A de 03/10/1983",
+      "ano": 1983,
+      "revisarAte": "2028-08-01",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b14-n04"
+      ]
+    },
+    {
+      "id": "fr-ticket-caisse-2023",
+      "afirmacao": "Desde el 1 de agosto de 2023 el tique de caja de la tienda solo se imprime si lo pides — pero los restaurantes y hoteles están entre las excepciones, así que la nota y la addition se siguen imprimiendo automáticamente.",
+      "fonte": "Loi 2020-105 anti-gaspillage; comunicado do Ministère de l'Économie, 24/07/2023",
+      "ano": 2023,
+      "revisarAte": "2027-08-01",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b14-n05"
+      ]
+    },
+    {
+      "id": "fr-cartao-recusavel",
+      "afirmacao": "No hay obligación legal en Francia de aceptar tarjeta. Un negocio puede rechazarla o fijar un importe mínimo, a condición de que lo indique por adelantado y de forma visible — una pegatina, un cartel en la entrada o en la caja. El efectivo en euros siempre tiene que aceptarse.",
+      "fonte": "Ministère de l'Économie; fiche DGCCRF «Moyens de paiement»",
+      "ano": 2026,
+      "revisarAte": "2027-08-01",
+      "evidencia": "CONSENSO",
+      "risco": "medio",
+      "audioKeys": [
+        "fr-b14-n06"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b14-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "Parte catorce. La cuenta, y la buena noticia es que las cuentas se hicieron antes de que te sentaras."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b14-n02",
+      "bloco": "cena",
+      "pt": "Los platos ya no están, la terraza está llena detrás de ti, y no pasa nada hasta que lo pidas."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b14-t01",
+      "es": "Je voudrais l'addition, s'il vous plaît.",
+      "pinyin": "zhuh voo-DREH la-dee-SYON, seel voo PLEH",
+      "pt": "Quisiera la cuenta, por favor.",
+      "tts": "Je voudrais l'addition, s'il vous plaît."
+    },
+    {
+      "consulta": [
+        "pagar/pedir",
+        "mesa/conta"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "JE-VOUDRAIS",
+      "encaixe": "l'addition",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b14-p01",
+      "promptPt": "Pasa junto a tu mesa con dos cafés y te cruza la mirada medio segundo. Habla ahora.",
+      "audioKey": "fr-b14-t01",
+      "es": "Je voudrais l'addition, s'il vous plaît.",
+      "pinyin": "zhuh voo-DREH la-dee-SYON, seel voo PLEH",
+      "pt": "Quisiera la cuenta, por favor.",
+      "tts": "Je voudrais l'addition, s'il vous plaît."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b14-r01",
+      "es": "Je vous apporte ça tout de suite.",
+      "pt": "Se lo traigo enseguida.",
+      "tts": "Je vous apporte ça tout de suite."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b14-n03",
+      "bloco": "corpo",
+      "pt": "El servicio va dentro del precio aquí por ley, y una casa que lo cobra tiene que imprimir prix service compris en la lista."
+    },
+    {
+      "consulta": [
+        "pagar/gorjeta",
+        "mesa/conta"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b14-p02",
+      "promptPt": "Quieres oírlo confirmado en tu propia mesa antes de decidir nada. Habla ahora.",
+      "audioKey": "fr-b14-t02",
+      "es": "Le service est compris ?",
+      "pinyin": "luh sehr-VEES eh kon-PREE",
+      "pt": "¿El servicio está incluido?",
+      "tts": "Le service est compris ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b14-r02",
+      "receptivo": true,
+      "es": "Toujours, monsieur. C'est dans le prix.",
+      "pt": "Siempre, señor. Está en el precio.",
+      "tts": "Toujours, monsieur. C'est dans le prix.",
+      "acao": "Tómalo tal cual. El total que tienes delante es el total entero."
+    },
+    {
+      "consulta": [
+        "pagar/rachar",
+        "mesa/conta"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b14-p03",
+      "promptPt": "Sois cuatro, un platillo con el papel, y alguien quiere la cifra en voz alta. Habla ahora.",
+      "audioKey": "fr-b14-t03",
+      "es": "C'est combien, en tout ?",
+      "pinyin": "seh kon-BYAN, ahn TOO",
+      "pt": "¿Cuánto es en total?",
+      "tts": "C'est combien, en tout ?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b14-n04",
+      "pt": "A partir de veinticinco euros, tienen que entregarte una nota escrita antes de pagar. No tienes que ganártela."
+    },
+    {
+      "consulta": [
+        "pagar/pedir",
+        "compras/pagar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "JE-VOUDRAIS",
+      "encaixe": "une note",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b14-p04",
+      "promptPt": "Cena para tres, y alguien en casa va a querer el papeleo. Habla ahora.",
+      "audioKey": "fr-b14-t04",
+      "es": "Je voudrais une note, s'il vous plaît.",
+      "pinyin": "zhuh voo-DREH ewn NOT, seel voo PLEH",
+      "pt": "Quisiera una factura, por favor.",
+      "tts": "Je voudrais une note, s'il vous plaît."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b14-n05",
+      "pt": "Desde agosto de 2023 los tiques de tienda solo se imprimen a petición — pero restaurantes y hoteles están exentos, así que el tuyo sí se imprime."
+    },
+    {
+      "consulta": [
+        "pagar/cartao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "JE-VOUDRAIS",
+      "encaixe": "payer par carte",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b14-p05",
+      "promptPt": "El platillo está en la mesa y tu cartera solo tiene plástico. Di cómo vas a pagar. Habla ahora.",
+      "audioKey": "fr-b14-t05",
+      "es": "Je voudrais payer par carte.",
+      "pinyin": "zhuh voo-DREH peh-YEH par KART",
+      "pt": "Quisiera pagar con tarjeta.",
+      "tts": "Je voudrais payer par carte."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b14-r03",
+      "receptivo": true,
+      "es": "La carte à partir de quinze euros. C'est écrit à l'entrée.",
+      "pt": "Tarjeta a partir de quince euros. Está escrito en la entrada.",
+      "tts": "La carte à partir de quinze euros. C'est écrit à l'entrée.",
+      "acao": "Lee la puerta y la caja al entrar, no el platillo al salir."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b14-n06",
+      "bloco": "capsula",
+      "pt": "Nada obliga a un negocio francés a aceptar tarjeta. También se permite un mínimo — siempre que esté puesto donde puedas verlo primero."
+    },
+    {
+      "consulta": [
+        "pagar/cartao",
+        "compras/pagar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b14-p06",
+      "promptPt": "Estás en la puerta de un sitio pequeño, antes de pedir, y no hay ninguna pegatina. Habla ahora.",
+      "audioKey": "fr-b14-t06",
+      "es": "Vous acceptez la carte ?",
+      "pinyin": "voo zak-sep-TEH la KART",
+      "pt": "¿Aceptan tarjeta?",
+      "tts": "Vous acceptez la carte ?"
+    },
+    {
+      "consulta": [
+        "pagar/rachar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "JE-VOUDRAIS",
+      "encaixe": "payer séparément",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b14-p07",
+      "promptPt": "Sois dos, dos tarjetas, y un solo papel entre las dos. Dilo antes de que empiece a teclear. Habla ahora.",
+      "audioKey": "fr-b14-t07",
+      "es": "Je voudrais payer séparément.",
+      "pinyin": "zhuh voo-DREH peh-YEH seh-pa-reh-MAHN",
+      "pt": "Quisiera pagar por separado.",
+      "tts": "Je voudrais payer séparément."
+    },
+    {
+      "consulta": [
+        "pagar/pedir",
+        "mesa/bebida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b14-p08",
+      "promptPt": "Una línea del papel es una cifra que no esperabas por la última ronda. Pregunta por ese ítem. Habla ahora.",
+      "audioKey": "fr-b14-t08",
+      "es": "C'est combien, le café ?",
+      "pinyin": "seh kon-BYAN, luh ka-FEH",
+      "pt": "¿Cuánto es el café?",
+      "tts": "C'est combien, le café ?"
+    },
+    {
+      "consulta": [
+        "compras/pagar",
+        "pagar/cartao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b14-p09",
+      "promptPt": "La máquina de tarjeta pita y él empieza a irse con el tiquecito. Habla ahora.",
+      "audioKey": "fr-b14-t09",
+      "es": "Je voudrais un reçu, s'il vous plaît.",
+      "pinyin": "zhuh voo-DREH an ruh-SEW, seel voo PLEH",
+      "pt": "Quisiera un recibo, por favor.",
+      "tts": "Je voudrais un reçu, s'il vous plaît.",
+      "molde": "JE-VOUDRAIS",
+      "encaixe": "un reçu"
+    },
+    {
+      "consulta": [
+        "pagar/gorjeta",
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b14-p10",
+      "promptPt": "Dos horas en esa mesa, una nota entregada, y prefieres no esperar a las monedas. Habla ahora.",
+      "audioKey": "fr-b14-t10",
+      "es": "Merci, gardez la monnaie.",
+      "pinyin": "mehr-SEE, gar-DEH la mo-NEH",
+      "pt": "Gracias, quédese con el cambio.",
+      "tts": "Merci, gardez la monnaie."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b14-n07",
+      "bloco": "permissao",
+      "pt": "No hay ningún porcentaje que calcular. No se debe nada extra, y lo que redondees hacia arriba es exactamente eso — extra."
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b14-s01",
+      "es": "Je voudrais l'addition, s'il vous plaît. C'est combien, en tout ? Je voudrais payer par carte.",
+      "pinyin": "zhuh voo-DREH la-dee-SYON, seel voo PLEH · seh kon-BYAN, ahn TOO · zhuh voo-DREH peh-YEH par KART",
+      "pt": "Repite en shadowing los tres movimientos del final, en el orden en que ocurren.",
+      "tts": "Je voudrais l'addition, s'il vous plaît. C'est combien, en tout ? Je voudrais payer par carte.",
+      "molde": "JE-VOUDRAIS"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b14-n08",
+      "bloco": "recap",
+      "pt": "B14 hecho. Pídela, oye el total, di tu método, coge el papel — y el servicio ya estaba en el número."
+    }
+  ],
+  "aprofundar": {
+    "titulo": "El total ya estaba cerrado antes de que te sentaras",
+    "secoes": [
+      {
+        "titulo": "Service compris es una norma, no una cortesía",
+        "corpo": "Un establecimiento que cobra por el servicio tiene que mostrar «Prix service compris» con el porcentaje entre paréntesis, y la lista de precios tiene que leerse desde fuera en caracteres de al menos 1,5 cm. Es el arrêté de 1987, aún en vigor. El efecto práctico para ti cabe en una frase: la cifra impresa junto al plato es la cifra que pagas por el plato.",
+        "exemplos": [
+          {
+            "es": "Le service est compris ?",
+            "pt": "¿El servicio está incluido?"
+          },
+          {
+            "es": "C'est combien, en tout ?",
+            "pt": "¿Cuánto es en total?"
+          }
+        ]
+      },
+      {
+        "titulo": "Dos papeles distintos",
+        "corpo": "La note es la cuenta detallada de la comida — obligatoria a partir de 25 € con impuestos, entregada antes de pagar. Le reçu es el tiquecito que imprime el datáfono. Pide el que de verdad quieras; pedir los dos es normal y no cuesta nada.",
+        "exemplos": [
+          {
+            "es": "Je voudrais une note, s'il vous plaît.",
+            "pt": "Quisiera una factura, por favor."
+          },
+          {
+            "es": "Je voudrais un reçu, s'il vous plaît.",
+            "pt": "Quisiera un recibo, por favor."
+          }
+        ]
+      },
+      {
+        "titulo": "Por qué tu tique de restaurante sí se imprime",
+        "corpo": "Desde el 1 de agosto de 2023 el tique automático de caja ha desaparecido en las tiendas — solo se imprime si lo pides. Los restaurantes y hoteles están entre las excepciones, así que la nota y la addition se te siguen imprimiendo sin pedirlas. En un supermercado, si quieres el papel, dilo antes de que se marque el total."
+      },
+      {
+        "titulo": "Tarjeta, efectivo, y el cartel de la puerta",
+        "corpo": "Nada en Francia obliga a un negocio a aceptar tarjeta, y se permite un gasto mínimo — ambas cosas con la misma condición, que te lo digan por adelantado y de forma visible. Lo que se convierte en una pequeña costumbre útil: lee la entrada y la caja al entrar. Un logo CB en la puerta sin mínimo escrito al lado es un compromiso de aceptar la tarjeta por cualquier importe. El efectivo en euros, mientras tanto, siempre tiene que aceptarse."
+      },
+      {
+        "titulo": "Redondear, sin un número",
+        "corpo": "No hay porcentaje publicado para un pourboire en Francia, y cualquier cifra que leas en internet debe tratarse como inventada. Lo que existe en su lugar es una costumbre sin aritmética: deja las monedas, o di gardez la monnaie. No dejar nada no es un incidente."
+      }
+    ]
+  },
+  "slot": "B14",
+  "permissao": "Tienes permiso para pedir la cuenta en cuanto la quieras, y para preguntar si el servicio está incluido aunque ya sepas la respuesta. Ninguna de las dos preguntas es un desafío a nadie. La mesa es tuya hasta que la pidas, lo que significa que pedir es la parte que tú controlas.",
+  "permissaoAudioKey": "fr-b14-n07",
+  "espelho": "La costumbre que conviene notar es esperar a que te traigan la cuenta. En casa suele llegar con los últimos platos y la mesa empieza a sentirse prestada; aquí no llega nada hasta que lo pides, así que una mesa que parece ignorarte suele ser una mesa que te han dejado a ti.",
+  "fichasCulturais": [
+    {
+      "sinal": "El datáfono muestra el total exacto, no hay línea de propina en la pantalla, y el camarero está ahí de pie esperando a que pulses la tecla verde.",
+      "suaLeitura": "No hay opción de propina, así que se espera que calcule un porcentaje de cabeza y entregue monedas.",
+      "oQueEAli": "El servicio va dentro del precio por ley, así que el total en la pantalla ya está completo. No hay porcentaje publicado para un pourboire en Francia — cualquier número que circule en internet está inventado, y el datáfono no lo está esperando.",
+      "oQueVoceFaz": "Pulsa la tecla verde. Si aun así quieres dejar algo, pon monedas en el platillo o di gardez la monnaie — sin aritmética de por medio.",
+      "oQueMelhora": "El final de la comida deja de ser un cálculo y se vuelve una despedida, que es la parte que hace que te recuerden la próxima vez.",
+      "ondeNaoVale": "No en un bar donde el precio que te dijeron era el de barra y te lo tomaste sentado en la terraza — ahí el total más alto es la tarifa marcada para ese asiento, no una propina ni un error.",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-b14-n03",
+        "fr-b14-n07"
+      ]
+    },
+    {
+      "sinal": "Una tarjetita escrita a mano pegada junto a la caja dice «carte à partir de 15 €».",
+      "suaLeitura": "Me están empujando a gastar más de lo que quería.",
+      "oQueEAli": "Un negocio francés no está obligado a aceptar tarjeta, y se permite un mínimo — a condición de que se exponga por adelantado. Esa tarjeta junto a la caja es la información que la norma exige, hecha de la forma más barata posible.",
+      "oQueVoceFaz": "Lee la entrada y la caja antes de pedir. Si el logo CB está en la puerta sin mínimo al lado, la tarjeta funciona por cualquier importe; si hay un mínimo, decide entonces, con un café aún sin pedir.",
+      "oQueMelhora": "Te enteras en la puerta en vez de en el platillo, y guardas suficiente efectivo para los sitios que discretamente funcionan con él.",
+      "ondeNaoVale": "No donde no hay nada expuesto en ninguna parte y el mínimo se anuncia solo cuando vas a pagar — esa es una situación distinta, y el efectivo en euros siempre la resuelve.",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b14-n06",
+        "fr-b14-r03"
+      ]
+    }
+  ]
+}

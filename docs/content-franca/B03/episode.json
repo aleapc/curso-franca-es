@@ -1,0 +1,349 @@
+{
+  "id": "b03",
+  "nivel": "basico",
+  "numero": 3,
+  "parte": "B03",
+  "titulo": "Pardon, y luego lo que necesitas",
+  "subtitulo": "Una entrada para cualquier desconocido: el marco que convierte un momento que no captaste en uno que aún puedes usar",
+  "cena": "La respuesta volvió a toda velocidad, captaste una palabra, y la persona ya mira al siguiente.",
+  "moldura": "ganha",
+  "frasePiso": "Pardon, luego lo que necesitas. Una entrada, y cualquier desconocido se vuelve alguien a quien puedes preguntar.",
+  "moldes": [
+    "PARDON"
+  ],
+  "clique": {
+    "contagem": [
+      "el mostrador de la panadería",
+      "la ventanilla de billetes",
+      "el vagón del metro",
+      "la acera de fuera"
+    ],
+    "desconto": "Nadie te dio una entrada distinta para el panadero, el taquillero, el pasajero y el desconocido de la calle. Guardaste una palabra y cambiaste solo lo que venía después.",
+    "piso": "La próxima vez que la frase se te escape, no sonreirás asintiendo. Abrirás con pardon y pedirás la mitad que perdiste."
+  },
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b03-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "Perderás una frase el primer día. Eso no hay que evitarlo: es un momento con una entrada que lo arregla."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b03-n02",
+      "bloco": "molde",
+      "pt": "Este es el molde: pardon, luego lo que necesitas. La misma entrada para el panadero, el taquillero y la persona en la puerta."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b03-t01",
+      "es": "Pardon, je n'ai pas compris.",
+      "pinyin": "par-DOHN, zhuh nay pa kon-PREE",
+      "pt": "Perdón, no he entendido.",
+      "tts": "Pardon, je n'ai pas compris."
+    },
+    {
+      "consulta": [
+        "reparo/devagar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "PARDON",
+      "encaixe": "je n'ai pas compris",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b03-p01",
+      "promptPt": "En el mostrador de la panadería acaba de decir un número y se te fue de largo. Habla ahora.",
+      "audioKey": "fr-b03-t01",
+      "es": "Pardon, je n'ai pas compris.",
+      "pinyin": "par-DOHN, zhuh nay pa kon-PREE",
+      "pt": "Perdón, no he entendido.",
+      "tts": "Pardon, je n'ai pas compris."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b03-r01",
+      "receptivo": true,
+      "es": "Ah pardon — je disais deux euros quarante.",
+      "pt": "Ah, perdón, decía dos euros cuarenta.",
+      "tts": "Ah pardon, je disais deux euros quarante.",
+      "acao": "La repetición suele volver más lenta y más corta. Espera el número al final del grupo: esa es la parte que necesitabas."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b03-n03",
+      "bloco": "corpo",
+      "pt": "El marco se mantiene y solo cambia el final: pídelo otra vez, pídelo más despacio, pídelo por escrito."
+    },
+    {
+      "consulta": [
+        "reparo/devagar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "PARDON",
+      "encaixe": "vous pouvez répéter",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b03-p02",
+      "promptPt": "Mismo mostrador, y otra pasada lo resolvería todo. Habla ahora.",
+      "audioKey": "fr-b03-t02",
+      "es": "Pardon, vous pouvez répéter ?",
+      "pinyin": "par-DOHN, voo poo-vay ray-pay-TAY",
+      "pt": "Perdón, ¿puede repetir?",
+      "tts": "Pardon, vous pouvez répéter ?"
+    },
+    {
+      "consulta": [
+        "reparo/devagar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "PARDON",
+      "encaixe": "plus lentement",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b03-p03",
+      "promptPt": "En la ventanilla la repetición volvió a la misma velocidad. Pide la otra cosa. Habla ahora.",
+      "audioKey": "fr-b03-t03",
+      "es": "Pardon, plus lentement, s'il vous plaît.",
+      "pinyin": "par-DOHN, plew lahnt-MAHN, seel voo PLEH",
+      "pt": "Perdón, más despacio, por favor.",
+      "tts": "Pardon, plus lentement, s'il vous plaît."
+    },
+    {
+      "consulta": [
+        "reparo/escreve"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "PARDON",
+      "encaixe": "vous pouvez l'écrire",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b03-p04",
+      "promptPt": "Sigues en la ventanilla, y es un número de andén que no puedes adivinar. Habla ahora.",
+      "audioKey": "fr-b03-t04",
+      "es": "Excusez-moi, vous pouvez l'écrire ?",
+      "pinyin": "ek-skew-zay-MWA, voo poo-vay lay-KREER",
+      "pt": "Disculpe, ¿puede escribirlo?",
+      "tts": "Excusez-moi, vous pouvez l'écrire ?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b03-n04",
+      "pt": "Pardon y excusez-moi hacen el mismo trabajo en el marco. La más larga solo suena un pelín más cuidada."
+    },
+    {
+      "consulta": [
+        "chegar/entrar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "PARDON",
+      "encaixe": "je peux passer",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b03-p05",
+      "promptPt": "El vagón del metro está lleno y tu parada es la siguiente. Habla ahora.",
+      "audioKey": "fr-b03-t05",
+      "es": "Pardon, je peux passer ?",
+      "pinyin": "par-DOHN, zhuh puh pa-SAY",
+      "pt": "Perdón, ¿puedo pasar?",
+      "tts": "Pardon, je peux passer ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b03-r02",
+      "es": "Oui, allez-y, je vous en prie.",
+      "pt": "Sí, adelante, por favor.",
+      "tts": "Oui, allez-y, je vous en prie."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b03-n05",
+      "bloco": "capsula",
+      "pt": "Dos finales más para el marco, ambos de acera: la hora, y si la persona tiene inglés."
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "PARDON",
+      "encaixe": "vous avez l'heure",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b03-p06",
+      "promptPt": "En la acera de fuera, móvil muerto, y alguien espera en el paso. Habla ahora.",
+      "audioKey": "fr-b03-t06",
+      "es": "Pardon, vous avez l'heure ?",
+      "pinyin": "par-DOHN, voo za-vay LURR",
+      "pt": "Perdón, ¿tiene hora?",
+      "tts": "Pardon, vous avez l'heure ?"
+    },
+    {
+      "consulta": [
+        "reparo/ingles"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "PARDON",
+      "encaixe": "vous parlez anglais",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b03-p07",
+      "promptPt": "Misma acera, y lo que sigue es más largo que tu francés. Abre bien primero. Habla ahora.",
+      "audioKey": "fr-b03-t07",
+      "es": "Excusez-moi, vous parlez anglais ?",
+      "pinyin": "ek-skew-zay-MWA, voo par-lay ahn-GLEH",
+      "pt": "Disculpe, ¿habla inglés?",
+      "tts": "Excusez-moi, vous parlez anglais ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b03-r03",
+      "receptivo": true,
+      "es": "Un petit peu. Qu'est-ce que vous cherchez ?",
+      "pt": "Un poco. ¿Qué busca?",
+      "tts": "Un petit peu. Qu'est-ce que vous cherchez ?",
+      "acao": "Responde con el sustantivo, no con una frase. Una palabra más un gesto te lleva más lejos aquí que una pregunta entera."
+    },
+    {
+      "consulta": [
+        "reparo/como-se-diz"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "PARDON",
+      "encaixe": "comment on dit ça en français",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b03-p08",
+      "promptPt": "De vuelta en la panadería, sostienes la cosa que quieres poder nombrar. Habla ahora.",
+      "audioKey": "fr-b03-t08",
+      "es": "Pardon, comment on dit ça en français ?",
+      "pinyin": "par-DOHN, ko-mahn ton dee sa ahn frahn-SEH",
+      "pt": "Perdón, ¿cómo se dice esto en francés?",
+      "tts": "Pardon, comment on dit ça en français ?"
+    },
+    {
+      "consulta": [
+        "reparo/apontar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "PARDON",
+      "encaixe": "c'est quoi, ça",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b03-p09",
+      "promptPt": "Mismo mostrador, señalando la bandeja que no identificas. Habla ahora.",
+      "audioKey": "fr-b03-t09",
+      "es": "Excusez-moi, c'est quoi, ça ?",
+      "pinyin": "ek-skew-zay-MWA, seh KWA, SA",
+      "pt": "Disculpe, ¿qué es eso?",
+      "tts": "Excusez-moi, c'est quoi, ça ?"
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b03-p10",
+      "promptPt": "Fue más despacio, lo repitió y escribió el número en el tique. Ciérralo con calidez. Habla ahora.",
+      "audioKey": "fr-b03-t10",
+      "es": "Merci, c'est gentil.",
+      "pinyin": "mair-SEE, seh zhahn-TEE",
+      "pt": "Gracias, muy amable.",
+      "tts": "Merci, c'est gentil."
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b03-s01",
+      "es": "Pardon, je n'ai pas compris. Pardon, vous pouvez répéter ? Pardon, plus lentement, s'il vous plaît. Pardon, je peux passer ?",
+      "pinyin": "par-DOHN zhuh nay pa kon-PREE · par-DOHN voo poo-vay ray-pay-TAY · par-DOHN plew lahnt-MAHN seel voo PLEH · par-DOHN zhuh puh pa-SAY",
+      "pt": "Repite en sombra la misma entrada para cuatro necesidades distintas.",
+      "tts": "Pardon, je n'ai pas compris. Pardon, vous pouvez répéter ? Pardon, plus lentement, s'il vous plaît. Pardon, je peux passer ?",
+      "molde": "PARDON"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b03-n06",
+      "bloco": "recap",
+      "pt": "B03 hecho. Pardon más la necesidad cubre la repetición, la versión lenta, la versión escrita, el paso y la hora."
+    }
+  ],
+  "aprofundar": {
+    "titulo": "Una entrada, cualquier desconocido",
+    "secoes": [
+      {
+        "titulo": "El marco abierto",
+        "corpo": "Guarda pardon o excusez-moi y cambia solo lo que venga después. Nada en la entrada se dobla: no la conjugas nunca, no la adaptas a con quién hablas, y funciona de pie, sentado, en cola o por una ventanilla.",
+        "exemplos": [
+          {
+            "es": "Pardon, vous pouvez répéter ?",
+            "pt": "Perdón, ¿puede repetir?"
+          },
+          {
+            "es": "Pardon, je peux passer ?",
+            "pt": "Perdón, ¿puedo pasar?"
+          }
+        ]
+      },
+      {
+        "titulo": "Pardon o excusez-moi",
+        "corpo": "Ambos abren la misma puerta. Pardon es la más corta y la que sale bajo presión: un roce en el metro, pasar apretando junto a una mesa. Excusez-moi es un pelín más larga y se lee como algo más deliberado, lo que va bien para parar a un desconocido que no te esperaba. Ninguna es más correcta."
+      },
+      {
+        "titulo": "Pide la versión que puedas usar",
+        "corpo": "Hay tres peticiones distintas escondidas en 'no lo pillé', y dan tres resultados distintos. Répéter consigue la misma frase otra vez. Plus lentement la consigue estirada. L'écrire la consigue en papel, que es la única que sobrevive a un número de andén o al nombre de una calle."
+      },
+      {
+        "titulo": "El medio segundo que lo hace funcionar",
+        "corpo": "Di la entrada y luego para. La pausa es lo que convierte tu frase en una petición y no en una interrupción, y es también lo que da a la otra persona tiempo para salir de lo que estaba haciendo. Meter pardon de golpe en la pregunta pierde casi todo lo que la palabra hace por ti."
+      },
+      {
+        "titulo": "La reparación va antes que el vocabulario",
+        "corpo": "Esta parte va tercera en el curso a propósito. Toda parte posterior asume que oirás algo mal, y el coste de oír mal baja casi a cero en cuanto tienes una entrada que compra un segundo intento. Es el seguro más barato del módulo y el que más usarás."
+      }
+    ]
+  },
+  "slot": "B03",
+  "permissao": "Tienes permiso para no entender, en voz alta, tantas veces como haga falta. Pedir la versión lenta es algo normal de decir en una tienda francesa, y nadie en ese mostrador piensa peor de quien pregunta que de quien asiente y se va con la respuesta equivocada.",
+  "permissaoAudioKey": "fr-b03-n01",
+  "espelho": "Ya haces esto en tu idioma en cada mala línea telefónica y cada bar ruidoso: perdona, repite, perdona, más despacio. El gesto no tiene nada de nuevo. Lo único nuevo es que la entrada es una palabra fija y nunca tienes que elegirla.",
+  "fichasCulturais": [
+    {
+      "sinal": "Pides una repetición y la segunda versión vuelve más corta y más seca que la primera, a la misma velocidad.",
+      "suaLeitura": "Le molesta que le haya hecho decirlo dos veces.",
+      "oQueEAli": "Una repetición en un intercambio francés suele reducirse a la parte que lleva la información —el número, la dirección, el sí o el no— quitando el relleno. Más corta es la versión servicial, no la molesta, y la velocidad es lo último que la gente ajusta porque es lo más difícil de notar de la propia voz.",
+      "oQueVoceFaz": "Si aún se te escapa, pide expresamente la versión lenta y no otra repetición: plus lentement, s'il vous plaît.",
+      "oQueMelhora": "Consigues la palabra que faltaba en vez de la frase entera por segunda vez.",
+      "ondeNaoVale": "No cuando la pieza que falta es un número, un andén o una dirección: ahí, pedirla por escrito resuelve en un movimiento lo que tres repeticiones no.",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b03-r01",
+        "fr-b03-n03"
+      ]
+    },
+    {
+      "sinal": "Abres con excusez-moi en la acera y la persona sigue caminando sin volverse.",
+      "suaLeitura": "Vio a un turista y decidió no tratar conmigo.",
+      "oQueEAli": "En una calle con gente la entrada tiene que aterrizar mientras la persona aún decide si iba dirigida a ella. Dicha por detrás, a paso de marcha, o sin medio segundo de contacto visual, se oye como ruido de calle: lo mismo les pasa a dos locales.",
+      "oQueVoceFaz": "Ponte en su línea de mirada primero, di pardon, y luego espera a que pare antes de añadir la petición.",
+      "oQueMelhora": "La tasa de parada sube mucho, y gastas la frase que preparaste en alguien que de verdad escucha.",
+      "ondeNaoVale": "No en una tienda, una panadería o una ventanilla, donde la persona ya te mira y no hay atención que ganar: ahí la entrada puede ir directa a la petición.",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b03-n04"
+      ]
+    }
+  ]
+}

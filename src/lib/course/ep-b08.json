@@ -1,0 +1,325 @@
+{
+  "id": "b08",
+  "nivel": "basico",
+  "numero": 8,
+  "parte": "B08",
+  "titulo": "Où est: la pregunta cuya respuesta cabe en tu cabeza",
+  "subtitulo": "Nombra el lugar y luego moldea la repregunta para que la respuesta vuelva como un sí, un no o una mano señalando",
+  "cena": "Sales de la estación con un nombre escrito en el móvil, cuatro salidas delante, y la primera persona a la que preguntas va a responder a toda velocidad.",
+  "moldura": "ganha",
+  "frasePiso": "Où est, luego el lugar. Luego una pregunta más que solo pueda responderse con un sí, un no o una mano.",
+  "moldes": [
+    "OU-EST"
+  ],
+  "clique": {
+    "contagem": [
+      "el vestíbulo de la estación",
+      "la calle frente a la estación",
+      "el mostrador del café",
+      "la entrada del museo"
+    ],
+    "desconto": "No aprendiste una frase para la estación, otra para la calle y otra para el museo. Guardaste dos palabras y cambiaste el lugar de detrás.",
+    "piso": "La próxima vez que estés ante cuatro salidas con un nombre en la mano, no abrirás el mapa a la esperanza. Preguntarás, y luego harás la respuesta lo bastante pequeña para llevártela."
+  },
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b08-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "Preguntar es la mitad fácil. La difícil es recibir una respuesta lo bastante corta para seguir en tu cabeza en la esquina."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b08-n02",
+      "bloco": "molde",
+      "pt": "Este es el molde: où est, luego el lugar. Dos palabras delante, y el lugar es lo único que eliges."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b08-t01",
+      "es": "Pardon, où est la gare ?",
+      "pinyin": "par-DOHN, oo eh la GAR",
+      "pt": "Perdón, ¿dónde está la estación?",
+      "tts": "Pardon, où est la gare ?"
+    },
+    {
+      "consulta": [
+        "transporte/placas",
+        "reparo/apontar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "OU-EST",
+      "encaixe": "la gare",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b08-p01",
+      "promptPt": "Tienes veinte minutos antes de un tren y ni idea de por dónde están las vías. Abre y luego pregunta. Habla ahora.",
+      "audioKey": "fr-b08-t01",
+      "es": "Pardon, où est la gare ?",
+      "pinyin": "par-DOHN, oo eh la GAR",
+      "pt": "Perdón, ¿dónde está la estación?",
+      "tts": "Pardon, où est la gare ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b08-r01",
+      "receptivo": true,
+      "es": "Vous prenez la deuxième à droite, puis c'est tout droit, à cinq minutes d'ici.",
+      "pt": "Coge la segunda a la derecha, luego todo recto, a cinco minutos de aquí.",
+      "tts": "Vous prenez la deuxième à droite, puis c'est tout droit, à cinq minutes d'ici.",
+      "acao": "Capta tres palabras y deja ir el resto: deuxième, droite, tout droit. Segunda, derecha, todo recto."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b08-n03",
+      "bloco": "corpo",
+      "pt": "Eso volvió más rápido de lo que puedes retener. Así que pregunta de nuevo en una forma que solo permita un sí, un no o una mano."
+    },
+    {
+      "consulta": [
+        "reparo/apontar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b08-p02",
+      "promptPt": "Captaste la mitad, más o menos. Señala una calle y haz que te confirmen o te corrijan. Habla ahora.",
+      "audioKey": "fr-b08-t02",
+      "es": "C'est par là ?",
+      "pinyin": "say par LA",
+      "pt": "¿Es por ahí?",
+      "tts": "C'est par là ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b08-r02",
+      "es": "Oui, c'est ça. Tout droit.",
+      "pt": "Sí, eso es. Todo recto.",
+      "tts": "Oui, c'est ça. Tout droit."
+    },
+    {
+      "consulta": [
+        "transporte/placas"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "OU-EST",
+      "encaixe": "la sortie",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b08-p03",
+      "promptPt": "Estás bajo tierra en un vestíbulo de estación con pasillos hacia los cuatro lados y ninguna luz de día. Habla ahora.",
+      "audioKey": "fr-b08-t03",
+      "es": "Où est la sortie ?",
+      "pinyin": "oo eh la sor-TEE",
+      "pt": "¿Dónde está la salida?",
+      "tts": "Où est la sortie ?"
+    },
+    {
+      "consulta": [
+        "taxi/parar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "OU-EST",
+      "encaixe": "la station de taxis",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b08-p04",
+      "promptPt": "Llueve, estás fuera de la estación, y los taxis pasan sin parar porque cargan en un sitio concreto. Habla ahora.",
+      "audioKey": "fr-b08-t04",
+      "es": "Où est la station de taxis ?",
+      "pinyin": "oo eh la sta-SYOHN duh tak-SEE",
+      "pt": "¿Dónde está la parada de taxis?",
+      "tts": "Où est la station de taxis ?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b08-n04",
+      "bloco": "capsula",
+      "pt": "Un lugar en francés va en plural, y es el que más necesitarás: les toilettes. Où sont, no où est."
+    },
+    {
+      "consulta": [
+        "chegar/entrar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "OU-EST",
+      "encaixe": "les toilettes",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b08-p05",
+      "promptPt": "Estás dentro de un café y el fondo del local tiene tres puertas sin señalizar. Pregunta a quien está en el mostrador. Habla ahora.",
+      "audioKey": "fr-b08-t05",
+      "es": "Où sont les toilettes ?",
+      "pinyin": "oo sohn lay twa-LETT",
+      "pt": "¿Dónde están los baños?",
+      "tts": "Où sont les toilettes ?"
+    },
+    {
+      "consulta": [
+        "transporte/placas"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b08-p06",
+      "promptPt": "Han señalado. Ahora averigua si es un paseo de dos minutos o un trayecto en bus, en tres sonidos. Habla ahora.",
+      "audioKey": "fr-b08-t06",
+      "es": "C'est loin ?",
+      "pinyin": "say LWAHN",
+      "pt": "¿Está lejos?",
+      "tts": "C'est loin ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b08-r03",
+      "es": "Non, c'est à cinq minutes à pied.",
+      "pt": "No, está a cinco minutos a pie.",
+      "tts": "Non, c'est à cinq minutes à pied."
+    },
+    {
+      "consulta": [
+        "chegar/entrar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "OU-EST",
+      "encaixe": "l'entrée",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b08-p07",
+      "promptPt": "Has recorrido todo el lateral del museo y cada puerta hasta ahora decía solo grupos. Habla ahora.",
+      "audioKey": "fr-b08-t07",
+      "es": "Où est l'entrée ?",
+      "pinyin": "oo eh lahn-TRAY",
+      "pt": "¿Dónde está la entrada?",
+      "tts": "Où est l'entrée ?"
+    },
+    {
+      "consulta": [
+        "transporte/placas",
+        "reparo/apontar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "VOUS-AVEZ",
+      "encaixe": "un plan",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b08-p08",
+      "promptPt": "En el mostrador de billetes del museo. Tu móvil está muerto y hay una pila de papel doblado tras el mostrador. Habla ahora.",
+      "audioKey": "fr-b08-t08",
+      "es": "Vous avez un plan ?",
+      "pinyin": "voo-za-VAY uhn PLAHN",
+      "pt": "¿Tiene un mapa?",
+      "tts": "Vous avez un plan ?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b08-n05",
+      "pt": "Y cuando vuelve demasiado rápido, tienes una línea que te compra toda la respuesta otra vez, más despacio."
+    },
+    {
+      "consulta": [
+        "reparo/devagar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "PARDON",
+      "encaixe": "vous pouvez répéter",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b08-p09",
+      "promptPt": "Toda la respuesta se te fue en unos dos segundos. Pídela otra vez. Habla ahora.",
+      "audioKey": "fr-b08-t09",
+      "es": "Pardon, vous pouvez répéter ?",
+      "pinyin": "par-DOHN, voo poo-VAY ray-pay-TAY",
+      "pt": "Perdón, ¿puede repetir?",
+      "tts": "Pardon, vous pouvez répéter ?"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b08-s01",
+      "es": "Où est la gare ? Où est la sortie ? C'est par là ? C'est loin ?",
+      "pinyin": "oo eh la GAR. oo eh la sor-TEE. say par LA. say LWAHN",
+      "pt": "Repite en sombra el par: el lugar primero, luego la respuesta hecha pequeña.",
+      "tts": "Où est la gare ? Où est la sortie ? C'est par là ? C'est loin ?",
+      "molde": "OU-EST"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b08-n06",
+      "bloco": "recap",
+      "pt": "B08 hecho. El marco halló la estación, la salida, la parada, los baños y la entrada, y dos repreguntas mantuvieron las respuestas portátiles."
+    }
+  ],
+  "aprofundar": {
+    "titulo": "Pregunta grande, luego pregunta pequeño",
+    "secoes": [
+      {
+        "titulo": "Où est más el lugar",
+        "corpo": "Dos palabras delante, y lo único que eliges es el lugar. Es où est y no où se trouve por la misma razón que es je peux y no puis-je: la forma corta es la que sale bajo presión, y la larga es la que la gente abandona a medias.",
+        "exemplos": [
+          {
+            "es": "Où est la sortie ?",
+            "pt": "¿Dónde está la salida?"
+          },
+          {
+            "es": "Où est la station de taxis ?",
+            "pt": "¿Dónde está la parada de taxis?"
+          }
+        ]
+      },
+      {
+        "titulo": "El único plural",
+        "corpo": "Los baños van en plural en francés —les toilettes—, así que el marco se vuelve où sont. Es la única versión de esto que necesitas en todo el viaje, y vale la pena tenerla lista, porque es también la que preguntas con más prisa."
+      },
+      {
+        "titulo": "Haz que la respuesta encaje",
+        "corpo": "Una pregunta abierta compra una respuesta abierta, servida a velocidad. Así que síguela con una cerrada: c'est par là, con el brazo extendido, y c'est loin. Ambas solo pueden volver como sí, no, o una mano, y una mano es una respuesta sobre la que puedes actuar sin entender ni una palabra de alrededor."
+      },
+      {
+        "titulo": "Tres palabras que vale captar",
+        "corpo": "Las direcciones en francés se agrupan en torno a un conjunto pequeño: à droite, à gauche, tout droit —derecha, izquierda, todo recto— más la première y la deuxième para qué giro. Todo lo demás en la frase es relleno. Escuchar cinco palabras en vez de treinta es lo que convierte una respuesta rápida en una usable."
+      }
+    ]
+  },
+  "slot": "B08",
+  "permissao": "Tienes permiso para no entender la respuesta. Preguntar de nuevo en una forma más pequeña no es un fallo del primer intento: es la segunda mitad de la técnica, y la persona que tienes delante simplemente señalará.",
+  "permissaoAudioKey": "fr-b08-n03",
+  "espelho": "Quien haya dado indicaciones en casa ha visto los ojos del otro nublarse en la tercera instrucción y luego ha dicho: mira, es por ahí. Ese reflejo existe en todos los idiomas; solo estás haciendo que ocurra antes.",
+  "fichasCulturais": [
+    {
+      "sinal": "Te acercas a alguien en la calle, abres con ¿habla inglés?, y el intercambio se vuelve corto y seco.",
+      "suaLeitura": "Saben hablar inglés y eligen no hacerlo, porque soy turista.",
+      "oQueEAli": "El trabajo sobre la cortesía francesa describe bonjour y pardon como rituales de apertura: fórmulas cortas con poco contenido cuya función es pedir permiso para entrar en el espacio de alguien. Empezar sin una se salta el paso que abre el intercambio, y la sequedad que sigue es fácil de oír como un rechazo del idioma. Esa lectura es una interpretación que apoya la literatura sobre rituales, no algo que nadie haya medido.",
+      "oQueVoceFaz": "Empieza con Pardon o Bonjour, deja un tiempo, luego pregunta, en francés si lo tienes, en inglés si no.",
+      "oQueMelhora": "El intercambio empieza cálido en vez de frío, y dejas de acumular pruebas para una historia sobre el país a partir de un momento que era de secuencia.",
+      "ondeNaoVale": "No es una afirmación de que la apertura compre ayuda: quien llega tarde a un tren sigue llegando tarde. Y no es un diagnóstico del inglés de nadie: una respuesta corta en una ventanilla es normalmente una ventanilla ocupada.",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b08-n01"
+      ]
+    },
+    {
+      "sinal": "Preguntas dónde está algo y te vuelven treinta palabras a toda velocidad, con nombres de calle que nunca has oído.",
+      "suaLeitura": "Mi francés no da para esto, así que debería dejar de preguntar y usar el móvil.",
+      "oQueEAli": "Quien da indicaciones da la ruta entera, porque eso es lo que pidió la pregunta. La largura de la respuesta es una propiedad de la pregunta, no un veredicto sobre tu acento.",
+      "oQueVoceFaz": "Coge las dos o tres primeras palabras, luego cierra la pregunta: señala y di c'est par là, y sigue con c'est loin.",
+      "oQueMelhora": "Consigues una mano y un sí en vez de un párrafo, y dejas la conversación con algo que aún puedes sostener en la siguiente esquina.",
+      "ondeNaoVale": "No cuando el sitio de verdad necesita una ruta y no una dirección: varios giros, un cambio de línea. Ahí, lo honesto es pedir que te lo enseñen en tu mapa o que escriban el nombre.",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b08-n03"
+      ]
+    }
+  ]
+}

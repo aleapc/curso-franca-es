@@ -1,0 +1,356 @@
+{
+  "id": "b09",
+  "nivel": "basico",
+  "numero": 9,
+  "parte": "B09",
+  "titulo": "El billete, y si este hay que validarlo",
+  "subtitulo": "La cajita naranja ha desaparecido casi de los andenes franceses, y las redes donde se quedó son justo las que usa un visitante",
+  "cena": "Billete en mano, una máquina a la cabeza del andén que puede o no ser para ti, y cuatro minutos antes de la salida.",
+  "moldura": "ganha",
+  "frasePiso": "Una pregunta lo resuelve antes de subir, y tiene tres palabras: je dois valider ?",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-fim-compostagem",
+      "afirmacao": "Desde el 1 de enero de 2023, picar el billete (compostage) ya no es obligatorio en los trenes SNCF; se retiraron unas 3000 máquinas, 725 en TGV/Intercités y 2468 en TER, y los billetes digitales suponen ya el 96-99% de los viajes en TGV-Intercités. No es una regla nacional sin excepciones: la validación sigue vigente en Transilien, en TER Sud PACA y en TER Nouvelle-Aquitaine.",
+      "fonte": "UFC-Que Choisir",
+      "ano": 2023,
+      "revisarAte": "2027-08-05",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": [
+        "fr-b09-n02"
+      ]
+    },
+    {
+      "id": "fr-multa-validacao",
+      "afirmacao": "Desde el 2 de junio de 2025, viajar sin billete cuesta 70 € pagados en el acto, frente a los 50 € anteriores; viajar con un billete válido sin validar cuesta 15 €, frente a los 5 € anteriores.",
+      "fonte": "comunicado RATP de 22/05/2025",
+      "ano": 2025,
+      "revisarAte": "2027-06-02",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": [
+        "fr-b09-n03"
+      ]
+    },
+    {
+      "id": "fr-paris-fim-carnet",
+      "afirmacao": "Desde el 1 de enero de 2025 París tiene dos títulos en lugar del carnet: uno para métro-train-RER y otro para bus-tram. La venta del billete en formato tarjeta cesó en los autobuses el 1 de octubre de 2025 y en la red ferroviaria el 1 de noviembre de 2025; los billetes viejos se cambian en ventanilla hasta el 14 de enero de 2027, hasta cinco al día, y se convierten en una Navigo Easy: una tarjeta anónima recargable que cuesta 2 €. Liberté+ es la opción de pago posterior con tope diario, disponible en el móvil desde el 23 de junio de 2025.",
+      "fonte": "IDFM; RATP",
+      "ano": 2025,
+      "revisarAte": "2027-01-14",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": [
+        "fr-b09-n05"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b09-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "Comprar el billete es la parte simple. Lo que varía es qué haces con él en el último minuto antes de subir."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b09-t01",
+      "es": "Je dois valider ?",
+      "pinyin": "zhuh dwa va-lee-DAY",
+      "pt": "¿Tengo que validar?",
+      "tts": "Je dois valider ?"
+    },
+    {
+      "consulta": [
+        "transporte/bilhete"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b09-p01",
+      "promptPt": "Hay una máquina pequeña a la cabeza del andén y nadie delante de ti la ha tocado. Pregunta al agente de la puerta. Habla ahora.",
+      "audioKey": "fr-b09-t01",
+      "es": "Je dois valider ?",
+      "pinyin": "zhuh dwa va-lee-DAY",
+      "pt": "¿Tengo que validar?",
+      "tts": "Je dois valider ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b09-r01",
+      "receptivo": true,
+      "es": "Sur le TGV, non. Mais sur le Transilien, oui, il faut valider.",
+      "pt": "En el TGV, no. Pero en el Transilien, sí, hay que validar.",
+      "tts": "Sur le TGV, non. Mais sur le Transilien, oui, il faut valider.",
+      "acao": "Escucha el nombre de la red, no la regla general. Transilien, TER Sud PACA y TER Nouvelle-Aquitaine aún validan."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b09-n02",
+      "bloco": "corpo",
+      "pt": "Picar dejó de ser obligatorio en los trenes SNCF en enero de 2023. Salieron tres mil máquinas. Tres redes lo mantuvieron."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b09-n03",
+      "pt": "Transilien, TER Sud PACA, TER Nouvelle-Aquitaine. Desde junio de 2025 un billete válido sin validar ahí son quince euros."
+    },
+    {
+      "consulta": [
+        "transporte/bilhete",
+        "transporte/plataforma"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "OU-EST",
+      "encaixe": "le composteur",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b09-p02",
+      "promptPt": "Subes a un tren regional cerca de Marsella y la respuesta fue sí. Encuentra la máquina. Habla ahora.",
+      "audioKey": "fr-b09-t02",
+      "es": "Où est le composteur ?",
+      "pinyin": "oo eh luh kohn-pos-TUHR",
+      "pt": "¿Dónde está la máquina de validar?",
+      "tts": "Où est le composteur ?"
+    },
+    {
+      "consulta": [
+        "transporte/bilhete"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b09-p03",
+      "promptPt": "En la ventanilla. Un viajero, y el nombre del panel que quieres es Lyon. Cíñete al destino y la cortesía. Habla ahora.",
+      "audioKey": "fr-b09-t03",
+      "es": "Un billet pour Lyon, s'il vous plaît.",
+      "pinyin": "uhn bee-YAY poor lee-OHN, seel voo PLEH",
+      "pt": "Un billete a Lyon, por favor.",
+      "tts": "Un billet pour Lyon, s'il vous plaît."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b09-r02",
+      "receptivo": true,
+      "es": "Voie douze, départ à quatorze heures trente-cinq.",
+      "pt": "Vía doce, salida a las catorce treinta y cinco.",
+      "tts": "Voie douze, départ à quatorze heures trente-cinq.",
+      "acao": "Voie es la vía. Coge el número y la hora y deja ir la frase de alrededor."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b09-n04",
+      "bloco": "capsula",
+      "pt": "Las horas van en formato de veinticuatro horas. Quatorze heures trente-cinq son las tres menos veinticinco de la tarde."
+    },
+    {
+      "consulta": [
+        "transporte/plataforma"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "OU-EST",
+      "encaixe": "la voie douze",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b09-p04",
+      "promptPt": "Tienes el número pero los carteles del vestíbulo saltan del nueve al quince. Habla ahora.",
+      "audioKey": "fr-b09-t04",
+      "es": "Où est la voie douze ?",
+      "pinyin": "oo eh la vwa DOOZ",
+      "pt": "¿Dónde está la vía doce?",
+      "tts": "Où est la voie douze ?"
+    },
+    {
+      "consulta": [
+        "transporte/qual-trem"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b09-p05",
+      "promptPt": "Hay dos trenes en la misma vía y el panel no muestra ninguno. Comprueba con la persona de la puerta. Habla ahora.",
+      "audioKey": "fr-b09-t05",
+      "es": "Ce train va à Lyon ?",
+      "pinyin": "suh trahn va a lee-OHN",
+      "pt": "¿Este tren va a Lyon?",
+      "tts": "Ce train va à Lyon ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b09-r03",
+      "es": "Oui, mais vous changez à Part-Dieu.",
+      "pt": "Sí, pero cambia en Part-Dieu.",
+      "tts": "Oui, mais vous changez à Part-Dieu."
+    },
+    {
+      "consulta": [
+        "transporte/qual-trem"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b09-p06",
+      "promptPt": "Oíste un nombre de estación que no esperabas en medio de eso. Conviértelo en un sí o un no. Habla ahora.",
+      "audioKey": "fr-b09-t06",
+      "es": "Je dois changer ?",
+      "pinyin": "zhuh dwa shahn-ZHAY",
+      "pt": "¿Tengo que cambiar?",
+      "tts": "Je dois changer ?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b09-n05",
+      "pt": "En París el carnet de papel se acabó. Ahora dos títulos: métro-train-RER, y bus-tram. La tarjeta que recargas es la Navigo Easy."
+    },
+    {
+      "consulta": [
+        "transporte/bilhete"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "OU-EST",
+      "encaixe": "le guichet",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b09-p07",
+      "promptPt": "Las máquinas de este vestíbulo tienen cola y una pantalla que no lees desde aquí. Quieres la ventanilla atendida. Habla ahora.",
+      "audioKey": "fr-b09-t07",
+      "es": "Où est le guichet ?",
+      "pinyin": "oo eh luh ghee-SHAY",
+      "pt": "¿Dónde está la ventanilla?",
+      "tts": "Où est le guichet ?"
+    },
+    {
+      "consulta": [
+        "transporte/bilhete",
+        "pagar/pedir"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b09-p08",
+      "promptPt": "Primera mañana en París, cinco días por delante, y prefieres llevar una tarjeta que papel suelto. Habla ahora.",
+      "audioKey": "fr-b09-t08",
+      "es": "Une carte Navigo Easy, s'il vous plaît.",
+      "pinyin": "ün kart na-vee-GO EE-zee, seel voo PLEH",
+      "pt": "Una tarjeta Navigo Easy, por favor.",
+      "tts": "Une carte Navigo Easy, s'il vous plaît."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b09-r04",
+      "receptivo": true,
+      "es": "Contrôle des billets, s'il vous plaît. Vous avez validé ?",
+      "pt": "Control de billetes, por favor. ¿Ha validado?",
+      "tts": "Contrôle des billets, s'il vous plaît. Vous avez validé ?",
+      "acao": "Ten el billete o la tarjeta en la mano antes de que te lo pidan, y entrégalo sin explicar nada."
+    },
+    {
+      "consulta": [
+        "transporte/placas"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "OU-EST",
+      "encaixe": "la sortie",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b09-p09",
+      "promptPt": "Estás fuera del tren, bajo tierra, y los pasillos van hacia los cuatro lados. Habla ahora.",
+      "audioKey": "fr-b09-t09",
+      "es": "Où est la sortie ?",
+      "pinyin": "oo eh la sor-TEE",
+      "pt": "¿Dónde está la salida?",
+      "tts": "Où est la sortie ?"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b09-s01",
+      "es": "Je dois valider ? Où est le composteur ? Ce train va à Lyon ? Je dois changer ?",
+      "pinyin": "zhuh dwa va-lee-DAY. oo eh luh kohn-pos-TUHR. suh trahn va a lee-OHN. zhuh dwa shahn-ZHAY",
+      "pt": "Repite en sombra las cuatro preguntas que resuelven un andén antes de que se mueva.",
+      "tts": "Je dois valider ? Où est le composteur ? Ce train va à Lyon ? Je dois changer ?"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b09-n06",
+      "bloco": "recap",
+      "pt": "B09 hecho. Je dois valider, el andén, el tren, el cambio y la salida: cuatro minutos, cinco preguntas."
+    }
+  ],
+  "aprofundar": {
+    "titulo": "La caja naranja, y dónde se quedó",
+    "secoes": [
+      {
+        "titulo": "Lo que cambió en 2023",
+        "corpo": "Picar el billete en la maquinita de la cabeza del andén dejó de ser obligatorio en los trenes SNCF el 1 de enero de 2023, y se retiraron unas tres mil máquinas: 725 en TGV e Intercités, 2468 en TER. Casi todo el viaje en TGV e Intercités va en el móvil ahora, así que de todos modos no hay nada que picar."
+      },
+      {
+        "titulo": "Dónde no cambió",
+        "corpo": "La validación siguió vigente en Transilien, en TER Sud PACA y en TER Nouvelle-Aquitaine. Son los trenes de alrededor de París, a lo largo de la costa de Provenza y en torno a Burdeos, que es decir, tres de los sitios donde un visitante es más probable que esté en un andén. Desde el 2 de junio de 2025 un billete válido sin validar son 15 €, y ningún billete son 70 € pagados en el acto.",
+        "exemplos": [
+          {
+            "es": "Je dois valider ?",
+            "pt": "¿Tengo que validar?"
+          },
+          {
+            "es": "Où est le composteur ?",
+            "pt": "¿Dónde está la máquina de validar?"
+          }
+        ]
+      },
+      {
+        "titulo": "París tras el carnet",
+        "corpo": "El taco de diez billetes de papel se acabó. Desde el 1 de enero de 2025 hay dos títulos en su lugar —uno para métro, train y RER, otro para bus y tram— y el billete en formato tarjeta dejó de venderse en los autobuses el 1 de octubre de 2025 y en la red ferroviaria el 1 de noviembre de 2025. Los billetes que aún tengas se cambian en ventanilla hasta el 14 de enero de 2027, cinco al día, a una Navigo Easy: una tarjeta anónima recargable que cuesta 2 €. Liberté+ es la versión de pago posterior con tope diario, en el móvil desde el 23 de junio de 2025. Las tarifas se mueven, así que lee la máquina en vez de un número que viste online."
+      },
+      {
+        "titulo": "Números, solo en el oído",
+        "corpo": "No necesitas decir números de vía ni horas: necesitas captarlos. Voie significa vía. Las horas van en formato de veinticuatro horas: quatorze heures son las dos de la tarde, dix-huit heures son las seis de la tarde. Escuchar el número y la palabra voie, e ignorar todo lo demás del anuncio, es toda la destreza."
+      }
+    ]
+  },
+  "slot": "B09",
+  "permissao": "Preguntar si hay que validar no es la pregunta de quien no ha hecho los deberes: la regla de verdad varía por red, y el personal la responde todo el día. Tres palabras gastadas antes de subir son lo más barato que comprarás en Francia.",
+  "espelho": "Cada red ferroviaria del mundo tiene una de estas: la barrera que se abre, la tarjeta que tocas, el papel que nadie revisa hasta el día que sí. Lo único desconocido aquí es que la regla cambió hace poco y no cambió en todas partes.",
+  "permissaoAudioKey": "fr-b09-n01",
+  "fichasCulturais": [
+    {
+      "sinal": "Alguien te dice que los franceses dejaron de picar billetes hace años, y subes a un Transilien con el billete intacto en el bolsillo.",
+      "suaLeitura": "Las máquinas ya no están, así que la regla ya no está, en todas partes.",
+      "oQueEAli": "El fin del picado obligatorio en enero de 2023 fue un cambio de la SNCF con excepciones nombradas. Transilien y dos redes TER —Sud PACA y Nouvelle-Aquitaine— mantuvieron la validación. Cubren los trenes de cercanías de alrededor de París y los regionales de la costa sur y en torno a Burdeos.",
+      "oQueVoceFaz": "Pregunta en el andén, antes de subir: je dois valider ? Si hay una máquina a la entrada del andén y la respuesta es sí, úsala: tarda dos segundos.",
+      "oQueMelhora": "Dejas de llevar una regla que es correcta en casi todo el país y equivocada en las partes donde de verdad estás, y una inspección se vuelve un trámite.",
+      "ondeNaoVale": "No en TGV ni Intercités con el billete en el móvil: no hay nada que picar, y buscar una máquina ahí te cuesta los cuatro minutos que tenías.",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-b09-n02",
+        "fr-b09-n03"
+      ]
+    },
+    {
+      "sinal": "Vas a comprar un taco de diez billetes de metro en París y la ventanilla te vende una tarjeta de plástico en su lugar.",
+      "suaLeitura": "Me colocan algo que no pedí.",
+      "oQueEAli": "El carnet se acabó el 1 de enero de 2025 y el billete en formato tarjeta dejó de venderse durante el otoño de 2025: en los autobuses el 1 de octubre y en la red ferroviaria el 1 de noviembre. Lo que lo sustituyó son dos títulos, métro-train-RER y bus-tram, cargados en una Navigo Easy, una tarjeta anónima de 2 € que recargas. Los billetes de papel que ya tengas aún se cambian en ventanilla hasta el 14 de enero de 2027.",
+      "oQueVoceFaz": "Coge la Navigo Easy el primer día y cárgala en la máquina. Si ya tienes billetes de papel sueltos de un viaje anterior, llévalos a una ventanilla atendida y no a un torno.",
+      "oQueMelhora": "Una tarjeta cubre la semana en vez de un bolsillo de papel, y dejas de perder tiempo en tornos que ya no leen lo que llevas.",
+      "ondeNaoVale": "No fuera de Île-de-France: otras ciudades tienen sus propios sistemas y tarjetas, y el arreglo de París no dice nada sobre Lyon ni Marsella.",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-b09-n05"
+      ]
+    }
+  ]
+}

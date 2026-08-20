@@ -1,0 +1,96 @@
+{
+  "id": "q-i07",
+  "nivel": "intermediario",
+  "titulo": "Quiz — El cumplido que llega a la cocina",
+  "subtitulo": "Ambas frases necesitan un sustantivo dentro",
+  "introAudioKey": "fr-i07-q-i",
+  "introPt": "Un viajero hace llegar el elogio a la cocina, y luego resuelve un plato frío en una sola frase.",
+  "cenario": "A media comida en un comedor pequeño, un plato bueno y otro frío.",
+  "dialogo": [
+    {
+      "audioKey": "fr-i07-q01",
+      "voz": "target_fr_f",
+      "es": "Le canard était excellent, mes compliments au chef.",
+      "pt": "El pato estaba excelente, mis felicitaciones al chef.",
+      "tts": "Le canard était excellent, mes compliments au chef."
+    },
+    {
+      "audioKey": "fr-i07-q02",
+      "voz": "target_fr_m",
+      "es": "Je lui dirai, ça va lui faire plaisir.",
+      "pt": "Se lo diré, le va a hacer ilusión.",
+      "tts": "Je lui dirai, ça va lui faire plaisir."
+    },
+    {
+      "audioKey": "fr-i07-q03",
+      "voz": "target_fr_f",
+      "es": "Excusez-moi, c'est froid.",
+      "pt": "Disculpe, esto está frío.",
+      "tts": "Excusez-moi, c'est froid."
+    },
+    {
+      "audioKey": "fr-i07-q04",
+      "voz": "target_fr_m",
+      "es": "Ah pardon, je vous le fais réchauffer tout de suite.",
+      "pt": "Ah, perdón, se lo recaliento ahora mismo.",
+      "tts": "Ah pardon, je vous le fais réchauffer tout de suite."
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "¿Qué hace que el elogio llegue a la cocina?",
+      "opcoes": [
+        "Decirlo en voz alta",
+        "Nombrar el plato",
+        "Dejar más dinero",
+        "Decirlo en inglés"
+      ],
+      "correta": 1,
+      "explica": "Nadie puede llevar «todo estaba delicioso» a una cocina. Sí pueden llevar «le canard»."
+    },
+    {
+      "pergunta": "¿Cómo se construye la frase sobre el plato frío?",
+      "opcoes": [
+        "Excusez-moi, luego el hecho, y parar",
+        "Disculpa, el hecho, y otra disculpa",
+        "Un relato completo de la velada hasta ahora",
+        "No decir nada y contarlo por escrito después"
+      ],
+      "correta": 0,
+      "explica": "Seis palabras son una petición completa y bien formada. Cuanto más corta, más rápido se mueve el plato."
+    },
+    {
+      "pergunta": "¿Por qué apilar disculpas encima resulta contraproducente?",
+      "opcoes": [
+        "Se considera de mala educación",
+        "Es demasiado formal para un comedor",
+        "Entierra el hecho y señala que esperas una discusión",
+        "Solo funciona en París"
+      ],
+      "correta": 2,
+      "explica": "Una frase neutra, cálida y factual se oye en cambio como información."
+    },
+    {
+      "pergunta": "La respuesta a tu cumplido es breve —«je lui dirai»— y luego se marcha. Eso significa:",
+      "opcoes": [
+        "Que el cumplido cayó mal",
+        "Que la respuesta es breve por convención; el mensaje llega igual",
+        "Que deberías repetirlo más alto",
+        "Que deberías preguntar por el chef"
+      ],
+      "correta": 1,
+      "explica": "La parte que importa ocurre fuera de tu vista, en la cocina. La longitud de la respuesta no mide nada."
+    },
+    {
+      "pergunta": "El cumplido más fuerte a tu alcance es:",
+      "opcoes": [
+        "Délicieux",
+        "Una propina grande",
+        "Una reseña de cinco estrellas",
+        "On reviendra"
+      ],
+      "correta": 3,
+      "explica": "Una sala que alimenta al mismo barrio cada semana mide su trabajo por la gente que vuelve."
+    }
+  ]
+}

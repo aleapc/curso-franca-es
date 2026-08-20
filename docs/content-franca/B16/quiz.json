@@ -1,0 +1,96 @@
+{
+  "id": "q-b16",
+  "nivel": "basico",
+  "titulo": "Quiz — Je cherche, y el mostrador se pone a buscar contigo",
+  "subtitulo": "Una estructura, tres mostradores, y el minuto en que preguntar aún es gratis",
+  "introAudioKey": "fr-b16-q-i",
+  "introPt": "Un viajero hace el check-in, mejora la habitación y encuentra dos cosas que nadie había mencionado.",
+  "cenario": "Recepción del hotel, a media mañana, la habitación aún sin estar lista.",
+  "dialogo": [
+    {
+      "audioKey": "fr-b16-q01",
+      "voz": "target_fr_f",
+      "es": "Bonjour. Je cherche une chambre plus calme.",
+      "pt": "Hola. Busco una habitación más tranquila.",
+      "tts": "Bonjour. Je cherche une chambre plus calme."
+    },
+    {
+      "audioKey": "fr-b16-q02",
+      "voz": "target_fr_m",
+      "es": "Bien sûr. J'en ai une côté cour, au troisième.",
+      "pt": "Claro. Tengo una que da al patio, en el tercer piso.",
+      "tts": "Bien sûr. J'en ai une côté cour, au troisième."
+    },
+    {
+      "audioKey": "fr-b16-q03",
+      "voz": "target_fr_f",
+      "es": "Parfait. Je peux laisser ma valise ici ?",
+      "pt": "Perfecto. ¿Puedo dejar aquí mi maleta?",
+      "tts": "Parfait. Je peux laisser ma valise ici ?"
+    },
+    {
+      "audioKey": "fr-b16-q04",
+      "voz": "target_fr_m",
+      "es": "Oui, laissez-la derrière le comptoir. Je vous mets une étiquette.",
+      "pt": "Sí, déjela detrás del mostrador. Le pongo una etiqueta.",
+      "tts": "Oui, laissez-la derrière le comptoir. Je vous mets une étiquette."
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "¿Qué va después de je cherche?",
+      "opcoes": [
+        "Un verbo que tienes que cambiar",
+        "La cosa o el lugar que buscas",
+        "Una hora",
+        "Un número"
+      ],
+      "correta": 1,
+      "explica": "Une chambre plus calme, la salle du petit-déjeuner, un distributeur — la apertura nunca se mueve."
+    },
+    {
+      "pergunta": "Côté cour te dice que la habitación da a ¿qué?",
+      "opcoes": [
+        "La calle",
+        "El patio",
+        "El aparcamiento",
+        "La cocina"
+      ],
+      "correta": 1,
+      "explica": "Cour es el patio, y es el lado tranquilo. Rue es el lado de la calle."
+    },
+    {
+      "pergunta": "¿Cuándo sale más barato pedir un piso más alto o una salida más tarde?",
+      "opcoes": [
+        "En el check-in, mientras la lista aún está abierta",
+        "Después de la primera noche",
+        "La última mañana",
+        "Por correo después de irte"
+      ],
+      "correta": 0,
+      "explica": "La misma petición cuesta un clic en recepción y luego necesita un motivo adjunto."
+    },
+    {
+      "pergunta": "Sabes que el hotel tiene wifi. ¿Qué apertura encaja mejor?",
+      "opcoes": [
+        "Je cherche le wifi",
+        "Vous avez le wifi",
+        "Où est le wifi",
+        "Je peux le wifi"
+      ],
+      "correta": 1,
+      "explica": "Vous avez pregunta qué tiene la otra persona. Je cherche abre una búsqueda que podría volver vacía."
+    },
+    {
+      "pergunta": "En recepción dicen ce n'est pas possible. ¿Cuál es el movimiento útil siguiente?",
+      "opcoes": [
+        "Preguntar lo mismo pero para otro momento — esta tarde, mañana",
+        "Preguntar una tercera vez enseguida",
+        "No decir nada y quedarte con la habitación",
+        "Cambiar de hotel"
+      ],
+      "correta": 0,
+      "explica": "La respuesta es sobre la lista a esa hora, y la lista cambia a lo largo del día."
+    }
+  ]
+}

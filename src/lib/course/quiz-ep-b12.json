@@ -1,0 +1,96 @@
+{
+  "id": "q-b12",
+  "nivel": "basico",
+  "titulo": "Quiz — Sans — la palabra que hace editable la carta",
+  "subtitulo": "Restar en lugar de describir",
+  "introAudioKey": "fr-b12-q-i",
+  "introPt": "Un viajero edita un plato en el momento de pedir, y se queda con la versión aparte cuando quitarlo es imposible.",
+  "cenario": "Una brasserie a la hora de comer.",
+  "dialogo": [
+    {
+      "audioKey": "fr-b12-q01",
+      "voz": "target_fr_f",
+      "es": "La salade, s'il vous plaît. Sans oignon.",
+      "pt": "La ensalada, por favor. Sin cebolla.",
+      "tts": "La salade, s'il vous plaît. Sans oignon."
+    },
+    {
+      "audioKey": "fr-b12-q02",
+      "voz": "target_fr_m",
+      "es": "Sans oignon, je le note. Et la sauce ?",
+      "pt": "Sin cebolla, lo apunto. ¿Y la salsa?",
+      "tts": "Sans oignon, je le note. Et la sauce ?"
+    },
+    {
+      "audioKey": "fr-b12-q03",
+      "voz": "target_fr_f",
+      "es": "Avec de la sauce à côté, s'il vous plaît. C'est sans gluten ?",
+      "pt": "Con la salsa aparte, por favor. ¿Es sin gluten?",
+      "tts": "Avec de la sauce à côté, s'il vous plaît. C'est sans gluten ?"
+    },
+    {
+      "audioKey": "fr-b12-q04",
+      "voz": "target_fr_m",
+      "es": "Je vais demander en cuisine. Le plat est fait maison, ils sauront.",
+      "pt": "Voy a preguntar en la cocina. El plato es casero, lo sabrán.",
+      "tts": "Je vais demander en cuisine. Le plat est fait maison, ils sauront."
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "¿Cómo se usa sans?",
+      "opcoes": [
+        "Cambia de forma según el ingrediente",
+        "Va delante del ingrediente, sin cambiar",
+        "Solo funciona en preguntas",
+        "Tiene que empezar la frase"
+      ],
+      "correta": 1,
+      "explica": "Sans oignon, sans glace, sans sucre — la palabra nunca se mueve ni cambia."
+    },
+    {
+      "pergunta": "¿Cuándo es más fácil de satisfacer la petición?",
+      "opcoes": [
+        "Cuando llega el plato",
+        "En el momento de pedir",
+        "Cuando pides la cuenta",
+        "Después del primer bocado"
+      ],
+      "correta": 1,
+      "explica": "Una cocina que trabaja desde crudo puede dejar algo fuera; un plato ya montado normalmente solo se puede recolocar."
+    },
+    {
+      "pergunta": "La sauce est déjà dedans, je peux vous en mettre à côté ? es:",
+      "opcoes": [
+        "Un rechazo",
+        "Una petición de pago",
+        "Un ofrecimiento de la versión aparte",
+        "Un aviso sobre un alérgeno"
+      ],
+      "correta": 2,
+      "explica": "À côté la pone al lado del plato en vez de fuera del plato."
+    },
+    {
+      "pergunta": "Una carta no muestra el logo fait maison por ninguna parte. Eso te dice:",
+      "opcoes": [
+        "Nada — la mención es opcional desde 2015",
+        "Que la comida es industrial",
+        "Que la cocina no tiene licencia",
+        "Que los platos son congelados"
+      ],
+      "correta": 0,
+      "explica": "Es una afirmación sobre cocinar en el local a partir de productos crudos, y mostrarlo es voluntario."
+    },
+    {
+      "pergunta": "Tienes una alergia real. ¿Basta con sans?",
+      "opcoes": [
+        "Sí, es la misma petición",
+        "Sí, si lo dices dos veces",
+        "No — una alergia lleva su propia frase y una tarjeta escrita",
+        "No, deberías evitar los restaurantes"
+      ],
+      "correta": 2,
+      "explica": "Preferencia y alergia son dos conversaciones distintas, y la segunda es la parte siguiente."
+    }
+  ]
+}

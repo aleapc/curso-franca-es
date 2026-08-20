@@ -1,0 +1,96 @@
+{
+  "id": "q-b17",
+  "nivel": "basico",
+  "titulo": "Quiz — Farmacia, dolor y el número que funciona desde cualquier teléfono",
+  "subtitulo": "La hoja en el escaparate, el mostrador que decide y el 112",
+  "introAudioKey": "fr-b17-q-i",
+  "introPt": "Un viajero encuentra la farmacia de guardia y lo atienden sin un idioma común.",
+  "cenario": "Un domingo por la noche, la farmacia más cercana cerrada.",
+  "dialogo": [
+    {
+      "audioKey": "fr-b17-q01",
+      "voz": "target_fr_f",
+      "es": "Bonsoir. Où est la pharmacie de garde ?",
+      "pt": "Buenas noches. ¿Dónde está la farmacia de guardia?",
+      "tts": "Bonsoir. Où est la pharmacie de garde ?"
+    },
+    {
+      "audioKey": "fr-b17-q02",
+      "voz": "target_fr_m",
+      "es": "La liste est affichée sur la vitrine, à droite de la porte.",
+      "pt": "La lista está puesta en el escaparate, a la derecha de la puerta.",
+      "tts": "La liste est affichée sur la vitrine, à droite de la porte."
+    },
+    {
+      "audioKey": "fr-b17-q03",
+      "voz": "target_fr_f",
+      "es": "Merci. J'ai mal à la gorge depuis deux jours.",
+      "pt": "Gracias. Me duele la garganta desde hace dos días.",
+      "tts": "Merci. J'ai mal à la gorge depuis deux jours."
+    },
+    {
+      "audioKey": "fr-b17-q04",
+      "voz": "target_fr_f",
+      "es": "Celui-là, oui. L'autre, non : sur ordonnance seulement.",
+      "pt": "Ese sí. El otro no: solo con receta.",
+      "tts": "Celui-là, oui. L'autre, non : sur ordonnance seulement."
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "¿Qué número marcas en una emergencia en Francia?",
+      "opcoes": [
+        "999",
+        "112",
+        "911",
+        "101"
+      ],
+      "correta": 1,
+      "explica": "112 es el número único europeo y el que más probablemente se atienda en inglés. El 15, el 17 y el 18 quedan detrás."
+    },
+    {
+      "pergunta": "La farmacia más cercana está cerrada. ¿Dónde figura la de guardia?",
+      "opcoes": [
+        "En una hoja puesta en el escaparate de esa misma farmacia",
+        "Solo en el ayuntamiento",
+        "En ninguna parte — caminas hasta encontrar una",
+        "En la puerta del hotel más cercano"
+      ],
+      "correta": 0,
+      "explica": "Cada farmacia pone el turno del sector. La misma lista está en 3237.fr, y en el 3237 por teléfono."
+    },
+    {
+      "pergunta": "¿Cuánto cuesta llamar al 3237?",
+      "opcoes": [
+        "Es gratis",
+        "0,35 € por minuto",
+        "2 € fijos",
+        "Es gratis solo desde el móvil"
+      ],
+      "correta": 1,
+      "explica": "Se cobra por minuto — por eso la hoja del escaparate y la web son las vías más baratas."
+    },
+    {
+      "pergunta": "Tu GHIC o EHIC cubre ¿cuál de estas?",
+      "opcoes": [
+        "La repatriación a casa",
+        "El tratamiento público en las mismas condiciones que un residente",
+        "Una clínica privada",
+        "El rescate de montaña"
+      ],
+      "correta": 1,
+      "explica": "Solo atención pública — y en Francia el ticket modérateur, del 20 al 30 por ciento, sigue siendo tuyo. No es un seguro de viaje."
+    },
+    {
+      "pergunta": "No sabes la palabra francesa de la parte que te duele. ¿Qué dices?",
+      "opcoes": [
+        "Nada, y esperar el inglés",
+        "J'ai mal ici, con la mano encima",
+        "La palabra en inglés, más fuerte",
+        "Pedir la caja más fuerte"
+      ],
+      "correta": 1,
+      "explica": "Una parte del cuerpo, un número de días, o una mano y tres palabras es una presentación completa en ese mostrador."
+    }
+  ]
+}

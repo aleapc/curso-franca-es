@@ -1,0 +1,353 @@
+{
+  "id": "a05",
+  "nivel": "avancado",
+  "numero": 33,
+  "parte": "A05",
+  "titulo": "El otro idioma",
+  "subtitulo": "Cuatro palabras de francés antes de la petición, y el inglés suele aparecer solo — seis palabras de cortesía sostienen toda esta parte",
+  "cena": "Abriste en el mostrador en inglés, te devolvieron una sola palabra plana, y toda la historia que te contaron antes del viaje pareció confirmarse en un segundo y medio.",
+  "moldura": "ganha",
+  "frasePiso": "Saluda primero, pide después. El orden de la apertura hace aquí más trabajo que cualquier cantidad de vocabulario.",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-ef-epi-2025",
+      "afirmacao": "La única medición utilizable del inglés en Francia es el EF English Proficiency Index 2025: Francia obtiene 539 puntos, sube 15, pasa del puesto 49 al 38 entre 123 países, sobre una base de 2,2 millones de personas evaluadas en 2024. La propia EF declara que se trata de una encuesta online de participantes autoseleccionados y no de una muestra estadísticamente válida de la población, lo que sesga el resultado al alza. Solo permite una afirmación — que Francia ha mejorado y se sitúa en la mitad baja del rango europeo — y no puede sostener ningún porcentaje de franceses que hablan inglés.",
+      "fonte": "EF EPI 2025 (base: 2,2 M de testados em 2024); ressalva da própria EF: «an online survey rather than a statistically valid sampling of the population»",
+      "ano": 2026,
+      "revisarAte": "2027-08-04",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": [
+        "fr-a05-n03",
+        "fr-a05-n04"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a05-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "Te han dicho que aquí la gente no te hablará en inglés. Nada mide eso. Ninguna encuesta, ningún estudio, nada."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a05-n02",
+      "bloco": "corpo",
+      "pt": "Lo que sí existe es un ranking, una advertencia que el editor imprime encima, y una secuencia de apertura. En ese orden."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a05-n03",
+      "bloco": "capsula",
+      "pt": "El índice de EF de 2025 sitúa a Francia en el puesto 38 de 123 países, sube once puestos, con 2,2 millones de personas evaluadas."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a05-n04",
+      "pt": "Esas personas se apuntaron solas por internet, cosa que EF dice por escrito. Así que sostiene una tendencia, nunca un porcentaje de nadie."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a05-r01",
+      "receptivo": true,
+      "acao": "Abriste en inglés. Esa única palabra es la secuencia reiniciándose, no una puerta cerrándose.",
+      "es": "Bonjour.",
+      "pt": "Hola.",
+      "tts": "Bonjour."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a05-n05",
+      "pt": "La mejor lectura disponible es ritual más que actitud. Bonjour pide permiso para entrar en el espacio de alguien."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a05-n06",
+      "pt": "Una petición que llega sin él es una entrada sin llamar. Eso es una interpretación de la pragmática, no un resultado medido."
+    },
+    {
+      "consulta": [
+        "chegar/entrar",
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a05-p01",
+      "promptPt": "Necesitas algo de un desconocido tras un mostrador. Haz la apertura antes de la petición. Habla ahora.",
+      "audioKey": "fr-a05-t01",
+      "es": "Bonjour, excusez-moi de vous déranger.",
+      "pinyin": "bohn-ZHOOR · eks-kew-zay-MWA duh voo day-rahn-ZHAY",
+      "pt": "Hola, perdone que le moleste.",
+      "tts": "Bonjour, excusez-moi de vous déranger."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a05-r02",
+      "receptivo": true,
+      "acao": "La misma persona, cuatro palabras después. En ellos no cambió nada — cambió el orden.",
+      "es": "Bonjour ! Je vous en prie, dites-moi.",
+      "pt": "¡Hola! Por favor, dígame.",
+      "tts": "Bonjour ! Je vous en prie, dites-moi."
+    },
+    {
+      "consulta": [
+        "reparo/ingles"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a05-p02",
+      "promptPt": "Ya los saludaste y ahora necesitas el otro idioma. Pídelo, con la subida al final. Habla ahora.",
+      "audioKey": "fr-a05-t02",
+      "es": "Vous parlez anglais ?",
+      "pinyin": "voo par-lay ahn-GLEH",
+      "pt": "¿Habla inglés?",
+      "tts": "Vous parlez anglais ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a05-r03",
+      "receptivo": true,
+      "acao": "Un sí con una condición. Baja el ritmo y tienes tu respuesta.",
+      "es": "Un petit peu. Doucement, alors.",
+      "pt": "Un poquito. Despacio, entonces.",
+      "tts": "Un petit peu. Doucement, alors."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a05-r04",
+      "receptivo": true,
+      "acao": "La respuesta suele ser otra persona. Diez segundos de espera son casi siempre toda la solución.",
+      "es": "Moi non, mais ma collègue, oui. Je vais la chercher.",
+      "pt": "Yo no, pero mi compañera sí. Voy a buscarla.",
+      "tts": "Moi non, mais ma collègue, oui. Je vais la chercher."
+    },
+    {
+      "consulta": [
+        "reparo/ingles",
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a05-p03",
+      "promptPt": "Adelántate, antes de que nadie tenga que ser educado sobre tu acento. Habla ahora.",
+      "audioKey": "fr-a05-t03",
+      "es": "Je suis désolé, je parle très mal français.",
+      "pinyin": "zhuh swee day-zo-LAY · zhuh parl treh mal frahn-SEH",
+      "pt": "Lo siento, hablo muy mal francés.",
+      "tts": "Je suis désolé, je parle très mal français."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a05-r05",
+      "receptivo": true,
+      "acao": "No discutas con ello. Coge el ánimo y sigue.",
+      "es": "Mais si, mais si. Continuez, je comprends très bien.",
+      "pt": "Que sí, que sí. Siga, le entiendo perfectamente.",
+      "tts": "Mais si, mais si. Continuez, je comprends très bien."
+    },
+    {
+      "consulta": [
+        "reparo/ingles"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a05-p04",
+      "promptPt": "Cambiaron al inglés para ayudarte, y tú prefieres seguir del otro modo. Ofrécelo. Habla ahora.",
+      "audioKey": "fr-a05-t04",
+      "es": "On peut continuer en français, si vous voulez.",
+      "pinyin": "ohn puh kohn-tee-NWAY ahn frahn-SEH · see voo voo-LAY",
+      "pt": "Podemos seguir en francés, si quiere.",
+      "tts": "On peut continuer en français, si vous voulez."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a05-n07",
+      "pt": "Seis palabras cargan con toda esta parte: bonjour, merci, s'il vous plaît, pardon, au revoir, bonne journée."
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer",
+        "chegar/sair"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a05-p05",
+      "promptPt": "Sales de la tienda con lo que viniste a buscar. Ciérralo como lo cierra la sala. Habla ahora.",
+      "audioKey": "fr-a05-t05",
+      "es": "Merci beaucoup. Bonne journée !",
+      "pinyin": "mer-SEE bo-KOO · bon zhoor-NAY",
+      "pt": "Muchas gracias. ¡Buen día!",
+      "tts": "Merci beaucoup. Bonne journée !"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a05-r06",
+      "receptivo": true,
+      "acao": "Tres cierres seguidos. Cerrar también es una secuencia, y el tuyo puede ser más corto que el suyo.",
+      "es": "Merci à vous, bonne journée, au revoir !",
+      "pt": "¡Gracias a usted, buen día, adiós!",
+      "tts": "Merci à vous, bonne journée, au revoir !"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a05-n08",
+      "pt": "Una cosa más que se confunde con otro idioma: el mismo francés a velocidad, con los centros comidos."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a05-r07",
+      "receptivo": true,
+      "acao": "Nada nuevo ahí dentro. Chais pas es je ne sais pas, faut es il faut, l'aut' es l'autre.",
+      "es": "Chais pas, moi. Faut demander à l'aut' là-bas.",
+      "pt": "Ni idea, yo. Hay que preguntarle al otro de ahí.",
+      "tts": "Chais pas, moi. Faut demander à l'autre là-bas."
+    },
+    {
+      "consulta": [
+        "reparo/devagar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a05-p06",
+      "promptPt": "Eso llegó a toda velocidad y cazaste dos palabras. Pide que lo repitan, más despacio. Habla ahora.",
+      "audioKey": "fr-a05-t06",
+      "es": "Vous pouvez répéter plus lentement ?",
+      "pinyin": "voo poo-VAY ray-pay-TAY plew lahnt-MAHN",
+      "pt": "¿Puede repetirlo más despacio?",
+      "tts": "Vous pouvez répéter plus lentement ?"
+    },
+    {
+      "consulta": [
+        "reparo/como-se-diz"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a05-p07",
+      "promptPt": "Tienes una cosa en la mano y ninguna palabra para ella en la cabeza. Señálala y pregunta. Habla ahora.",
+      "audioKey": "fr-a05-t07",
+      "es": "Comment on dit ça en français ?",
+      "pinyin": "ko-MAHN ohn dee sa ahn frahn-SEH",
+      "pt": "¿Cómo se dice eso en francés?",
+      "tts": "Comment on dit ça en français ?"
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a05-p08",
+      "promptPt": "Alguien acaba de pasar cinco minutos yendo despacio por ti. Agradéceles lo que de verdad hicieron. Habla ahora.",
+      "audioKey": "fr-a05-t08",
+      "es": "Merci de votre patience.",
+      "pinyin": "mer-SEE duh votr pa-SYAHNS",
+      "pt": "Gracias por su paciencia.",
+      "tts": "Merci de votre patience."
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a05-s01",
+      "es": "Bonjour, excusez-moi de vous déranger. Vous parlez anglais ? Merci beaucoup. Bonne journée !",
+      "pinyin": "bohn-ZHOOR eks-kew-zay-MWA duh voo day-rahn-ZHAY · voo par-lay ahn-GLEH · mer-SEE bo-KOO bon zhoor-NAY",
+      "pt": "Repite en sombra la secuencia misma: saludo, luego la pregunta, luego el cierre.",
+      "tts": "Bonjour, excusez-moi de vous déranger. Vous parlez anglais ? Merci beaucoup. Bonne journée !"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a05-n09",
+      "bloco": "recap",
+      "pt": "A05 hecho. Ninguna fuente mide a nadie rechazándote. Saluda primero, pide después, y seis palabras cargan con el resto."
+    }
+  ],
+  "aprofundar": {
+    "titulo": "La secuencia, el índice y las seis palabras",
+    "secoes": [
+      {
+        "titulo": "Qué puede y qué no puede decir el número",
+        "corpo": "El EF English Proficiency Index 2025 sitúa a Francia en 539 puntos, sube 15, en el puesto 38 de 123, con 2,2 millones de personas evaluadas en 2024. EF imprime la salvedad ella misma: los participantes se apuntan solos por internet, así que es una encuesta de autoseleccionados y no una muestra válida de la población, y el sesgo va al alza. Eso lo hace utilizable para exactamente una frase — Francia ha mejorado y se sitúa en la mitad baja del rango europeo — e inútil para cualquier afirmación sobre qué proporción de gente habla inglés, o sobre la persona que tienes delante.",
+        "exemplos": [
+          {
+            "es": "Vous parlez anglais ?",
+            "pt": "¿Habla inglés?"
+          },
+          {
+            "es": "Un petit peu. Doucement, alors.",
+            "pt": "Un poquito. Despacio, entonces."
+          }
+        ]
+      },
+      {
+        "titulo": "La lectura ritual, ofrecida como hipótesis",
+        "corpo": "No hay investigación que mida una decisión de no hablar inglés a los visitantes, y este curso no afirma tal cosa. Lo que sí hay es trabajo descriptivo sobre los rituales de apertura franceses: bonjour y bonsoir son formulaicos, semánticamente ligeros y relacionalmente cargados, y abrir una interacción se trata como un pequeño gesto territorial que el saludo suaviza. Leído así, una petición que llega sin saludo es una entrada sin llamar, y la frialdad que vuelve es por el paso que falta. Eso es una interpretación de la literatura — una hipótesis que encaja y es accionable — no un resultado medido, y hay que sostenerla con ligereza."
+      },
+      {
+        "titulo": "Las seis palabras",
+        "corpo": "Bonjour, merci, s'il vous plaît, pardon, au revoir, bonne journée. No son vocabulario; son el marco dentro del cual sucede el intercambio. Dichas mal y en el orden correcto compran mucho más que una frase correcta soltada sin ellas, y toda esta parte cabe entre la primera y la última."
+      },
+      {
+        "titulo": "El francés rápido no es otro idioma",
+        "corpo": "Chais pas por je ne sais pas, faut por il faut, l'aut' por l'autre, y a por il y a. Las vocales se quedan; las palabritas del medio se van. Cuando una frase suena a algo que nunca has estudiado, lo más probable es que sea algo que sí — dicho a velocidad. Vous pouvez répéter plus lentement ? es toda la reparación, y pedirlo es normal más que notable."
+      }
+    ]
+  },
+  "slot": "A05",
+  "permissao": "Tienes permiso para pedir inglés en voz alta, en francés, sin disculparte por el viaje. Bonjour, y luego vous parlez anglais ?, es una petición completa y del todo corriente — el saludo no es una contraseña que te estén evaluando, es simplemente la primera mitad del intercambio.",
+  "permissaoAudioKey": "fr-a05-n05",
+  "espelho": "Cualquiera al que en el trabajo se le haya acercado un desconocido que empezó a hablar a media frase conoce la pequeña fricción que describe esta parte, y sabe que no tenía nada que ver con qué idioma usaba. Que te saluden primero no es un requisito nacional — solo es más visible aquí.",
+  "fichasCulturais": [
+    {
+      "sinal": "Abres en un mostrador en inglés y te devuelven una sola palabra plana, o casi nada.",
+      "suaLeitura": "Han decidido no hablarme en inglés, justo como me advirtieron.",
+      "oQueEAli": "Ninguna fuente mide una decisión así; la afirmación es un estereotipo y este curso no lo repite. La lectura mejor sostenida es sobre la secuencia: el trabajo sobre los rituales de apertura franceses describe bonjour como una fórmula cuya función es suavizar la entrada en el espacio de alguien, de modo que una petición que llega sin él cae como una entrada sin llamar. La frialdad es por el paso que falta más que por el idioma. Esa lectura es una interpretación de la literatura, no un hallazgo medido.",
+      "oQueVoceFaz": "Di bonjour, espera el medio segundo al bonjour de vuelta, y solo entonces pide — en inglés si lo necesitas.",
+      "oQueMelhora": "La misma persona muy a menudo produce inglés, o va a buscar a un compañero que lo tenga. Dejas de leer un error de secuencia como uno personal.",
+      "ondeNaoVale": "No en todas partes ni siempre. En un mostrador de aeropuerto, un gran hotel o un sitio construido en torno al tráfico internacional el saludo se espera pero cambia poco; y mucha gente genuinamente no tiene inglés, en cuyo caso ninguna apertura del mundo lo produce.",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-a05-n05",
+        "fr-a05-n06"
+      ]
+    },
+    {
+      "sinal": "Lees que Francia ocupa el puesto 38 del mundo en inglés y planeas tu semana en torno a ello.",
+      "suaLeitura": "Ese número me dice más o menos qué probabilidad hay de que la próxima persona me hable en inglés.",
+      "oQueEAli": "No lo hace. El índice de EF puntúa a Francia con 539 puntos, sube 15, en el puesto 38 de 123, con 2,2 millones de participantes en 2024 — pero EF declara sin rodeos que esas personas se apuntaron solas por internet, así que la muestra es autoseleccionada y el resultado está sesgado al alza. El número es prueba de una tendencia a nivel de país y de nada sobre un mostrador concreto.",
+      "oQueVoceFaz": "Úsalo como trasfondo, luego pregunta en vez de suponer — en cualquier dirección. Vous parlez anglais ? tras el saludo lo resuelve en dos segundos.",
+      "oQueMelhora": "Dejas de sorprenderte en ambas direcciones, que es lo que hace que los primeros intercambios se sientan impredecibles.",
+      "ondeNaoVale": "El número no se puede trocear. No dice nada sobre rural frente a urbano, mayores frente a jóvenes, o un oficio frente a otro, y tratarlo como si pudiera es exactamente el error del que EF advierte.",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-a05-n03",
+        "fr-a05-n04"
+      ]
+    }
+  ]
+}

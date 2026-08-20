@@ -1,0 +1,96 @@
+{
+  "id": "q-i06",
+  "nivel": "intermediario",
+  "titulo": "Quiz — Ayer, contado en voz alta",
+  "subtitulo": "Dos palabras delante del verbo",
+  "introAudioKey": "fr-i06-q-i",
+  "introPt": "Un viajero convierte un día en un relato que el otro quiere continuar.",
+  "cenario": "De pie en un mostrador, la mañana después de una salida.",
+  "dialogo": [
+    {
+      "audioKey": "fr-i06-q01",
+      "voz": "target_fr_m",
+      "es": "Alors, vous avez fait quoi hier ?",
+      "pt": "Entonces, ¿qué hizo ayer?",
+      "tts": "Alors, vous avez fait quoi hier ?"
+    },
+    {
+      "audioKey": "fr-i06-q02",
+      "voz": "target_fr_f",
+      "es": "Je suis allée à Lyon et j'ai mangé dans un tout petit restaurant.",
+      "pt": "Fui a Lyon y comí en un restaurante muy pequeñito.",
+      "tts": "Je suis allée à Lyon et j'ai mangé dans un tout petit restaurant."
+    },
+    {
+      "audioKey": "fr-i06-q03",
+      "voz": "target_fr_m",
+      "es": "Ah bon ? Et c'était comment ?",
+      "pt": "¿Ah, sí? ¿Y qué tal estuvo?",
+      "tts": "Ah bon ? Et c'était comment ?"
+    },
+    {
+      "audioKey": "fr-i06-q04",
+      "voz": "target_fr_f",
+      "es": "C'était vraiment très bon. Demain, on va à Bordeaux. Vous connaissez ?",
+      "pt": "Estuvo realmente muy bueno. Mañana vamos a Burdeos. ¿Lo conoce?",
+      "tts": "C'était vraiment très bon. Demain, on va à Bordeaux. Vous connaissez ?"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "¿Qué verbos llevan je suis en vez de j'ai?",
+      "opcoes": [
+        "Todos",
+        "Un pequeño grupo sobre ir y llegar — allé, parti, resté",
+        "Cualquier cosa relacionada con comida",
+        "Solo los verbos que usa una mujer"
+      ],
+      "correta": 1,
+      "explica": "Casi todo lo demás funciona con j'ai, y confundirlos es el error más perdonado que comete un visitante."
+    },
+    {
+      "pergunta": "Una mujer dice je suis allée. Comparado con allé, suena:",
+      "opcoes": [
+        "Más largo",
+        "Idéntico — la e de más es ortografía, no sonido",
+        "Acentuado al final",
+        "Como un verbo distinto"
+      ],
+      "correta": 1,
+      "explica": "Lo que significa que el único sitio donde esto puede salir mal es una postal."
+    },
+    {
+      "pergunta": "¿Cómo deberías tratar c'était?",
+      "opcoes": [
+        "Como un tiempo verbal que aprender y construir",
+        "Como una palabrita que significa fue/estuvo, mantenida entera",
+        "Solo para escritura formal",
+        "Como una forma de pregunta"
+      ],
+      "correta": 1,
+      "explica": "C'était très bon, c'était magnifique, c'était trop court. Se pega a cualquier cosa."
+    },
+    {
+      "pergunta": "Ah bon? en medio de tu relato significa:",
+      "opcoes": [
+        "Que dudan de ti",
+        "Sigue — dame el siguiente detalle",
+        "El tema está cerrado",
+        "Que no están de acuerdo"
+      ],
+      "correta": 1,
+      "explica": "Responde con un detalle concreto, y luego pon una pregunta al final."
+    },
+    {
+      "pergunta": "¿Por qué nombrar algo que no te gustó?",
+      "opcoes": [
+        "Para parecer exigente",
+        "Porque un relato sin ningún punto bajo no le da nada al que escucha para responder",
+        "Se espera de los visitantes",
+        "Para que te quiten algo de la cuenta"
+      ],
+      "correta": 1,
+      "explica": "Je n'ai pas trop aimé es suave, y es lo que convierte un informe en una conversación."
+    }
+  ]
+}

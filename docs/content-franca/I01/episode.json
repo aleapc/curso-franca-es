@@ -1,0 +1,304 @@
+{
+  "id": "i01",
+  "nivel": "intermediario",
+  "numero": 19,
+  "parte": "I01",
+  "titulo": "Su reloj, y la hora en que se llena la sala",
+  "subtitulo": "A la una de la tarde media Francia está comiendo, y la cena tiene su pico a las ocho y cuarto — dos números que deciden dónde acabas sentado",
+  "cena": "Son las dos y veinte, por fin te has sentado, y el camarero te explica que la cocina cerró hace veinte minutos.",
+  "moldura": "ganha",
+  "frasePiso": "Pregunta los horarios antes de caminar. La respuesta te dice cuándo volver y en qué sala vas a sentarte.",
+  "decisao": "comer en los horarios de ellos en vez de los míos — almorzar dentro de la franja del mediodía y cenar después de las ocho, que es cuando la sala se llena y la cocina está de verdad cocinando",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-insee-1417-horarios",
+      "afirmacao": "Los horarios de las comidas en Francia están inusualmente sincronizados: a la una de la tarde la mitad de la población francesa está almorzando, y el pico de la cena se sitúa alrededor de las 20h15, habiéndose desplazado desde cerca de las 20h00 a lo largo de veinticuatro años. Comer ocupaba 2h22 del día medio en 2010, y el pico del desayuno entre semana es alrededor de las 8h. El INSEE registra este modelo como muy distante del norteamericano.",
+      "fonte": "INSEE Première n° 1417, out/2012, «Le temps de l'alimentation en France» (Emploi du temps 1985-86, 1998-99, 2009-10)",
+      "ano": 2012,
+      "revisarAte": "2028-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-i01-n02",
+        "fr-i01-n04"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i01-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "Francia funciona con un reloj más apretado del que traen casi todos los visitantes, y el almuerzo es la hora más apretada."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i01-r01",
+      "receptivo": true,
+      "acao": "No leas la sala llena como suerte. Todos se sentaron a la misma hora, así que ven antes mañana.",
+      "es": "Là, c'est complet. Tout le monde déjeune en même temps.",
+      "pt": "Ahora mismo estamos completos. Todo el mundo almuerza a la misma hora.",
+      "tts": "Là, c'est complet. Tout le monde déjeune en même temps."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i01-n02",
+      "bloco": "corpo",
+      "pt": "A la una de la tarde, medio país está comiendo. Eso está medido, no es folclore, y es por eso que esta sala está llena."
+    },
+    {
+      "consulta": [
+        "mesa/comida",
+        "chegar/entrar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i01-p01",
+      "promptPt": "Estás fuera de un sitio que te gusta cómo se ve y son casi las dos. Averigua cuánto tiempo tienes. Habla ahora.",
+      "audioKey": "fr-i01-t01",
+      "es": "La cuisine ferme à quelle heure ?",
+      "pinyin": "la kwee-ZEEN fairm a kel UR",
+      "pt": "¿A qué hora cierra la cocina?",
+      "tts": "La cuisine ferme à quelle heure ?",
+      "molde": "A-QUELLE-HEURE",
+      "encaixe": "la cuisine ferme"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i01-r02",
+      "receptivo": true,
+      "acao": "Dos horas de nada entre servicios. Planifica la tarde en torno a ello en vez de meterte de lleno.",
+      "es": "On sert jusqu'à quatorze heures. Le soir, à partir de dix-neuf heures trente.",
+      "pt": "Servimos hasta las dos. Por la noche, a partir de las siete y media.",
+      "tts": "On sert jusqu'à quatorze heures. Le soir, à partir de dix-neuf heures trente."
+    },
+    {
+      "consulta": [
+        "mesa/comida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i01-p02",
+      "promptPt": "Estás en la puerta y los últimos platos están saliendo. Una pregunta corta decide tu tarde. Habla ahora.",
+      "audioKey": "fr-i01-t02",
+      "es": "Vous servez encore ?",
+      "pinyin": "voo sair-VAY on-KOR",
+      "pt": "¿Todavía están sirviendo?",
+      "tts": "Vous servez encore ?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i01-n03",
+      "pt": "El molde es lo importante, luego a quelle heure. Entre servicios la cocina está cerrada, no lenta — las dos es un límite.",
+      "bloco": "molde"
+    },
+    {
+      "consulta": [
+        "mesa/comida",
+        "chegar/entrar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i01-p03",
+      "promptPt": "Estás planeando mañana y quieres confirmar la franja del mediodía. Pregunta. Habla ahora.",
+      "audioKey": "fr-i01-t03",
+      "es": "C'est ouvert entre midi et deux ?",
+      "pinyin": "seh oo-VAIR ontr mee-DEE ay DUH",
+      "pt": "¿Están abiertos entre las doce y las dos?",
+      "tts": "C'est ouvert entre midi et deux ?"
+    },
+    {
+      "consulta": [
+        "mesa/mesa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "JE-VOUDRAIS",
+      "encaixe": "réserver une table pour ce soir",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i01-p04",
+      "promptPt": "Estás allí de pie por la tarde con el sitio para ti solo. Reserva la noche ahora. Habla ahora.",
+      "audioKey": "fr-i01-t04",
+      "es": "Je voudrais réserver une table pour ce soir.",
+      "pinyin": "zhuh voo-DREH ray-zair-VAY oon TABL poor suh SWAR",
+      "pt": "Quisiera reservar una mesa para esta noche.",
+      "tts": "Je voudrais réserver une table pour ce soir."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i01-r03",
+      "es": "Vingt heures ou vingt et une heures ?",
+      "pt": "¿A las ocho o a las nueve?",
+      "tts": "Vingt heures ou vingt et une heures ?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i01-n04",
+      "bloco": "capsula",
+      "pt": "La cena tiene su pico hacia las ocho y cuarto. Una sala vacía a las siete no está siendo juzgada aún — es temprano."
+    },
+    {
+      "consulta": [
+        "mesa/mesa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "JE-VOUDRAIS",
+      "encaixe": "une table à vingt heures trente",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i01-p05",
+      "promptPt": "Te ofrecieron dos horas. Toma la más tardía, en una frase. Habla ahora.",
+      "audioKey": "fr-i01-t05",
+      "es": "Je voudrais une table à vingt heures trente.",
+      "pinyin": "zhuh voo-DREH oon TABL a vant-UR TRONT",
+      "pt": "Quisiera una mesa a las ocho y media.",
+      "tts": "Je voudrais une table à vingt heures trente."
+    },
+    {
+      "consulta": [
+        "mesa/comida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i01-p06",
+      "promptPt": "Un sitio nuevo, una noche nueva. Pregunta cuándo empieza la comida. Habla ahora.",
+      "audioKey": "fr-i01-t06",
+      "es": "Le service commence à quelle heure ?",
+      "pinyin": "luh sair-VEESS ko-MONSS a kel UR",
+      "pt": "¿A qué hora empieza el servicio?",
+      "tts": "Le service commence à quelle heure ?",
+      "molde": "A-QUELLE-HEURE",
+      "encaixe": "le service commence"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i01-n05",
+      "pt": "Pregunta a qué hora comen ellos, no a qué hora deberías comer tú. La segunda pregunta te da la respuesta de visitante."
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa",
+        "mesa/comida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i01-p07",
+      "promptPt": "Estás charlando con alguien que vive allí. Pregunta por su propio día, no por el tuyo. Habla ahora.",
+      "audioKey": "fr-i01-t07",
+      "es": "Vous déjeunez à quelle heure, vous ?",
+      "pinyin": "voo day-zhuh-NAY a kel UR, VOO",
+      "pt": "¿A qué hora almuerza usted?",
+      "tts": "Vous déjeunez à quelle heure, vous ?",
+      "molde": "A-QUELLE-HEURE",
+      "encaixe": "vous déjeunez"
+    },
+    {
+      "consulta": [
+        "mesa/mesa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i01-p08",
+      "promptPt": "La reserva es a las ocho y prefieres caminar otra hora antes. Pregunta. Habla ahora.",
+      "audioKey": "fr-i01-t08",
+      "es": "On peut venir plus tard ?",
+      "pinyin": "on puh vuh-NEER ploo TAR",
+      "pt": "¿Podemos venir más tarde?",
+      "tts": "On peut venir plus tard ?"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-i01-s01",
+      "es": "La cuisine ferme à quelle heure ? Vous servez encore ? Je voudrais une table à vingt heures trente.",
+      "pinyin": "la kwee-ZEEN fairm a kel UR. voo sair-VAY on-KOR. zhuh voo-DREH oon TABL a vant-UR TRONT",
+      "pt": "Repite en sombra las tres frases que fijan un día entero de comidas.",
+      "tts": "La cuisine ferme à quelle heure ? Vous servez encore ? Je voudrais une table à vingt heures trente.",
+      "molde": "JE-VOUDRAIS"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i01-n06",
+      "bloco": "recap",
+      "pt": "I01 hecho. Horarios de cocina, el límite de las dos, una mesa a las ocho y media, y la pregunta que consigue la hora real."
+    }
+  ],
+  "aprofundar": {
+    "titulo": "Dos números y un hueco",
+    "secoes": [
+      {
+        "titulo": "La una es la multitud",
+        "corpo": "La franja del mediodía es estrecha y es colectiva: a las 13h, medio país está almorzando. Por eso la sala que te gustó está llena a la una y diez y ha terminado para las dos y media — todos llegaron dentro de la misma hora en lugar de repartirse por la tarde.",
+        "exemplos": [
+          {
+            "es": "C'est ouvert entre midi et deux ?",
+            "pt": "¿Están abiertos entre las doce y las dos?"
+          },
+          {
+            "es": "Vous servez encore ?",
+            "pt": "¿Todavía están sirviendo?"
+          }
+        ]
+      },
+      {
+        "titulo": "La cocina cierra, la sala sigue abierta",
+        "corpo": "Entre servicios muy a menudo puedes sentarte igual y tomar un café o una copa en el mismo sitio. Lo que ha parado es el cocinar. Preguntar por la cuisine en vez de por el restaurante te da la respuesta que importa."
+      },
+      {
+        "titulo": "Las ocho y cuarto",
+        "corpo": "El pico de la noche se sitúa alrededor de las 20h15 y se ha desplazado unos quince minutos más tarde a lo largo de veinticuatro años de encuestas. Una reserva a las ocho y media te pone en la sala a la misma hora que la gente que vive allí, que es una sala distinta de la de las siete."
+      },
+      {
+        "titulo": "La formulación de la pregunta",
+        "corpo": "Où est-ce que je devrais manger invita a una recomendación calibrada para un visitante. Vous déjeunez à quelle heure, vous pregunta por el propio día de alguien, y la respuesta vuelve con una hora, un barrio y normalmente un nombre incluido."
+      }
+    ]
+  },
+  "slot": "I01",
+  "permissao": "Tienes permiso para tener hambre durante dos horas. Esperar hasta las ocho y media no es una prueba de resistencia con una moraleja cultural — es simplemente cuando la sala se llena y cuando la cocina está de verdad cocinando.",
+  "permissaoAudioKey": "fr-i01-n04",
+  "espelho": "Cualquiera que haya aterrizado en algún sitio y cenado a las seis porque el reloj del cuerpo aún no se había movido conoce este hueco. Se cierra solo en dos días, y lo único que cuesta mientras tanto es qué salas viste llenas.",
+  "fichasCulturais": [
+    {
+      "sinal": "Pasas por delante de un comedor a las siete de la tarde, ves cuatro mesas vacías y una pareja, y sigues caminando.",
+      "suaLeitura": "Una sala vacía a la hora de cenar significa que la gente que vive aquí ha decidido en contra de este sitio.",
+      "oQueEAli": "Las siete es antes del pico de la noche, que se sitúa alrededor de las ocho y cuarto. La sala que estás calificando no ha empezado aún, y el vacío que estás leyendo como veredicto es la hora.",
+      "oQueVoceFaz": "Pregunta le service commence à quelle heure, reserva para las ocho y media, y pasa el hueco caminando o tomando algo en otro sitio.",
+      "oQueMelhora": "Dejas de filtrar restaurantes por cuáles están llenos en un horario extranjero, que es un filtro que selecciona de forma fiable las salas construidas para horarios extranjeros.",
+      "ondeNaoVale": "No en el almuerzo, donde una sala llena sí es información porque la franja es estrecha y todos comen dentro de ella — y no en un sitio que sigue vacío a las nueve y media.",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-i01-n04"
+      ]
+    },
+    {
+      "sinal": "Llegas a las dos y veinte, la sala sigue medio llena de gente terminando, y te dicen que la cocina está cerrada.",
+      "suaLeitura": "Pueden ver que hay gente comiendo, así que se niegan a servirme.",
+      "oQueEAli": "Esos platos se pidieron dentro de la franja. La cocina deja de tomar pedidos al final del servicio y reabre para la noche; los clientes sentados son la cola del almuerzo, no prueba de que aún haya comida disponible.",
+      "oQueVoceFaz": "Pregunta la cuisine ferme à quelle heure antes de comprometerte con la caminata, y si la has perdido, siéntate a tomar un café y reserva la noche mientras estás allí.",
+      "oQueMelhora": "Dejas de gastar la mitad de la tarde buscando un plato caliente y empiezas a usarla para lo que la tarde sí sirve.",
+      "ondeNaoVale": "No en las brasseries y cafés de estación con servicio continuo, que existen precisamente para cubrir el hueco y dirán service continu en la puerta.",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-i01-n03"
+      ]
+    }
+  ]
+}

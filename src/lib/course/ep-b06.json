@@ -1,0 +1,340 @@
+{
+  "id": "b06",
+  "nivel": "basico",
+  "numero": 6,
+  "parte": "B06",
+  "titulo": "Vous avez, y luego lo que necesites",
+  "subtitulo": "Cuatro mostradores en la primera hora, y todos responden a la misma apertura",
+  "cena": "Llegadas: la cinta se ha parado, la eSIM no ha conectado, y hay cuatro mostradores entre tú y poder sentarte.",
+  "moldura": "ganha",
+  "frasePiso": "Vous avez, más la cosa. Un marco, y todo el vestíbulo de llegadas se vuelve respondible.",
+  "moldes": [
+    "VOUS-AVEZ"
+  ],
+  "clique": {
+    "contagem": [
+      "la cafetería del aeropuerto",
+      "la tienda de móviles",
+      "el estanco",
+      "el mostrador de información"
+    ],
+    "desconto": "Nadie te dio una frase distinta para cada mostrador. Guardaste una apertura y cambiaste solo la cosa que iba después.",
+    "piso": "La próxima vez que necesites algo y no sepas si el sitio lo tiene, no lo mimarás. Preguntarás en tres palabras."
+  },
+  "fatosDatados": [
+    {
+      "id": "fr-b06-carte",
+      "afirmacao": "En Francia no hay obligación legal de aceptar pago con tarjeta. Un comerciante puede rechazar cheque o tarjeta, o aceptarlos solo bajo condiciones que él fija —incluido un importe mínimo—, siempre que informe de antemano y de forma visible: una pegatina, un cartel en la entrada o en la caja. El efectivo en euros debe aceptarse. El corolario útil: un logotipo de tarjeta mostrado en la puerta sin mínimo indicado equivale a un compromiso de aceptar la tarjeta por cualquier importe.",
+      "fonte": "Na França não há obrigação legal de aceitar cartão. O comerciante pode recusar cheque ou cartão, ou aceitá-los sob condições que ele fixa, desde que informe previamente e de modo visível — etiqueta, cartaz na entrada ou no caixa (Ministère de l'Économie; fiche DGCCRF «Moyens de paiement»). Montante mínimo é legal, com a mesma condição de afixação.",
+      "ano": 2026,
+      "revisarAte": "2027-08-05",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": [
+        "fr-b06-n06"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b06-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "Tu primera hora son cuatro mostradores y cuatro preguntitas. En Francia todos se abren igual."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b06-n02",
+      "bloco": "molde",
+      "pt": "Este es el molde: vous avez, luego la cosa. ¿Tiene usted...? y luego lo que necesites."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b06-t01",
+      "es": "Bonjour, vous avez du wifi ?",
+      "pinyin": "bon-ZHOOR, voo za-vay du wee-FEE",
+      "pt": "Hola, ¿tiene wifi?",
+      "tts": "Bonjour, vous avez du wifi ?"
+    },
+    {
+      "consulta": [
+        "chegar/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "VOUS-AVEZ",
+      "encaixe": "du wifi",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b06-p01",
+      "promptPt": "En la cafetería del aeropuerto tu eSIM aún no ha conectado y necesitas la red. Pregunta. Habla ahora.",
+      "audioKey": "fr-b06-t01",
+      "es": "Bonjour, vous avez du wifi ?",
+      "pinyin": "bon-ZHOOR, voo za-vay du wee-FEE",
+      "pt": "Hola, ¿tiene wifi?",
+      "tts": "Bonjour, vous avez du wifi ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b06-r01",
+      "es": "Bonjour ! Oui, le code est sur le ticket.",
+      "pt": "¡Hola! Sí, el código está en el tique.",
+      "tts": "Bonjour ! Oui, le code est sur le ticket."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b06-n03",
+      "bloco": "corpo",
+      "pt": "Fíjate en lo que pide el marco: no si la cosa existe en algún sitio, sino si esta persona la tiene."
+    },
+    {
+      "consulta": [
+        "chegar/balcao",
+        "compras/quanto"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "VOUS-AVEZ",
+      "encaixe": "une carte SIM",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b06-p02",
+      "promptPt": "En la tienda de móviles junto a la recogida de equipaje, quieres un número local para la semana. Pregunta. Habla ahora.",
+      "audioKey": "fr-b06-t02",
+      "es": "Vous avez une carte SIM ?",
+      "pinyin": "voo za-vay un kart SEEM",
+      "pt": "¿Tiene una tarjeta SIM?",
+      "tts": "Vous avez une carte SIM ?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b06-n04",
+      "pt": "Bonjour va primero, siempre. Llegar con la petición y sin saludo es entrar sin llamar."
+    },
+    {
+      "consulta": [
+        "chegar/balcao",
+        "reparo/apontar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "VOUS-AVEZ",
+      "encaixe": "un chargeur",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b06-p03",
+      "promptPt": "De vuelta en la tienda de móviles, tu batería está al cuatro por ciento y el tuyo va en la bodega. Pregunta. Habla ahora.",
+      "audioKey": "fr-b06-t03",
+      "es": "Vous avez un chargeur ?",
+      "pinyin": "voo za-vay un shar-ZHUR",
+      "pt": "¿Tiene un cargador?",
+      "tts": "Vous avez un chargeur ?"
+    },
+    {
+      "consulta": [
+        "transporte/bilhete"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "VOUS-AVEZ",
+      "encaixe": "des tickets de métro",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b06-p04",
+      "promptPt": "El estanco junto a la salida vende transporte, y las máquinas tienen una cola larga. Pregunta. Habla ahora.",
+      "audioKey": "fr-b06-t04",
+      "es": "Vous avez des tickets de métro ?",
+      "pinyin": "voo za-vay day tee-KAY duh may-TRO",
+      "pt": "¿Tiene billetes de metro?",
+      "tts": "Vous avez des tickets de métro ?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b06-n05",
+      "bloco": "capsula",
+      "pt": "Al marco le da igual qué sea la cosa. Wifi, una SIM, un cargador, billetes, monedas, un mapa."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b06-n06",
+      "pt": "Aquí el efectivo siempre funciona. La tarjeta no tiene por qué, y un mínimo colgado en la caja es del todo legal."
+    },
+    {
+      "consulta": [
+        "pagar/dinheiro"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "VOUS-AVEZ",
+      "encaixe": "de la monnaie",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b06-p05",
+      "promptPt": "La máquina de bebidas de la cafetería solo acepta monedas y solo tienes un billete de veinte. Pregunta en el estanco. Habla ahora.",
+      "audioKey": "fr-b06-t05",
+      "es": "Vous avez de la monnaie ?",
+      "pinyin": "voo za-vay duh la mo-NAY",
+      "pt": "¿Tiene cambio?",
+      "tts": "Vous avez de la monnaie ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b06-r02",
+      "es": "Non, pas ici, mais il y en a au niveau deux.",
+      "pt": "No, aquí no, pero hay en el nivel dos.",
+      "tts": "Non, pas ici, mais il y en a au niveau deux.",
+      "receptivo": true,
+      "acao": "Quédate para la segunda mitad: el no llega con la dirección del sí pegada."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b06-n07",
+      "pt": "Un no suele venir con la dirección del sí pegada. Quédate un tiempo más allá del no."
+    },
+    {
+      "consulta": [
+        "chegar/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "VOUS-AVEZ",
+      "encaixe": "un plan",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b06-p06",
+      "promptPt": "En el mostrador de información, el papel sobrevive a una batería muerta y la tuya casi lo está. Pregunta. Habla ahora.",
+      "audioKey": "fr-b06-t06",
+      "es": "Vous avez un plan ?",
+      "pinyin": "voo za-vay un PLON",
+      "pt": "¿Tiene un mapa?",
+      "tts": "Vous avez un plan ?"
+    },
+    {
+      "consulta": [
+        "chegar/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "VOUS-AVEZ",
+      "encaixe": "des toilettes",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b06-p07",
+      "promptPt": "De vuelta en la cafetería del aeropuerto, antes del tren y el largo trayecto al centro. Pregunta. Habla ahora.",
+      "audioKey": "fr-b06-t07",
+      "es": "Vous avez des toilettes ?",
+      "pinyin": "voo za-vay day twa-LET",
+      "pt": "¿Tiene baños?",
+      "tts": "Vous avez des toilettes ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b06-r03",
+      "es": "Bien sûr, au fond à droite.",
+      "pt": "Claro, al fondo a la derecha.",
+      "tts": "Bien sûr, au fond à droite."
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b06-p08",
+      "promptPt": "Te resolvieron en diez segundos. Ciérralo como cierra la gente aquí. Habla ahora.",
+      "audioKey": "fr-b06-t08",
+      "es": "Merci beaucoup, bonne journée.",
+      "pinyin": "mair-see bo-KOO, bon zhoor-NAY",
+      "pt": "Muchas gracias, buen día.",
+      "tts": "Merci beaucoup, bonne journée."
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b06-s01",
+      "es": "Vous avez du wifi ? Vous avez une carte SIM ? Vous avez de la monnaie ?",
+      "pinyin": "voo za-vay du wee-FEE. voo za-vay un kart SEEM. voo za-vay duh la mo-NAY",
+      "pt": "Repite en sombra la misma apertura en tres mostradores completamente distintos.",
+      "tts": "Vous avez du wifi ? Vous avez une carte SIM ? Vous avez de la monnaie ?",
+      "molde": "VOUS-AVEZ"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b06-n08",
+      "bloco": "recap",
+      "pt": "B06 hecho. Un marco, cuatro mostradores, y toda la primera hora respondida con tres palabras y un sustantivo."
+    }
+  ],
+  "aprofundar": {
+    "titulo": "Una apertura, siete problemas",
+    "secoes": [
+      {
+        "titulo": "Vous avez más la cosa",
+        "corpo": "Guarda vous avez y pon detrás cualquier cosa que una persona tras un mostrador pudiera tener físicamente. Nada se conjuga, nada concuerda, y el tono ascendente al final es lo que lo convierte en pregunta, que es por qué es el marco más barato del curso.",
+        "exemplos": [
+          {
+            "es": "Vous avez du wifi ?",
+            "pt": "¿Tiene wifi?"
+          },
+          {
+            "es": "Vous avez de la monnaie ?",
+            "pt": "¿Tiene cambio?"
+          }
+        ]
+      },
+      {
+        "titulo": "Lo que tienen, no lo que existe",
+        "corpo": "El inglés tira de is there a…, y el equivalente francés está bien pero pertenece a quien ya vive allí. En un mostrador la pregunta francesa natural es sobre la persona que tienes delante: qué tiene usted. Ese cambio es pequeño de decir y es la diferencia entre sonar a manual de frases y sonar a alguien que ya ha hecho esto antes."
+      },
+      {
+        "titulo": "Bonjour es la puerta, no el felpudo",
+        "corpo": "La investigación sobre la interacción francesa describe bonjour como un ritual: una fórmula fija cuyo contenido es casi vacío y cuya función es hacer aceptable entrar en el espacio de alguien. Ponlo delante del marco y el marco funciona; omítelo y obtienes una respuesta seca fácil de malleer como falta de disposición."
+      },
+      {
+        "titulo": "Efectivo, tarjeta y el cartel de la puerta",
+        "corpo": "Nada obliga a un comerciante francés a aceptar tarjeta. Rechazarla, o poner un mínimo, está permitido siempre que se muestre por adelantado: una pegatina en el cristal, un cartel en la caja. Los euros en efectivo siempre funcionan. El corolario es lo útil: un logotipo de tarjeta en la puerta sin mínimo escrito en ningún sitio es un compromiso de aceptar la tarjeta por cualquier importe."
+      },
+      {
+        "titulo": "El no que lleva una dirección",
+        "corpo": "Non, pas ici, mais… es la forma estándar. Marcharse en la primera palabra deja la mitad útil sobre el mostrador: el nivel, la otra terminal, la máquina que sí acepta billetes."
+      }
+    ]
+  },
+  "slot": "B06",
+  "permissao": "No necesitas una frase distinta para cada mostrador de ese vestíbulo, y nadie ahí te califica la gramática. Bonjour, vous avez, la cosa y un tono ascendente son una petición completa en cualquier parte del edificio, y tienes permiso para usar las mismas tres palabras en los cuatro mostradores sin variarlas para sonar mejor.",
+  "permissaoAudioKey": "fr-b06-n02",
+  "espelho": "Cualquiera que aterrice en un aeropuerto desconocido en casa ya hace este triaje exacto sin nombrarlo: señal, dinero, billete, un sitio donde estar. Lo único nuevo es hacerlo en tres palabras que nunca cambian.",
+  "fichasCulturais": [
+    {
+      "sinal": "Te acercas a un mostrador, abres en inglés con tu petición, y recibes una respuesta seca que parece una puerta cerrándose.",
+      "suaLeitura": "Preferirían no hablarme en inglés.",
+      "oQueEAli": "El trabajo descriptivo sobre la interacción francesa trata bonjour como una apertura ritual cuya función es hacer aceptable entrar en el territorio de alguien. Empezar con la petición se salta la apertura, y el tono neutro que sigue es fácil de leer como un rechazo sobre el idioma cuando es sobre la secuencia.",
+      "oQueVoceFaz": "Di bonjour solo, espera medio tiempo a que te devuelvan el bonjour, y solo entonces pregunta, en francés si lo tienes, en inglés si no.",
+      "oQueMelhora": "El intercambio empieza en el pie esperado, y quien sí tiene algo de inglés es mucho más propenso a ofrecerlo una vez ocurrida la apertura.",
+      "ondeNaoVale": "Es una interpretación que descansa en investigación sobre rituales de saludo, no un hallazgo medido sobre actitudes, y no explica cada mostrador frío. Alguien al final de un turno largo con cola detrás a veces es solo eso.",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b06-n04"
+      ]
+    },
+    {
+      "sinal": "Llegas a la caja con tarjeta, y la rechazan o te sueltan un mínimo.",
+      "suaLeitura": "Eso no puede estar permitido, o se lo inventan porque soy visitante.",
+      "oQueEAli": "No hay obligación legal en Francia de aceptar pago con tarjeta. Un comerciante puede rechazarla, o poner un mínimo, siempre que lo diga de antemano y de forma visible: una pegatina, un cartel en la entrada o en la caja. El efectivo en euros, en cambio, siempre debe aceptarse.",
+      "oQueVoceFaz": "Mira la puerta y la caja al entrar. Si hay un logotipo de tarjeta sin mínimo escrito al lado, la tarjeta vale para cualquier importe; si hay un mínimo colgado, ese es el número, y el efectivo es la respuesta por debajo.",
+      "oQueMelhora": "Guardas un pequeño fondo de efectivo para justo estos momentos y dejas de sorprenderte por una política que se muestra en vez de esconderse.",
+      "ondeNaoVale": "No es licencia para una condición inventada en el momento de pagar. La regla es el aviso previo visible; un mínimo sacado solo cuando ya tienes la cuenta delante es otra cosa.",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-b06-n06"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "q-a08",
+  "nivel": "avancado",
+  "titulo": "Quiz — La despedida",
+  "subtitulo": "Cinco preguntas sobre el último minuto y la tarjeta de bolsillo",
+  "introAudioKey": "fr-a08-q-i",
+  "introPt": "La última mañana, cuatro mostradores, y una despedida con una fecha dentro.",
+  "cenario": "Una panadería, una recepción y un umbral de salida.",
+  "dialogo": [
+    {
+      "audioKey": "fr-a08-q01",
+      "voz": "target_fr_f",
+      "es": "Merci pour tout, madame. C'était le meilleur pain du voyage.",
+      "pt": "Gracias por todo, señora. Ha sido el mejor pan del viaje.",
+      "tts": "Merci pour tout, madame. C'était le meilleur pain du voyage."
+    },
+    {
+      "audioKey": "fr-a08-q02",
+      "voz": "target_fr_f",
+      "es": "Ah, c'est gentil ça. Vous revenez nous voir, hein ?",
+      "pt": "Ah, qué amable. Vuelve a vernos, ¿eh?",
+      "tts": "Ah, c'est gentil ça. Vous revenez nous voir, hein ?"
+    },
+    {
+      "audioKey": "fr-a08-q03",
+      "voz": "target_fr_f",
+      "es": "L'année prochaine, au printemps. C'est promis.",
+      "pt": "El año que viene, en primavera. Prometido.",
+      "tts": "L'année prochaine, au printemps. C'est promis."
+    },
+    {
+      "audioKey": "fr-a08-q04",
+      "voz": "target_fr_m",
+      "es": "Mais vous vous débrouillez très bien ! Bon retour.",
+      "pt": "¡Pero si se defiende muy bien! Buen regreso.",
+      "tts": "Mais vous vous débrouillez très bien ! Bon retour."
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "La despedida tiene tres partes. ¿Cuál se dejan fuera los visitantes?",
+      "opcoes": [
+        "El agradecimiento",
+        "La cosa concreta que hicieron",
+        "El saludo",
+        "El apretón de manos"
+      ],
+      "correta": 1,
+      "explica": "Sin la parte central es cortesía corriente. Nombrar el pan es lo que demuestra que te fijaste."
+    },
+    {
+      "pergunta": "Vous revenez nous voir, hein ? ¿La mejor respuesta?",
+      "opcoes": [
+        "Peut-être, on verra",
+        "Una temporada y una promesa — l'année prochaine, au printemps",
+        "Una fecha exacta en tu agenda",
+        "Una sonrisa educada y nada más"
+      ],
+      "correta": 1,
+      "explica": "Nadie está reservando nada. El compromiso vago es la forma esperada, y es lo que se recuerda."
+    },
+    {
+      "pergunta": "¿Qué frase de todo el curso tiene que salir automática?",
+      "opcoes": [
+        "C'est combien ?",
+        "Je voudrais un café",
+        "Je n'ai pas compris, vous pouvez répéter ?",
+        "Où est la sortie ?"
+      ],
+      "correta": 2,
+      "explica": "Es lo que mantiene utilizable cualquier otra frase cuando la respuesta vuelve a toda velocidad."
+    },
+    {
+      "pergunta": "Alguien te dice vous vous débrouillez très bien. ¿Qué haces?",
+      "opcoes": [
+        "Explicar lo malo que es tu francés en realidad",
+        "Aceptarlo, y devolver una frase cálida en el acto",
+        "Cambiar al inglés para hacerlo más fácil",
+        "No decir nada"
+      ],
+      "correta": 1,
+      "explica": "Discutir con un cumplido te cuesta el momento. Merci, à vous aussi lo cierra bien."
+    },
+    {
+      "pergunta": "Au revoir, à bientôt, à la prochaine. ¿Qué tienen en común?",
+      "opcoes": [
+        "Que son todas formales",
+        "Que todas incorporan el próximo encuentro dentro de la palabra",
+        "Que son todas regionales",
+        "Que se usan solo en mostradores"
+      ],
+      "correta": 1,
+      "explica": "Las despedidas cotidianas de aquí son abiertas por diseño; adieu, la definitiva, ha desaparecido casi del uso corriente."
+    }
+  ]
+}

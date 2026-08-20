@@ -1,0 +1,344 @@
+{
+  "id": "i06",
+  "nivel": "intermediario",
+  "numero": 24,
+  "parte": "I06",
+  "titulo": "El día de ayer, contado en voz alta",
+  "subtitulo": "J'ai y je suis, una sola terminación de pasado, y un día que se vuelve una historia que alguien quiere seguir",
+  "cena": "Alguien acaba de preguntarte qué hiciste ayer, y todas las frases que tienes están en presente.",
+  "moldura": "ganha",
+  "frasePiso": "No necesitas el pasado del idioma. Necesitas dos palabritas delante de él.",
+  "decisao": "contar el día de ayer en dos o tres frases en pasado, en vez de responder en presente y volverte la persona que solo dice que sí",
+  "moldes": [],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i06-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "En el momento en que puedes decir qué hiciste ayer, dejas de ser alguien que pide cosas y pasas a ser alguien con un viaje."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i06-r01",
+      "receptivo": true,
+      "acao": "Este es el arranque de todas las conversaciones de esta semana. Responde con adónde fuiste, no con un sí.",
+      "es": "Alors, vous avez fait quoi hier ?",
+      "pt": "Entonces, ¿qué hiciste ayer?",
+      "tts": "Alors, vous avez fait quoi hier ?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i06-n02",
+      "bloco": "molde",
+      "pt": "El molde es j'ai o je suis, y luego el verbo terminando en un sonido «e». J'ai mangé. Je suis allé. Ese es todo el pasado."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-i06-t01",
+      "es": "Hier, je suis allé à Lyon.",
+      "pinyin": "ee-YEHR, zhuh swee za-LAY a lee-ON",
+      "pt": "Ayer fui a Lyon.",
+      "tts": "Hier, je suis allé à Lyon."
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i06-p01",
+      "promptPt": "Empieza por el gesto: una ciudad, una frase, y el día anterior a este. Habla ahora.",
+      "audioKey": "fr-i06-t01",
+      "es": "Hier, je suis allé à Lyon.",
+      "pinyin": "ee-YEHR, zhuh swee za-LAY a lee-ON",
+      "pt": "Ayer fui a Lyon.",
+      "tts": "Hier, je suis allé à Lyon.",
+      "molde": "J-AI-FAIT",
+      "encaixe": "je suis allé à Lyon"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i06-n03",
+      "pt": "Ir y venir llevan je suis; una mujer añade una e muda: allée. Todo lo que se hace a una cosa lleva j'ai."
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa",
+        "compras/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i06-p02",
+      "promptPt": "Habla una mujer, diciendo adónde fue por la mañana. La terminación se escribe, no se oye. Habla ahora.",
+      "audioKey": "fr-i06-t02",
+      "es": "Je suis allée au marché ce matin.",
+      "pinyin": "zhuh swee za-LAY oh mar-SHAY suh ma-TAN",
+      "pt": "Fui al mercado esta mañana.",
+      "tts": "Je suis allée au marché ce matin.",
+      "molde": "J-AI-FAIT",
+      "encaixe": "je suis allée au marché"
+    },
+    {
+      "consulta": [
+        "mesa/comida",
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i06-p03",
+      "promptPt": "Ahora la comida. Di dónde comiste, y haz que el sitio sea pequeño, no famoso. Habla ahora.",
+      "audioKey": "fr-i06-t03",
+      "es": "J'ai mangé dans un tout petit restaurant.",
+      "pinyin": "zhay mon-ZHAY don zan too puh-TEE res-toh-RON",
+      "pt": "Comí en un restaurante chiquitito.",
+      "tts": "J'ai mangé dans un tout petit restaurant.",
+      "molde": "J-AI-FAIT",
+      "encaixe": "j'ai mangé dans un petit restaurant"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i06-r02",
+      "receptivo": true,
+      "acao": "Ah bon no es duda. Es una invitación a dar un detalle más.",
+      "es": "Ah bon ? Et c'était comment ?",
+      "pt": "¿Ah, sí? ¿Y qué tal estuvo?",
+      "tts": "Ah bon ? Et c'était comment ?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i06-n04",
+      "bloco": "capsula",
+      "pt": "C'était es una sola palabra para ti: fue/estaba. No la construyas, no la analices, guárdala entera en el bolsillo."
+    },
+    {
+      "consulta": [
+        "simpatia/elogiar-comida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i06-p04",
+      "promptPt": "Te preguntaron qué tal estuvo. Responde por la comida, en tres palabras, con la del medio llevando el peso. Habla ahora.",
+      "audioKey": "fr-i06-t04",
+      "es": "C'était vraiment très bon.",
+      "pinyin": "say-TEH vreh-MON treh BON",
+      "pt": "Estaba realmente muy bueno.",
+      "tts": "C'était vraiment très bon."
+    },
+    {
+      "consulta": [
+        "simpatia/elogiar-lugar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i06-p05",
+      "promptPt": "Dos palabras para el día entero, y llevan más calidez que cualquier frase larga que pudieras construir. Habla ahora.",
+      "audioKey": "fr-i06-t05",
+      "es": "J'ai adoré.",
+      "pinyin": "zhay a-doh-RAY",
+      "pt": "Me encantó.",
+      "tts": "J'ai adoré."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i06-n05",
+      "pt": "Una historia necesita más de una cosa que pasó. Dos frases unidas por et ya suenan a relato."
+    },
+    {
+      "consulta": [
+        "transporte/bilhete",
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i06-p06",
+      "promptPt": "Di cómo viajaste y cuándo, en una línea corta. Habla ahora.",
+      "audioKey": "fr-i06-t06",
+      "es": "J'ai pris le train ce matin.",
+      "pinyin": "zhay PREE luh TRAN suh ma-TAN",
+      "pt": "Tomé el tren esta mañana.",
+      "tts": "J'ai pris le train ce matin.",
+      "molde": "J-AI-FAIT",
+      "encaixe": "j'ai pris le train"
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i06-p07",
+      "promptPt": "Junta dos de ellas: cómo se pasó el día, con los dos ahí dentro. Habla ahora.",
+      "audioKey": "fr-i06-t07",
+      "es": "On a marché toute la journée et on a bien mangé.",
+      "pinyin": "on a mar-SHAY toot la zhoor-NAY ay on a byan mon-ZHAY",
+      "pt": "Caminamos todo el día y comimos bien.",
+      "tts": "On a marché toute la journée et on a bien mangé.",
+      "molde": "J-AI-FAIT",
+      "encaixe": "on a marché toute la journée"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i06-n06",
+      "pt": "Una cosa que no cuajó hace creíble lo demás. Un día donde todo fue maravilloso suena a montaje."
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i06-p08",
+      "promptPt": "Nombra la parte del día que no te dijo nada, con ligereza, y sigue adelante. Habla ahora.",
+      "audioKey": "fr-i06-t08",
+      "es": "Le musée, je ne l'ai pas trop aimé.",
+      "pinyin": "luh mü-ZAY, zhuh nuh lay pa troh ay-MAY",
+      "pt": "El museo, no me gustó demasiado.",
+      "tts": "Le musée, je ne l'ai pas trop aimé.",
+      "molde": "J-AI-FAIT",
+      "encaixe": "je ne l'ai pas trop aimé"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i06-r03",
+      "es": "Ah, vous n'êtes pas le premier à dire ça !",
+      "pt": "¡Ah, no eres el primero en decir eso!",
+      "tts": "Ah, vous n'êtes pas le premier à dire ça !"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i06-n07",
+      "pt": "Termina en el mañana. Mueve la historia hacia adelante y convierte un informe en una conversación con una pregunta dentro."
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i06-p09",
+      "promptPt": "Di adónde vas después y pregunta si lo conocen. Habla ahora.",
+      "audioKey": "fr-i06-t09",
+      "es": "Demain, on va à Bordeaux. Vous connaissez ?",
+      "pinyin": "duh-MAN, on va a bor-DOH. voo ko-neh-SAY",
+      "pt": "Mañana vamos a Burdeos. ¿Lo conoce?",
+      "tts": "Demain, on va à Bordeaux. Vous connaissez ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i06-r04",
+      "receptivo": true,
+      "acao": "Llega la recomendación. Ten algo donde apuntar.",
+      "es": "Bordeaux, oui ! Attendez, je vous note une adresse.",
+      "pt": "¡Burdeos, sí! Espere, le apunto una dirección.",
+      "tts": "Bordeaux, oui ! Attendez, je vous note une adresse."
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-i06-s01",
+      "es": "Hier, je suis allé à Lyon. J'ai mangé dans un tout petit restaurant. C'était vraiment très bon.",
+      "pinyin": "ee-YEHR zhuh swee za-LAY a lee-ON. zhay mon-ZHAY don zan too puh-TEE res-toh-RON. say-TEH vreh-MON treh BON",
+      "pt": "Repite en sombra las tres frases en el orden que una historia quiere: dónde, qué, y qué tal cuajó.",
+      "tts": "Hier, je suis allé à Lyon. J'ai mangé dans un tout petit restaurant. C'était vraiment très bon.",
+      "molde": "J-AI-FAIT"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i06-n08",
+      "bloco": "recap",
+      "pt": "I06 hecho. Je suis allé, j'ai mangé, c'était très bon, y una pregunta sobre el mañana al final."
+    }
+  ],
+  "aprofundar": {
+    "titulo": "Dos palabras delante del verbo",
+    "secoes": [
+      {
+        "titulo": "J'ai o je suis",
+        "corpo": "Casi todo funciona con j'ai más el verbo: j'ai mangé, j'ai pris, j'ai vu, j'ai adoré. Un pequeño grupo sobre ir y llegar lleva je suis en su lugar: je suis allé, je suis parti, je suis resté. Elegir el equivocado es el error más perdonado que comete un visitante aquí, y nadie deja de entender la frase por eso.",
+        "exemplos": [
+          {
+            "es": "Hier, je suis allé à Lyon.",
+            "pt": "Ayer fui a Lyon."
+          },
+          {
+            "es": "J'ai pris le train ce matin.",
+            "pt": "Tomé el tren esta mañana."
+          }
+        ]
+      },
+      {
+        "titulo": "La terminación que ya tienes",
+        "corpo": "Mangé, marché, adoré, resté: el sonido «e» al final es el pasado. Tu oído lo reconoce de cada palabra de menú que ya has leído. Di el verbo, aterriza en «e», y la frase está en pasado."
+      },
+      {
+        "titulo": "La e muda",
+        "corpo": "Una mujer dice je suis allée, y suena exactamente como je suis allé. La e de más es cosa de ortografía, no de habla, lo que significa que el único sitio donde esto puede salir mal es una postal."
+      },
+      {
+        "titulo": "C'était, entera",
+        "corpo": "C'était es fue/estaba, y tratarla como una palabrita en vez de un tiempo verbal te ahorra un capítulo entero de gramática. C'était très bon, c'était magnifique, c'était trop court. Se pega a cualquier cosa y es la respuesta natural a c'était comment."
+      },
+      {
+        "titulo": "Una cosa que no cuajó",
+        "corpo": "Je n'ai pas trop aimé es suave —no me entusiasmó, más que una queja— y es lo que hace que el resto del relato suene a algo que viviste en vez de a algo que montaste. Un detalle mecánico: nombra primero la cosa y el francés mantiene un pequeño l' en la frase para guardarle el sitio —le musée, je ne l'ai pas trop aimé— donde el español lo omite. El negativo suave también tiende a producir las mejores respuestas, porque le da a la otra persona un sitio donde discrepar contigo."
+      },
+      {
+        "titulo": "Termina en el mañana",
+        "corpo": "Demain, on va à… más vous connaissez? cuesta seis palabras y cede el turno. Ese suele ser el momento en que sale la libreta y consigues la dirección que nadie pone online."
+      }
+    ]
+  },
+  "slot": "I06",
+  "permissao": "Tienes permiso para confundir j'ai y je suis. La versión de esta parte en la que esperas a que la regla esté sólida es la versión en la que nunca le cuentas a nadie sobre tu día, y ese cambio es malo a cualquier nivel de precisión.",
+  "permissaoAudioKey": "fr-i06-n02",
+  "espelho": "Cualquiera que haya respondido a un amable «qué tal tu día» con un plano «bien», porque montar la respuesta de verdad parecía más trabajo que lo que valía, conoce exactamente el reflejo al que apunta esta parte. No es un problema de gramática. Es el coste de construir una frase siendo más alto que la recompensa, justo hasta que deja de serlo.",
+  "fichasCulturais": [
+    {
+      "sinal": "Dices algo sobre tu día y la respuesta es ah bon?, con las cejas arriba.",
+      "suaLeitura": "Dudan de mí, o piensan que lo que dije fue raro.",
+      "oQueEAli": "Ah bon es el continuador estándar: registra lo que dijiste y pide el siguiente detalle. Llega tanto tras buenas noticias como tras malas, y quedarse ahí deja la conversación a medio construir.",
+      "oQueVoceFaz": "Responde con un detalle concreto: el plato, la calle, la hora, el precio. Luego pon una pregunta al final.",
+      "oQueMelhora": "Consigues la segunda mitad del intercambio, que es donde vive la recomendación, en vez de un silencio cortés que lees como desaprobación.",
+      "ondeNaoVale": "No cuando se dice en tono plano mientras la persona vuelve a lo suyo: ahí está cerrando el tema, y lo correcto es dejar que se cierre.",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-i06-n04"
+      ]
+    },
+    {
+      "sinal": "Describes tu día como enteramente maravilloso y la conversación se queda en silencio.",
+      "suaLeitura": "El entusiasmo era el registro equivocado y me pasé.",
+      "oQueEAli": "Un relato sin ningún punto bajo no le da al que escucha nada que responder. Nombrar una cosa que no te dijo nada abre una puerta —acuerdo, contradicción, una sugerencia mejor— y las tres mantienen vivo el intercambio.",
+      "oQueVoceFaz": "Mantén el elogio, y luego añade un negativo suave: je n'ai pas trop aimé. Dilo con ligereza y pasa directo al mañana.",
+      "oQueMelhora": "La otra persona empieza a hablar de su propia ciudad con detalle en vez de por cortesía, que es toda la razón de estar ahí.",
+      "ondeNaoVale": "No sobre algo que hizo o eligió la persona que tienes delante: el cocinero, el anfitrión, el tendero que te lo recomendó. Ahí el punto bajo se queda en tu cabeza y el elogio se queda en voz alta.",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-i06-n06"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "q-a01",
+  "nivel": "avancado",
+  "titulo": "Quiz — Cuando no va contigo",
+  "subtitulo": "Cinco preguntas sobre lo que desaparece y lo que queda",
+  "introAudioKey": "fr-a01-q-i",
+  "introPt": "Dos personas cierran un plan a toda velocidad, y un viajero capta la forma de todo ello.",
+  "cenario": "Un mostrador con cola, y dos amigos decidiendo qué pasa a continuación.",
+  "dialogo": [
+    {
+      "audioKey": "fr-a01-q01",
+      "voz": "target_fr_f",
+      "es": "Bah chais pas, moi. T'as vu l'heure ?",
+      "pt": "Pues no sé, yo. ¿Has visto la hora?",
+      "tts": "Bah chais pas, moi. T'as vu l'heure ?"
+    },
+    {
+      "audioKey": "fr-a01-q02",
+      "voz": "target_fr_m",
+      "es": "Faut y aller, là. Y a plus rien après huit heures.",
+      "pt": "Hay que irse ya. No queda nada después de las ocho.",
+      "tts": "Faut y aller, là. Y a plus rien après huit heures."
+    },
+    {
+      "audioKey": "fr-a01-q03",
+      "voz": "target_fr_f",
+      "es": "Du coup on y va, voilà, c'est réglé.",
+      "pt": "Así que nos vamos, ya está, resuelto.",
+      "tts": "Du coup on y va, voilà, c'est réglé."
+    },
+    {
+      "audioKey": "fr-a01-q04",
+      "voz": "target_fr_m",
+      "es": "Pardon, je n'ai pas compris. Plus lentement, s'il vous plaît ?",
+      "pt": "Perdón, no he entendido. ¿Más despacio, por favor?",
+      "tts": "Pardon, je n'ai pas compris. Plus lentement, s'il vous plaît ?"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "Oyes chais pas. ¿Qué se ha dicho?",
+      "opcoes": [
+        "C'est pas grave",
+        "Je ne sais pas",
+        "Chez vous",
+        "Je cherche"
+      ],
+      "correta": 1,
+      "explica": "Je ne sais pas pierde el ne, y luego pierde el je. Tres tamaños de una misma frase, todos corrientes."
+    },
+    {
+      "pergunta": "Alguien dice faut y aller. ¿Qué acaba de pasar?",
+      "opcoes": [
+        "Se ha hecho una pregunta",
+        "Se ha pedido disculpas",
+        "Una decisión de marcharse, ya",
+        "Se ha dado un precio"
+      ],
+      "correta": 2,
+      "explica": "Il faut pierde su il al hablar. Si va dirigido a tu mesa, levántate."
+    },
+    {
+      "pergunta": "¿Qué función cumple du coup en una frase?",
+      "opcoes": [
+        "Pide disculpas",
+        "Introduce la consecuencia, normalmente la decisión",
+        "Pide que se repita",
+        "Significa de repente y nada más"
+      ],
+      "correta": 1,
+      "explica": "Afina el oído: la parte útil de la frase suele venir justo después."
+    },
+    {
+      "pergunta": "Voilà cae al final del intercambio. ¿Qué te dice?",
+      "opcoes": [
+        "Algo está a punto de explicarse",
+        "Alguien no estaba de acuerdo",
+        "Eso está zanjado — lo demás es cortesía",
+        "Viene una pregunta"
+      ],
+      "correta": 2,
+      "explica": "Voilà marca el final de la parte que necesitabas."
+    },
+    {
+      "pergunta": "¿Deberías empezar a decir chais pas y t'as tú mismo?",
+      "opcoes": [
+        "Sí, demuestra que hablas con fluidez",
+        "No — reconócelo, produce la forma completa",
+        "Solo con gente de tu edad",
+        "Solo en el sur"
+      ],
+      "correta": 1,
+      "explica": "Este módulo es receptivo a propósito. En boca de un visitante suena a imitación del francés más que a francés."
+    }
+  ]
+}

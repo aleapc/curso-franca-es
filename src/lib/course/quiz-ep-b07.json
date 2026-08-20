@@ -1,0 +1,96 @@
+{
+  "id": "q-b07",
+  "nivel": "basico",
+  "titulo": "Quiz — Je peux, y luego lo que necesites hacer",
+  "subtitulo": "Una apertura desde la terminal hasta la almohada",
+  "introAudioKey": "fr-b07-q-i",
+  "introPt": "Un viajero cruza cuatro mostradores entre el avión y la cama con una sola apertura.",
+  "cenario": "Sala de llegadas, luego el taxi, luego la recepción del hotel.",
+  "dialogo": [
+    {
+      "audioKey": "fr-b07-q01",
+      "voz": "target_fr_f",
+      "es": "Je peux payer par carte ?",
+      "pt": "¿Puedo pagar con tarjeta?",
+      "tts": "Je peux payer par carte ?"
+    },
+    {
+      "audioKey": "fr-b07-q02",
+      "voz": "target_fr_m",
+      "es": "La carte, c'est à partir de dix euros. C'est affiché là.",
+      "pt": "Con tarjeta, a partir de diez euros. Está indicado ahí.",
+      "tts": "La carte, c'est à partir de dix euros. C'est affiché là."
+    },
+    {
+      "audioKey": "fr-b07-q03",
+      "voz": "target_fr_f",
+      "es": "Je peux avoir un reçu ?",
+      "pt": "¿Puedo tener un recibo?",
+      "tts": "Je peux avoir un reçu ?"
+    },
+    {
+      "audioKey": "fr-b07-q04",
+      "voz": "target_fr_m",
+      "es": "Bien sûr. C'est le forfait, le même prix pour toute la zone.",
+      "pt": "Claro. Es la tarifa plana, el mismo precio para toda la zona.",
+      "tts": "Bien sûr. C'est le forfait, le même prix pour toute la zone."
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "¿Qué va después de je peux?",
+      "opcoes": [
+        "Un sustantivo por sí solo",
+        "El verbo en su forma de diccionario",
+        "Un nombre",
+        "Un número"
+      ],
+      "correta": 1,
+      "explica": "Je peux payer, je peux monter, je peux laisser — el verbo nunca cambia de forma."
+    },
+    {
+      "pergunta": "Un café en Francia rechaza tu tarjeta con la mano y señala un cartel. ¿Qué pasa?",
+      "opcoes": [
+        "Es ilegal y puedes insistir",
+        "Aceptar tarjetas es opcional allí, y se permite un mínimo indicado",
+        "Las tarjetas extranjeras están prohibidas",
+        "Solo aceptan tarjeta a la hora de comer"
+      ],
+      "correta": 1,
+      "explica": "No hay obligación legal de aceptar tarjeta, siempre que la condición se muestre por adelantado."
+    },
+    {
+      "pergunta": "¿Qué debe aceptarse siempre?",
+      "opcoes": [
+        "El efectivo en euros",
+        "Cualquier tarjeta de débito",
+        "Un cheque",
+        "Un monedero del móvil"
+      ],
+      "correta": 0,
+      "explica": "El efectivo en euros tiene curso legal; la tarjeta es decisión del negocio."
+    },
+    {
+      "pergunta": "El taxista del aeropuerto no enciende el taxímetro. ¿Por qué?",
+      "opcoes": [
+        "Está improvisando un precio",
+        "Los trayectos del aeropuerto tienen una tarifa plana fijada por orden de prefectura",
+        "El taxímetro está averiado",
+        "Quiere solo efectivo"
+      ],
+      "correta": 1,
+      "explica": "Cubre cualquier dirección dentro del perímetro, el equipaje no añade nada y el recibo es obligatorio."
+    },
+    {
+      "pergunta": "¿Cuál de estas NO usa la estructura?",
+      "opcoes": [
+        "¿Puedo cargar el móvil?",
+        "¿Puedo dejar aquí mi maleta?",
+        "¿Dónde está la salida?",
+        "¿Puedo pasar?"
+      ],
+      "correta": 2,
+      "explica": "Esa necesita où est, que es la siguiente parte."
+    }
+  ]
+}

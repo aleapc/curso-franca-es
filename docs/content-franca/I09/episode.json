@@ -1,0 +1,322 @@
+{
+  "id": "i09",
+  "nivel": "intermediario",
+  "numero": 27,
+  "parte": "I09",
+  "titulo": "Domingo, y las doce zonas donde las persianas siguen subidas",
+  "subtitulo": "El descanso es la norma legal por defecto y las excepciones están escritas — el mercado por la mañana, la zona abierta por la tarde, y la pregunta que convierte a un desconocido en guía",
+  "cena": "Es domingo, media calle tiene las persianas bajadas, y el día parece un agujero en mitad del viaje.",
+  "moldura": "ganha",
+  "frasePiso": "El domingo no es un día muerto, sino uno con otra forma. Mercado por la mañana, una zona abierta por la tarde, y el plan de un local para el resto.",
+  "decisao": "trocar a lista de museus por um domingo local — mercado de manhã e a zona que abre à tarde — em vez de descobrir a cidade fechada às onze",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-domingo-zti",
+      "afirmacao": "El descanso dominical es la norma en Francia. La loi 2015-990 («loi Macron») creó las Zones Touristiques Internationales, donde las tiendas pueden abrir el domingo y el personal puede trabajar hasta medianoche, sujeto a un convenio colectivo. París tiene 12 ZTI — entre ellas Champs-Élysées Montaigne, Haussmann, Marais, Les Halles, Maillot-Ternes y Montmartre — delimitadas por el décret del 23/09/2015 y los arrêtés del 25/09/2015. Consecuencia práctica: un domingo la misma ciudad está cerrada en una calle y completamente abierta a una parada de métro, y el límite es legal más que una cuestión de quién tiene ganas de vender.",
+      "fonte": "loi 2015-990 («Macron») — Zones Touristiques Internationales; décret de 23/09/2015 e arrêtés de 25/09/2015; em Paris, 12 ZTI (Champs-Élysées Montaigne, Haussmann, Marais, Les Halles, Maillot-Ternes, Montmartre e outras)",
+      "ano": 2015,
+      "revisarAte": "2028-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-i09-n03"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i09-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "El domingo aquí tiene una regla detrás. Conocer la regla convierte el día más vacío en el mejor de la semana."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i09-n02",
+      "bloco": "corpo",
+      "pt": "Empieza en el mercado por la mañana. Es donde está el barrio, y cuatro conversaciones breves no cuestan nada allí."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i09-r01",
+      "receptivo": true,
+      "acao": "Ve antes del mediodía. Los puestos se recogen pronto y la calle queda en silencio después.",
+      "es": "Le marché, c'est le dimanche matin. Ça ferme vers treize heures.",
+      "pt": "El mercado es el domingo por la mañana. Recoge hacia la una.",
+      "tts": "Le marché, c'est le dimanche matin. Ça ferme vers treize heures."
+    },
+    {
+      "consulta": [
+        "compras/mercado",
+        "cidade/evento"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "JE-CHERCHE",
+      "encaixe": "un marché",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i09-p01",
+      "promptPt": "Quieres lo único que seguro está pasando esta mañana. Abre la búsqueda. Habla ahora.",
+      "audioKey": "fr-i09-t01",
+      "es": "Je cherche un marché.",
+      "pinyin": "zhuh shairsh uhn mar-SHAY",
+      "pt": "Busco un mercado.",
+      "tts": "Je cherche un marché."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i09-n03",
+      "pt": "El cierre dominical es la norma legal por defecto. París escribió doce zonas turísticas donde las tiendas pueden abrir — el Marais es una de ellas."
+    },
+    {
+      "consulta": [
+        "cidade/evento",
+        "compras/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i09-p02",
+      "promptPt": "Antes de caminar veinte minutos hasta una calle, comprueba lo único que decide el día. Habla ahora.",
+      "audioKey": "fr-i09-t02",
+      "es": "C'est ouvert le dimanche ?",
+      "pinyin": "say too-VAIR luh dee-MAHNSH",
+      "pt": "¿Está abierto el domingo?",
+      "tts": "C'est ouvert le dimanche ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i09-r02",
+      "receptivo": true,
+      "acao": "Toma el nombre de la zona como una dirección. Ahí ocurre la tarde.",
+      "es": "Ici non. Mais dans le Marais, oui — c'est une zone touristique.",
+      "pt": "Aquí no. Pero en el Marais, sí — es una zona turística.",
+      "tts": "Ici non. Mais dans le Marais, oui — c'est une zone touristique."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i09-n04",
+      "bloco": "capsula",
+      "pt": "Dos marcos que ya dominas vuelven hoy: je cherche para lo que quizá no exista, je peux para lo que quizá no esté permitido."
+    },
+    {
+      "consulta": [
+        "compras/mercado",
+        "conversa/perguntar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i09-p03",
+      "promptPt": "Estás en un puesto sin idea de qué es de temporada. Deja la elección a quien vende. Habla ahora.",
+      "audioKey": "fr-i09-t03",
+      "es": "Vous me conseillez quoi ?",
+      "pinyin": "voo muh kohn-say-yay KWA",
+      "pt": "¿Qué me recomienda?",
+      "tts": "Vous me conseillez quoi ?"
+    },
+    {
+      "consulta": [
+        "compras/mercado",
+        "reparo/permissao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "JE-PEUX",
+      "encaixe": "goûter",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i09-p04",
+      "promptPt": "Hay un queso que nunca has visto. Pregunta antes de comprometerte con medio kilo. Habla ahora.",
+      "audioKey": "fr-i09-t04",
+      "es": "Je peux goûter ?",
+      "pinyin": "zhuh puh goo-TAY",
+      "pt": "¿Puedo probarlo?",
+      "tts": "Je peux goûter ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-i09-r03",
+      "receptivo": true,
+      "acao": "No te sirvas tú del producto. Señala, y deja que ellos lo cojan.",
+      "es": "Allez-y, goûtez. Je vous coupe un morceau.",
+      "pt": "Adelante, pruébelo. Le corto un trozo.",
+      "tts": "Allez-y, goûtez. Je vous coupe un morceau."
+    },
+    {
+      "consulta": [
+        "compras/mercado"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i09-p05",
+      "promptPt": "Pide una cantidad pequeña — comida para dos personas, hoy, no para una semana. Habla ahora.",
+      "audioKey": "fr-i09-t05",
+      "es": "Deux cents grammes, s'il vous plaît.",
+      "pinyin": "duh sahn GRAM, seel voo PLEH",
+      "pt": "Doscientos gramos, por favor.",
+      "tts": "Deux cents grammes, s'il vous plaît."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i09-n05",
+      "pt": "Luego la tarde. Pregunta a un local qué hace con el día — la respuesta es un plan, y le gana a la guía."
+    },
+    {
+      "consulta": [
+        "conversa/planos",
+        "conversa/perguntar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i09-p06",
+      "promptPt": "Pregunta a quien está tras el mostrador por su propio domingo, no por atracciones. Habla ahora.",
+      "audioKey": "fr-i09-t06",
+      "es": "Vous faites quoi le dimanche ?",
+      "pinyin": "voo fet kwa luh dee-MAHNSH",
+      "pt": "¿Qué hace usted los domingos?",
+      "tts": "Vous faites quoi le dimanche ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i09-r04",
+      "receptivo": true,
+      "acao": "Esa es tu tarde. Un parque, un almuerzo largo, y nada reservado.",
+      "es": "Nous, on déjeune, et après on se promène au parc. C'est tout.",
+      "pt": "Nosotros almorzamos, y luego paseamos por el parque. Nada más.",
+      "tts": "Nous, on déjeune, et après on se promène au parc. C'est tout."
+    },
+    {
+      "consulta": [
+        "cidade/passeio",
+        "chegar/lugar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "JE-CHERCHE",
+      "encaixe": "un endroit tranquille",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i09-p07",
+      "promptPt": "Tienes pan, queso y tres horas libres. Abre la búsqueda de un sitio donde ponerlos. Habla ahora.",
+      "audioKey": "fr-i09-t07",
+      "es": "Je cherche un endroit tranquille.",
+      "pinyin": "zhuh shairsh uhn ahn-drwa trahn-KEEL",
+      "pt": "Busco un sitio tranquilo.",
+      "tts": "Je cherche un endroit tranquille."
+    },
+    {
+      "consulta": [
+        "cidade/passeio",
+        "reparo/permissao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "JE-PEUX",
+      "encaixe": "m'asseoir ici",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i09-p08",
+      "promptPt": "Hay una silla libre en una terraza y el abrigo de alguien en la de al lado. Pregunta. Habla ahora.",
+      "audioKey": "fr-i09-t08",
+      "es": "Je peux m'asseoir ici ?",
+      "pinyin": "zhuh puh ma-swahr ee-SEE",
+      "pt": "¿Puedo sentarme aquí?",
+      "tts": "Je peux m'asseoir ici ?"
+    },
+    {
+      "consulta": [
+        "cidade/evento",
+        "compras/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i09-p09",
+      "promptPt": "La tienda abre hoy pero no sabes hasta qué hora. Pregunta antes de planear alrededor. Habla ahora.",
+      "audioKey": "fr-i09-t09",
+      "es": "Ça ferme à quelle heure, le dimanche ?",
+      "pinyin": "sa fairm a kel UR, luh dee-MAHNSH",
+      "pt": "¿A qué hora cierra el domingo?",
+      "tts": "Ça ferme à quelle heure, le dimanche ?",
+      "molde": "A-QUELLE-HEURE",
+      "encaixe": "ça ferme le dimanche"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-i09-s01",
+      "es": "Je cherche un marché. C'est ouvert le dimanche ? Je peux goûter ? Vous faites quoi le dimanche ?",
+      "pinyin": "zhuh shairsh uhn mar-SHAY. say too-VAIR luh dee-MAHNSH. zhuh puh goo-TAY. voo fet kwa luh dee-MAHNSH",
+      "pt": "Repite el día entero: encuéntralo, comprueba que abre, pruébalo, pregunta qué hacen.",
+      "tts": "Je cherche un marché. C'est ouvert le dimanche ? Je peux goûter ? Vous faites quoi le dimanche ?",
+      "molde": "JE-CHERCHE"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i09-n06",
+      "bloco": "recap",
+      "pt": "I09 hecho. Mercado antes de la una, la zona abierta después, y una pregunta que convierte a un desconocido en guía."
+    }
+  ],
+  "aprofundar": {
+    "titulo": "El día con una ley detrás",
+    "secoes": [
+      {
+        "titulo": "El descanso es la norma, abrir es la excepción",
+        "corpo": "El descanso dominical es la regla, y las aperturas que ves son excepciones escritas a ella. La loi 2015-990 creó las Zones Touristiques Internationales, donde las tiendas pueden abrir el domingo y trabajar hasta medianoche bajo un convenio colectivo; París tiene doce, fijadas por un décret del 23 de septiembre de 2015 y arrêtés del 25 de septiembre de 2015.",
+        "exemplos": [
+          {
+            "es": "C'est ouvert le dimanche ?",
+            "pt": "¿Está abierto el domingo?"
+          },
+          {
+            "es": "Ça ferme à quelle heure, le dimanche ?",
+            "pt": "¿A qué hora cierra el domingo?"
+          }
+        ]
+      },
+      {
+        "titulo": "Los dos marcos que hacen el trabajo",
+        "corpo": "Je cherche abre una búsqueda de algo que quizá no exista aquí — un mercado, un sitio tranquilo, un lugar que aún sirva. Je peux pregunta si algo está permitido en este lugar concreto. Entre los dos cubren casi toda una tarde sin planear, sin una sola forma de frase nueva."
+      },
+      {
+        "titulo": "En el puesto, señala en vez de coger",
+        "corpo": "Quien vende elige la fruta y corta el trozo. Je peux goûter es una petición normal, y vous me conseillez quoi les da una tarea que disfrutan — ambas te consiguen una cesta mejor que el autoservicio silencioso."
+      },
+      {
+        "titulo": "La mejor pregunta del módulo",
+        "corpo": "Vous faites quoi le dimanche ? pregunta por su día en vez de por tu itinerario, y por eso produce una respuesta con un lugar y una hora dentro. También funciona un martes: cambia el día y mantén la forma."
+      }
+    ]
+  },
+  "slot": "I09",
+  "permissao": "Tienes permiso para pasar un día entero sin una atracción dentro. Un mercado antes del mediodía, un almuerzo largo y un parque es para lo que está hecho el día aquí, y es la parte del viaje que aún podrás describir dentro de cinco años.",
+  "espelho": "Cualquiera que haya vuelto a casa recordando una tarde corriente mejor que el monumento por el que hizo noventa minutos de cola ya conoce el argumento. El itinerario es más fácil de justificarse a uno mismo; solo que rara vez es lo que queda.",
+  "permissaoAudioKey": "fr-i09-n01",
+  "fichasCulturais": [
+    {
+      "sinal": "El domingo tu calle tiene todas las persianas bajadas, y luego un barrio a diez minutos está completamente abierto, tiendas y todo.",
+      "suaLeitura": "Cerrar aquí es arbitrario, y ese otro distrito es solo la zona turística sacando tajada.",
+      "oQueEAli": "El descanso dominical es la norma legal por defecto y la apertura dominical es una excepción escrita a ella. La loi 2015-990 creó las Zones Touristiques Internationales; París tiene doce, fijadas por décret y arrêtés en septiembre de 2015. La línea que cruzaste es un límite legal, no una diferencia en las ganas de vender.",
+      "oQueVoceFaz": "Pon el sábado cualquier cosa que necesite una tienda. Da la mañana del domingo a un mercado y la tarde a una de las zonas, y comprueba con «c'est ouvert le dimanche ?» antes de caminar a ningún sitio.",
+      "oQueMelhora": "Dejas de perder un día por viaje ante puertas cerradas, y las aperturas empiezan a parecer un mapa en vez de suerte.",
+      "ondeNaoVale": "No como afirmación de que todo lo demás esté cerrado — mercados, panaderías y lugares que sirven comida mantienen su propio patrón dominical. Y la lista de doce zonas es específicamente de París: otras ciudades tienen sus propias excepciones, así que pregunta en el sitio en vez de llevar el mapa de París contigo.",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-i09-n03"
+      ]
+    }
+  ]
+}

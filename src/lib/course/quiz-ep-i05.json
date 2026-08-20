@@ -1,0 +1,96 @@
+{
+  "id": "q-i05",
+  "nivel": "intermediario",
+  "titulo": "Quiz — Las cinco preguntas que te harán toda la semana",
+  "subtitulo": "Cinco respuestas, y una negativa",
+  "introAudioKey": "fr-i05-q-i",
+  "introPt": "Un viajero supera el repertorio estándar en un mostrador, y se mantiene al margen de la única discusión que nunca fue suya.",
+  "cenario": "Un mostrador a media mañana, a un taburete de distancia de un habitual.",
+  "dialogo": [
+    {
+      "audioKey": "fr-i05-q01",
+      "voz": "target_fr_m",
+      "es": "Vous êtes d'où, vous ? Et vous restez combien de temps ?",
+      "pt": "¿Y usted de dónde es? ¿Y cuánto tiempo se queda?",
+      "tts": "Vous êtes d'où, vous ? Et vous restez combien de temps ?"
+    },
+    {
+      "audioKey": "fr-i05-q02",
+      "voz": "target_fr_f",
+      "es": "Je viens de Londres. Je reste cinq jours, c'est la première fois que je viens ici.",
+      "pt": "Vengo de Londres. Me quedo cinco días, es la primera vez que vengo aquí.",
+      "tts": "Je viens de Londres. Je reste cinq jours, c'est la première fois que je viens ici."
+    },
+    {
+      "audioKey": "fr-i05-q03",
+      "voz": "target_fr_m",
+      "es": "Paris, franchement, c'est plus la France. La vraie France, c'est ici.",
+      "pt": "París, francamente, ya no es Francia. La verdadera Francia está aquí.",
+      "tts": "Paris, franchement, c'est plus la France. La vraie France, c'est ici."
+    },
+    {
+      "audioKey": "fr-i05-q04",
+      "voz": "target_fr_f",
+      "es": "Je découvre encore, je ne peux pas comparer. Et vous, vous êtes d'ici ?",
+      "pt": "Todavía lo estoy descubriendo, no puedo comparar. ¿Y usted, es de aquí?",
+      "tts": "Je découvre encore, je ne peux pas comparer. Et vous, vous êtes d'ici ?"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "¿Por qué responder con una ciudad en vez de con un país?",
+      "opcoes": [
+        "Es más exacto",
+        "Una ciudad le da al otro algo con lo que responder",
+        "Los países se consideran groseros",
+        "Acorta la frase"
+      ],
+      "correta": 1,
+      "explica": "Un dato cierra el turno; una ciudad tiende un gancho. Luego añade et vous."
+    },
+    {
+      "pergunta": "Decir c'est la première fois que je viens ici suele conseguirte:",
+      "opcoes": [
+        "Precios más altos",
+        "Instrucciones — dónde comer, qué calle, qué día hay mercado",
+        "Un cambio al inglés",
+        "Una conversación más corta"
+      ],
+      "correta": 1,
+      "explica": "Fingir una familiaridad que no tienes cierra esa puerta, y no hay nada que merezca la pena al otro lado."
+    },
+    {
+      "pergunta": "Vous vous débrouillez très bien, dicho tras cuatro palabras de francés, es:",
+      "opcoes": [
+        "Una evaluación de tu nivel",
+        "El ánimo estándar para que sigas",
+        "Una burla suave",
+        "Una indirecta para pasar al inglés"
+      ],
+      "correta": 1,
+      "explica": "La única respuesta equivocada es cambiar al inglés justo en ese momento."
+    },
+    {
+      "pergunta": "Alguien insiste en que la capital no es el país de verdad. Tu jugada:",
+      "opcoes": [
+        "Asentir con calidez, es más amable",
+        "Decir que aún lo estás descubriendo y no puedes comparar, y luego preguntar por el suyo",
+        "Argumentar lo contrario",
+        "Cambiar de tema al tiempo"
+      ],
+      "correta": 1,
+      "explica": "Es su discusión y es muy anterior a tu viaje. El acuerdo de un visitante no tiene peso y viaja mal."
+    },
+    {
+      "pergunta": "¿Qué respalda en realidad el índice EF sobre el inglés en Francia?",
+      "opcoes": [
+        "Que un porcentaje concreto de gente habla inglés",
+        "Que Francia ha mejorado y se sitúa en la media europea baja",
+        "Que se habla inglés en cada mostrador",
+        "Nada en absoluto"
+      ],
+      "correta": 1,
+      "explica": "La muestra es autoseleccionada y en línea, por admisión del propio EF, así que no puede leerse como proporción de la población."
+    }
+  ]
+}

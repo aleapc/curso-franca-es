@@ -1,0 +1,96 @@
+{
+  "id": "q-i04",
+  "nivel": "intermediario",
+  "titulo": "Quiz — Una ronda, y el precio estaba en la puerta",
+  "subtitulo": "Barra, sala, terraza — y quién paga",
+  "introAudioKey": "fr-i04-q-i",
+  "introPt": "Dos viajeros superan un aperitivo, una ronda y una despedida sin una sola sorpresa.",
+  "cenario": "Un café de barrio a las ocho y media, la terraza llena.",
+  "dialogo": [
+    {
+      "audioKey": "fr-i04-q01",
+      "voz": "target_fr_m",
+      "es": "Vous prenez quelque chose ? Au comptoir c'est moins cher, si vous voulez.",
+      "pt": "¿Van a tomar algo? En la barra es más barato, si quieren.",
+      "tts": "Vous prenez quelque chose ? Au comptoir c'est moins cher, si vous voulez."
+    },
+    {
+      "audioKey": "fr-i04-q02",
+      "voz": "target_fr_f",
+      "es": "Deux demis, s'il vous plaît. Vous prenez la carte ?",
+      "pt": "Dos cañas, por favor. ¿Aceptan tarjeta?",
+      "tts": "Deux demis, s'il vous plaît. Vous prenez la carte ?"
+    },
+    {
+      "audioKey": "fr-i04-q03",
+      "voz": "target_fr_m",
+      "es": "La carte, c'est à partir de dix euros. C'est affiché à l'entrée.",
+      "pt": "Tarjeta a partir de diez euros. Está puesto en la entrada.",
+      "tts": "La carte, c'est à partir de dix euros. C'est affiché à l'entrée."
+    },
+    {
+      "audioKey": "fr-i04-q04",
+      "voz": "target_fr_f",
+      "es": "Très bien, c'est ma tournée. Ça fait combien en tout ?",
+      "pt": "Muy bien, esta ronda la pago yo. ¿Cuánto es en total?",
+      "tts": "Très bien, c'est ma tournée. Ça fait combien en tout ?"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "¿Dónde puedes ver el precio de una cerveza antes de entrar?",
+      "opcoes": [
+        "En ningún sitio, preguntas dentro",
+        "En un cartel fuera, exhibido por ley",
+        "En el recibo, después",
+        "Solo en la carta de bebidas de la mesa"
+      ],
+      "correta": 1,
+      "explica": "Una lista fija de bebidas y el plat du jour deben exhibirse fuera, en caracteres de al menos 1,5 cm de alto."
+    },
+    {
+      "pergunta": "Barra, sala y terraza tienen precios distintos para el mismo vaso. Eso es:",
+      "opcoes": [
+        "Ilegal",
+        "Legal, siempre que las tarifas estén exhibidas",
+        "Solo se hace en la capital",
+        "Un recargo añadido al final"
+      ],
+      "correta": 1,
+      "explica": "Los precios son libres; la obligación es exhibirlos. Estás eligiendo asiento tanto como bebida."
+    },
+    {
+      "pergunta": "Un café dice tarjeta solo a partir de diez euros. ¿Está permitido?",
+      "opcoes": [
+        "No, las tarjetas deben aceptarse siempre",
+        "Sí, si el mínimo se indica de antemano y a la vista",
+        "Solo para tarjetas extranjeras",
+        "Solo después de las 20h"
+      ],
+      "correta": 1,
+      "explica": "No hay ninguna obligación de aceptar tarjeta. Un mínimo está bien si está puesto donde puedas verlo — y el efectivo en euros nunca puede rechazarse."
+    },
+    {
+      "pergunta": "Donde se cobra el servicio, el precio exhibido:",
+      "opcoes": [
+        "Lo excluye, y se añade al final",
+        "Lo incluye, y debe indicar «service compris» con la tasa",
+        "Varía según el camarero",
+        "Lo incluye solo en la barra"
+      ],
+      "correta": 1,
+      "explica": "El número del cartel es el número que pagas. Cualquier cosa por encima es voluntaria, y no hay porcentaje estándar que lo rija."
+    },
+    {
+      "pergunta": "¿Cuándo conviene decir c'est ma tournée?",
+      "opcoes": [
+        "Después de que lleguen los vasos",
+        "Pronto, antes de que se pase la comanda",
+        "Solo en la última ronda",
+        "Nunca — es presuntuoso"
+      ],
+      "correta": 1,
+      "explica": "Dicho pronto es un gesto y zanja la velada. Dicho tarde se convierte en aritmética en la acera."
+    }
+  ]
+}

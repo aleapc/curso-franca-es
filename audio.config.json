@@ -1,0 +1,33 @@
+{
+  "_comentario": "EN → França. Voz-guia INGLESA (Matilda educadora + Eric para o que protege), fala-alvo FRANCESA (Céline + Enrick). REGRA INV-5 / G14: a voz-guia NUNCA fala francês e a voz nativa NUNCA fala inglês. Guia em flash_v2_5 (narração longa, metade do custo); alvo em multilingual_v2, que segura melhor o francês. Mesmas vozes-guia do EN → Itália, de propósito: quem compra dois cursos da linha EN reconhece a mesma dupla.",
+  "_casting": "Céline e Enrick são as DUAS ÚNICAS vozes com language:fr na conta (64 vozes, varredura de 2026-08-05). Não há terceira para o ear module de A01, então A01 não alega sotaque regional nenhum — mesma decisão tomada no curso italiano, onde Valeria e Fabio também eram as únicas duas. Se aparecer verba para casting, a prioridade aqui é uma voz do SUL (Marselha/Toulouse), porque a vogal nasal e o /ɛ/~/e/ final mudam audivelmente e é o corredor de férias mais denso.",
+  "_fonetica_do_par": "Inglês → francês, e é o par com MAIS armadilha ortográfica do catálogo, porque metade do vocabulário é cognata e o comprador acha que já sabe ler. CHEGA COM: o /ʃ/ de ⟨ch⟩, o /z/ intervocálico, e um estoque enorme de cognatos escritos iguais. PRECISA DESAPRENDER: (1) a consoante final muda — 'petit', 'beaucoup', 'trop', 'vous' perdem a última letra, e o anglófono a pronuncia; (2) o ⟨h⟩ é sempre mudo, inclusive em 'hôtel' e 'heure'; (3) ⟨ou⟩ é /u/ e ⟨u⟩ é /y/, dois fonemas que o inglês colapsa num só e que separam 'dessous' de 'dessus'; (4) a nasal — 'un', 'vin', 'pain', 'bon' não terminam em consoante nasal, a vogal INTEIRA é nasal; (5) o acento fica sempre no FIM do grupo rítmico, nunca na palavra, o que desmonta o hábito inglês de acentuar por palavra; (6) ⟨r⟩ uvular. CARO E NOVO: o /y/ de 'tu' e 'rue', e a LIAISON, que muda a fronteira de palavra e é a razão de o aluno não achar o começo das palavras na fala corrida.",
+  "guideModel": "eleven_flash_v2_5",
+  "targetModel": "eleven_multilingual_v2",
+  "roles": {
+    "guide_en_us_f": {
+      "voiceId": "CS57JcynCr2pHsVpogbW",
+      "languageCode": "es",
+      "name": "Paloma"
+    },
+    "guide_en_us_m": {
+      "voiceId": "4R9s73RrCF4wi6GqmzrT",
+      "languageCode": "es",
+      "name": "Gabriel"
+    },
+    "target_fr_f": {
+      "voiceId": "3fxbs2pB9bs8S6Z1N38A",
+      "languageCode": "fr",
+      "name": "Céline"
+    },
+    "target_fr_m": {
+      "voiceId": "0xHziZolI8Tp6rLtUqh2",
+      "languageCode": "fr",
+      "name": "Enrick"
+    }
+  },
+  "_g14": {
+    "guiaLingua": "es",
+    "alvoLingua": "fr"
+  }
+}

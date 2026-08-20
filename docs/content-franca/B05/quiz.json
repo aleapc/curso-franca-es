@@ -1,0 +1,96 @@
+{
+  "id": "q-b05",
+  "nivel": "basico",
+  "titulo": "Quiz — Motif, durée, adresse",
+  "subtitulo": "Tres respuestas y el papel hace el resto",
+  "introAudioKey": "fr-b05-q-i",
+  "introPt": "Un viajero pasa el control de frontera con cuatro respuestas breves.",
+  "cenario": "El mostrador de la frontera, la primera hora tras aterrizar.",
+  "dialogo": [
+    {
+      "audioKey": "fr-b05-q01",
+      "voz": "target_fr_m",
+      "es": "Bonjour. C'est pour quel motif ?",
+      "pt": "Buenos días. ¿Cuál es el motivo?",
+      "tts": "Bonjour. C'est pour quel motif ?"
+    },
+    {
+      "audioKey": "fr-b05-q02",
+      "voz": "target_fr_f",
+      "es": "Bonjour. Je suis en vacances.",
+      "pt": "Hola. Estoy de vacaciones.",
+      "tts": "Bonjour. Je suis en vacances."
+    },
+    {
+      "audioKey": "fr-b05-q03",
+      "voz": "target_fr_m",
+      "es": "Vous logez où ?",
+      "pt": "¿Dónde se aloja?",
+      "tts": "Vous logez où ?"
+    },
+    {
+      "audioKey": "fr-b05-q04",
+      "voz": "target_fr_f",
+      "es": "À Paris, dans un hôtel. Oui, la voici.",
+      "pt": "En París, en un hotel. Sí, aquí está.",
+      "tts": "À Paris, dans un hôtel. Oui, la voici."
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "«C'est pour quel motif ?» — ¿qué se está preguntando?",
+      "opcoes": [
+        "Cuánto tiempo te quedas",
+        "Por qué has venido",
+        "Dónde duermes",
+        "Si viajas solo"
+      ],
+      "correta": 1,
+      "explica": "Motif es el propósito. La duración y la dirección son preguntas aparte con respuestas aparte."
+    },
+    {
+      "pergunta": "¿Qué hace «la voici»?",
+      "opcoes": [
+        "Pide un momento",
+        "Dice que no entendiste",
+        "Entrega el documento — «aquí está»",
+        "Pregunta adónde ir después"
+      ],
+      "correta": 2,
+      "explica": "Tres sílabas y una mano abierta. Traslada el intercambio de tu memoria a tu prueba."
+    },
+    {
+      "pergunta": "El agente hace una pregunta corta. ¿Cuál es la respuesta con la mejor forma?",
+      "opcoes": [
+        "El itinerario completo, para que nada parezca oculto",
+        "Solo lo que se preguntó, y luego parar",
+        "Una explicación larga y amable",
+        "Silencio y el pasaporte"
+      ],
+      "correta": 1,
+      "explica": "El mostrador va resolviendo pares emparejados. Una respuesta que se pasa de su pregunta se lee como material a comprobar, no como cordialidad."
+    },
+    {
+      "pergunta": "No captaste lo que se dijo. ¿Qué dices?",
+      "opcoes": [
+        "Oui",
+        "Pardon, je n'ai pas compris",
+        "Bonne journée",
+        "Dix jours"
+      ],
+      "correta": 1,
+      "explica": "Dilo una vez, con claridad. Adivinar en un control de frontera cuesta más tiempo que preguntar."
+    },
+    {
+      "pergunta": "¿Por qué poner bonjour delante de la respuesta?",
+      "opcoes": [
+        "Es una regla de la gramática francesa",
+        "Hace que los agentes sean más amables",
+        "Es la apertura ritual que permite que empiece el intercambio",
+        "Demuestra que hablas francés"
+      ],
+      "correta": 2,
+      "explica": "La investigación describe bonjour como una fórmula fija cuya función es hacer aceptable la entrada en el territorio de alguien. Saltárselo no se lee tanto como grosero cuanto como no abierto — y tampoco explica cada intercambio frío."
+    }
+  ]
+}

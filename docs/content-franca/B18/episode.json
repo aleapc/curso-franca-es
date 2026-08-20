@@ -1,0 +1,339 @@
+{
+  "id": "b18",
+  "nivel": "basico",
+  "numero": 18,
+  "parte": "B18",
+  "titulo": "El último día — paga, deja la maleta y di la frase que recuerdan",
+  "subtitulo": "El checkout es papeleo. La despedida es lo que decide cómo te reciben la próxima vez que entres",
+  "cena": "Tu llave está en el mostrador, tu vuelo sale esta noche a las nueve, y hay once horas entre tú y el aeropuerto con una maleta en medio.",
+  "moldura": "ganha",
+  "frasePiso": "Paga, deja la maleta y luego dedica una frase a la persona que te ha resuelto cosas toda la semana.",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-b18-note",
+      "afirmacao": "Desde el 1 de agosto de 2023 las tiendas en Francia imprimen el tique solo si el cliente lo pide, según la ley antidespilfarro 2020-105 — pero la hostelería es una excepción: las facturas de hoteles y restaurantes se siguen imprimiendo de oficio. Una nota escrita es obligatoria para cualquier servicio de 25 € con impuestos o más, y se entrega antes del pago.",
+      "fonte": "Arrêté 83-50/A de 03/10/1983; comunicado do Ministère de l'Économie, 24/07/2023 (loi 2020-105 anti-gaspillage)",
+      "ano": 2023,
+      "revisarAte": "2027-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b18-n03"
+      ]
+    },
+    {
+      "id": "fr-b18-especes",
+      "afirmacao": "Los pagos en efectivo a un negocio están limitados a 1 000 € para quien tenga su residencia fiscal en Francia, según el artículo D112-3 del Code monétaire et financier. Quien pueda demostrar que no es residente fiscal en Francia y no actúa con fines comerciales tiene un tope de 15 000 €. El tope más alto pertenece al no residente, no al turista: un británico con residencia fiscal en Francia no lo tiene.",
+      "fonte": "Article D112-3 do Code monétaire et financier (Légifrance)",
+      "ano": 2026,
+      "revisarAte": "2028-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b18-n04"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b18-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "La última mañana tiene dos mitades: el papeleo y la frase. Solo una de las dos se recuerda."
+    },
+    {
+      "consulta": [
+        "quarto/mala",
+        "reparo/permissao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "JE-PEUX",
+      "encaixe": "laisser ma valise jusqu'à cinq heures",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b18-p01",
+      "promptPt": "La habitación se deja a las once y tu tren es a las seis. Resuelve las siete horas del medio. Habla ahora.",
+      "audioKey": "fr-b18-t01",
+      "es": "Je peux laisser ma valise jusqu'à cinq heures ?",
+      "pinyin": "zhuh PUH leh-SAY ma va-LEEZ zhews-ka sank UHR",
+      "pt": "¿Puedo dejar mi maleta hasta las cinco?",
+      "tts": "Je peux laisser ma valise jusqu'à cinq heures ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b18-r01",
+      "es": "Bien sûr. Je vous mets un numéro dessus, gardez le ticket.",
+      "pt": "Claro. Le pongo un número encima, guarde el resguardo.",
+      "tts": "Bien sûr. Je vous mets un numéro dessus, gardez le ticket."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b18-n02",
+      "bloco": "corpo",
+      "pt": "Pide el total antes de que te entreguen nada. Es el mismo molde que usaste para comprar cosas."
+    },
+    {
+      "consulta": [
+        "pagar/conta",
+        "quarto/checkout"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "COMBIEN",
+      "encaixe": "en tout",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b18-p02",
+      "promptPt": "Cuatro noches, dos desayunos y una tasa turística que nadie mencionó al llegar. Habla ahora.",
+      "audioKey": "fr-b18-t02",
+      "es": "C'est combien, en tout ?",
+      "pinyin": "seh kom-BYAN, ahn TOO",
+      "pt": "¿Cuánto es, en total?",
+      "tts": "C'est combien, en tout ?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b18-n03",
+      "pt": "Las tiendas ahora imprimen a petición. Hoteles y restaurantes siguen imprimiendo, y la nota es obligatoria a partir de veinticinco euros."
+    },
+    {
+      "consulta": [
+        "pagar/cartao",
+        "reparo/permissao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "JE-PEUX",
+      "encaixe": "payer par carte",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b18-p03",
+      "promptPt": "Hay un logo de pago en la puerta pero ningún cartel sobre importes mínimos. Pregunta antes de que sumen el total. Habla ahora.",
+      "audioKey": "fr-b18-t03",
+      "es": "Je peux payer par carte ?",
+      "pinyin": "zhuh PUH pay-YAY par KART",
+      "pt": "¿Puedo pagar con tarjeta?",
+      "tts": "Je peux payer par carte ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b18-r02",
+      "receptivo": true,
+      "es": "Par carte, oui, à partir de dix euros.",
+      "pt": "Con tarjeta, sí, a partir de diez euros.",
+      "tts": "Par carte, oui, à partir de dix euros.",
+      "acao": "Por debajo del mínimo indicado, paga en efectivo — aquí un mínimo es legal siempre que esté a la vista."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b18-n04",
+      "bloco": "capsula",
+      "pt": "El efectivo siempre funciona aquí; la tarjeta no tiene por qué aceptarse. Y el efectivo a un negocio tiene un tope legal."
+    },
+    {
+      "consulta": [
+        "pagar/conta",
+        "reparo/permissao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "JE-PEUX",
+      "encaixe": "avoir un reçu",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b18-p04",
+      "promptPt": "Tu empresa quiere papel y la máquina solo ha pitado. Pídelo antes de alejarte del mostrador. Habla ahora.",
+      "audioKey": "fr-b18-t04",
+      "es": "Je peux avoir un reçu ?",
+      "pinyin": "zhuh PUH a-VWAR un ruh-SEW",
+      "pt": "¿Puedo tener un recibo?",
+      "tts": "Je peux avoir un reçu ?"
+    },
+    {
+      "consulta": [
+        "taxi/destino",
+        "reparo/permissao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "JE-PEUX",
+      "encaixe": "appeler un taxi d'ici",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b18-p05",
+      "promptPt": "Las cinco, la maleta de nuevo en tu mano, y la app del móvil ha dejado de cargar. Habla ahora.",
+      "audioKey": "fr-b18-t05",
+      "es": "Je peux appeler un taxi d'ici ?",
+      "pinyin": "zhuh PUH a-play un tak-SEE dee-SEE",
+      "pt": "¿Puedo llamar a un taxi desde aquí?",
+      "tts": "Je peux appeler un taxi d'ici ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b18-r03",
+      "es": "Pour l'aéroport ? C'est un forfait, prix fixe.",
+      "pt": "¿Al aeropuerto? Es una tarifa cerrada, precio fijo.",
+      "tts": "Pour l'aéroport ? C'est un forfait, prix fixe."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b18-n05",
+      "pt": "Los trayectos al aeropuerto de París son una tarifa plana fijada por orden de la prefectura, sin suplemento de equipaje, y el conductor te debe un recibo."
+    },
+    {
+      "consulta": [
+        "taxi/destino",
+        "pagar/conta"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "COMBIEN",
+      "encaixe": "la course jusqu'à l'aéroport",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b18-p06",
+      "promptPt": "El maletero está abierto y la maleta aún no está dentro. Que digan el número en voz alta primero. Habla ahora.",
+      "audioKey": "fr-b18-t06",
+      "es": "C'est combien, la course jusqu'à l'aéroport ?",
+      "pinyin": "seh kom-BYAN, la KOORS zhews-ka lay-roh-POR",
+      "pt": "¿Cuánto es la carrera hasta el aeropuerto?",
+      "tts": "C'est combien, la course jusqu'à l'aéroport ?"
+    },
+    {
+      "consulta": [
+        "conversa/elogiar",
+        "conversa/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b18-p07",
+      "promptPt": "El mismo hombre que te cambió de habitación la primera noche y hoy te guardó la maleta. Di lo verdadero, no lo educado. Habla ahora.",
+      "audioKey": "fr-b18-t07",
+      "es": "Merci pour tout, c'était parfait.",
+      "pinyin": "mair-SEE poor TOO, say-teh par-FEH",
+      "pt": "Gracias por todo, ha sido perfecto.",
+      "tts": "Merci pour tout, c'était parfait."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b18-r04",
+      "es": "C'est nous qui vous remercions. Revenez quand vous voulez.",
+      "pt": "Nosotros le damos las gracias a usted. Vuelva cuando quiera.",
+      "tts": "C'est nous qui vous remercions. Revenez quand vous voulez."
+    },
+    {
+      "consulta": [
+        "conversa/despedir"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b18-p08",
+      "promptPt": "Acaba de dejarte la puerta abierta. Respóndele con un plan en vez de un cumplido. Habla ahora.",
+      "audioKey": "fr-b18-t08",
+      "es": "Je reviendrai, c'est sûr.",
+      "pinyin": "zhuh ruh-vyan-DRAY, seh SEWR",
+      "pt": "Volveré, seguro.",
+      "tts": "Je reviendrai, c'est sûr."
+    },
+    {
+      "consulta": [
+        "conversa/despedir"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b18-p09",
+      "promptPt": "Maleta en mano, un pie ya fuera. Cierra el intercambio como se abrió. Habla ahora.",
+      "audioKey": "fr-b18-t09",
+      "es": "Au revoir, et bonne journée.",
+      "pinyin": "oh ruh-VWAR, ay bonn zhoor-NAY",
+      "pt": "Adiós, y que tenga un buen día.",
+      "tts": "Au revoir, et bonne journée."
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b18-s01",
+      "es": "C'est combien, en tout ? Je peux laisser ma valise jusqu'à cinq heures ? Merci pour tout, c'était parfait.",
+      "pinyin": "seh kom-BYAN, ahn TOO. zhuh PUH leh-SAY ma va-LEEZ zhews-ka sank UHR. mair-SEE poor TOO, say-teh par-FEH",
+      "pt": "Repite las tres frases de las que está hecha la última mañana.",
+      "tts": "C'est combien, en tout ? Je peux laisser ma valise jusqu'à cinq heures ? Merci pour tout, c'était parfait."
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b18-n06",
+      "bloco": "recap",
+      "pt": "B18 hecho. Maleta guardada, total pedido, tarifa cerrada, y una frase verdadera dejada tras de ti en la puerta."
+    }
+  ],
+  "aprofundar": {
+    "titulo": "El papeleo, y luego la parte que perdura",
+    "secoes": [
+      {
+        "titulo": "Dos moldes cierran el viaje",
+        "corpo": "Je peux resuelve los permisos de la última mañana — la maleta, la tarjeta, el recibo, el taxi. C'est combien resuelve los dos números que importan, el total y la tarifa. No hace falta nada nuevo el último día; son las mismas dos aperturas que usas desde el aeropuerto.",
+        "exemplos": [
+          {
+            "es": "Je peux laisser ma valise jusqu'à cinq heures ?",
+            "pt": "¿Puedo dejar mi maleta hasta las cinco?"
+          },
+          {
+            "es": "C'est combien, en tout ?",
+            "pt": "¿Cuánto es, en total?"
+          }
+        ]
+      },
+      {
+        "titulo": "La nota se imprime para ti",
+        "corpo": "Desde agosto de 2023 una caja de tienda normal solo imprime un tique si lo pides. Los hoteles y restaurantes quedan fuera de eso: la factura se imprime de forma estándar, y una nota escrita es obligatoria para un servicio de veinticinco euros o más, entregada antes de pagar. Si no te la ofrecen, pídela — estás pidiendo algo que el establecimiento ya tiene que producir."
+      },
+      {
+        "titulo": "Efectivo, tarjeta y el tope",
+        "corpo": "Aquí no hay obligación de aceptar tarjeta, y un consumo mínimo es legal siempre que esté indicado en la puerta o en la caja. El efectivo siempre se acepta — con un tope: 1 000 € a un negocio para quien sea residente fiscal en Francia, y 15 000 € para quien pueda demostrar que no es residente fiscal y no compra para un negocio. La cifra más alta pertenece a la no residencia, no a ser visitante."
+      },
+      {
+        "titulo": "La frase en la puerta",
+        "corpo": "Merci pour tout, c'était parfait, luego au revoir y bonne journée. Lleva cuatro segundos, es la parte de la semana que el mostrador de verdad recuerda, y no cuesta nada — lo que la convierte en la frase de mayor rendimiento de todo el módulo."
+      }
+    ]
+  },
+  "slot": "B18",
+  "permissao": "Puedes terminar la semana con una frase en lugar de una firma. Nadie en ese mostrador encuentra excesivo el agradecimiento, y la pequeña fórmula de cierre es la forma corriente de terminar un intercambio aquí, no un extra que añades encima.",
+  "permissaoAudioKey": "fr-b18-n01",
+  "espelho": "Cualquiera que haya vuelto dos veces al mismo restaurante conoce el mecanismo: la segunda bienvenida la decide cómo terminó la primera visita, no cómo empezó. Los últimos cuatro segundos son los que controlas del todo.",
+  "fichasCulturais": [
+    {
+      "sinal": "El conductor en la parada del aeropuerto no pone el taxímetro y da un solo número para todo el trayecto.",
+      "suaLeitura": "Se ha inventado un precio porque soy un visitante con dos maletas.",
+      "oQueEAli": "Los trayectos entre los aeropuertos de París y la ciudad son una tarifa plana fijada por orden de la prefectura. Cubre cualquier dirección dentro del perímetro y no lleva suplemento de equipaje, así que el taxímetro apagado es el comportamiento correcto y no un atajo, y te deben un recibo al final.",
+      "oQueVoceFaz": "Que digan la tarifa en voz alta antes de meter las maletas, y pide el recibo al llegar.",
+      "oQueMelhora": "Dejas de vigilar un taxímetro durante cuarenta minutos, y te vas con un papel si el número se mueve.",
+      "ondeNaoVale": "Es un arreglo de los aeropuertos de París, no una regla nacional — un trayecto normal por ciudad va con taxímetro. Y las cifras publicadas cambian: toma el número del conductor y del cartel de la parada, nunca de un curso escrito meses atrás.",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b18-n05"
+      ]
+    },
+    {
+      "sinal": "Pagas la cuenta, coges la maleta y sales sin decir nada.",
+      "suaLeitura": "La transacción ha terminado, así que no queda nada por decir.",
+      "oQueEAli": "La literatura de pragmática sobre el francés trata la apertura y el cierre como un par de gestos rituales que van juntos: bonjour pide entrar en el intercambio, y au revoir, merci, bonne journée lo devuelve. Salir sin la segunda mitad termina el intercambio en un tiempo inacabado, igual que llegar sin la primera mitad lo empieza en uno.",
+      "oQueVoceFaz": "Di au revoir y pon una palabra más detrás — bonne journée por la mañana, bonne soirée por la tarde.",
+      "oQueMelhora": "El intercambio cierra donde debe cerrar, y el siguiente que tengas en ese edificio abre más cálido.",
+      "ondeNaoVale": "Esto describe una rutina, no los sentimientos de nadie, y es lingüística descriptiva más que comportamiento medido. No aplica cuando la persona está en mitad de una llamada o ya atendiendo a otro — entonces un gesto con la cabeza es todo el cierre.",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b18-n06"
+      ]
+    }
+  ]
+}

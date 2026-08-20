@@ -1,0 +1,328 @@
+{
+  "id": "i03",
+  "nivel": "intermediario",
+  "numero": 21,
+  "parte": "I03",
+  "titulo": "El plato que no ibas a pedir",
+  "subtitulo": "El plat du jour está en la pizarra de fuera porque lo obliga un decreto, fait maison significa algo exacto cuando aparece, y formule significa lo que esta casa quiera que signifique",
+  "cena": "Una pizarra en la acera con dos líneas escritas, una carta impresa dentro con cuarenta, y lo bueno está en la pizarra.",
+  "moldura": "ganha",
+  "frasePiso": "Pregunta qué es el plato de hoy y en qué se basa. Dos preguntas, y pides algo que no habrías podido elegir en una carta impresa.",
+  "decisao": "pedir o prato do dia ou o que a casa recomenda em vez do prato cujo nome eu já reconheço — e perguntar o que entra na formule antes de pedir, porque formule não tem definição legal",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-plat-du-jour-afixacao",
+      "afirmacao": "El plat du jour es un elemento de exhibición regulado, no un eslogan: aparece en la lista cerrada de artículos cuyos precios deben figurar de forma legible fuera del establecimiento, en caracteres de al menos 1,5 cm, junto al café, la cerveza, el zumo, el refresco, el agua mineral, el aperitivo y el bocadillo. Dentro, la casa también debe tener un documento con la lista completa.",
+      "fonte": "Arrêté du 27 mars 1987 (Légifrance, consolidado, mod. 29/06/1990), art. 2 e art. 3",
+      "ano": 1987,
+      "revisarAte": "2028-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-i03-n02"
+      ]
+    },
+    {
+      "id": "fr-fait-maison",
+      "afirmacao": "«Fait maison» está definido legalmente: un plato elaborado en el local a partir de productos crudos, con una lista cerrada de insumos procesados tolerados (pasta seca, pan, queso, embutidos, condimentos, caldos deshidratados, cobertura de chocolate). Su logo es una cacerola con tejado y chimenea. Al visitante le importan dos cosas: desde la reforma de 2015 la mención es opcional, así que su ausencia no prueba nada sobre la cocina; y certifica la transformación en el local, no el origen ni la calidad del ingrediente.",
+      "fonte": "Loi 2014-344 (Hamon), décret 2014-797 e arrêté de 11/07/2014, em vigor desde 15/07/2014, modificados pelo décret 2015-505 de 06/05/2015",
+      "ano": 2015,
+      "revisarAte": "2028-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-i03-n04"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i03-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "El mejor plato de la sala suele ser el que no está impreso en la carta."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i03-r01",
+      "receptivo": true,
+      "acao": "Eso es una recomendación con un motivo detrás. Acéptala, o al menos pregunta qué es antes de decidir.",
+      "es": "Je vous conseille le plat du jour. Il part vite.",
+      "pt": "Yo pediría el plato del día. Se está agotando.",
+      "tts": "Je vous conseille le plat du jour. Il part vite."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i03-n02",
+      "bloco": "corpo",
+      "pt": "Plat du jour no es una palabra de marketing. Está en la lista de precios que un local debe exhibir fuera, por decreto."
+    },
+    {
+      "consulta": [
+        "mesa/carta",
+        "mesa/comida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "VOUS-AVEZ",
+      "encaixe": "un plat du jour",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i03-p01",
+      "promptPt": "Estás sentado y la carta impresa acaba de aterrizar frente a ti. Busca primero la otra opción. Habla ahora.",
+      "audioKey": "fr-i03-t01",
+      "es": "Vous avez un plat du jour ?",
+      "pinyin": "voo za-VAY an pla dyoo ZHOOR",
+      "pt": "¿Tienen plato del día?",
+      "tts": "Vous avez un plat du jour ?"
+    },
+    {
+      "consulta": [
+        "mesa/comida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i03-p02",
+      "promptPt": "Dijeron que sí. Ahora averigua qué es hoy realmente. Habla ahora.",
+      "audioKey": "fr-i03-t02",
+      "es": "C'est quoi, le plat du jour ?",
+      "pinyin": "seh KWAH, luh pla dyoo ZHOOR",
+      "pt": "¿Qué es el plato del día?",
+      "tts": "C'est quoi, le plat du jour ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i03-r02",
+      "es": "Aujourd'hui, c'est joue de bœuf, avec une purée maison.",
+      "pt": "Hoy es carrillera de ternera, con puré hecho aquí.",
+      "tts": "Aujourd'hui, c'est joue de bœuf, avec une purée maison."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i03-n03",
+      "pt": "El molde de tu primera hora sigue funcionando aquí. Vous avez, y luego lo que quieras que tengan."
+    },
+    {
+      "consulta": [
+        "mesa/comida",
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i03-p03",
+      "promptPt": "Cuarenta líneas en la carta y reconoces seis. Deja la elección en manos de quien sabe. Habla ahora.",
+      "audioKey": "fr-i03-t03",
+      "es": "Qu'est-ce que vous me conseillez ?",
+      "pinyin": "kess kuh voo muh kon-say-YAY",
+      "pt": "¿Qué me recomienda?",
+      "tts": "Qu'est-ce que vous me conseillez ?"
+    },
+    {
+      "consulta": [
+        "mesa/comida",
+        "dieta/o-que-tem"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i03-p04",
+      "promptPt": "Un nombre en la pizarra que no te dice nada. Una pregunta lo abre. Habla ahora.",
+      "audioKey": "fr-i03-t04",
+      "es": "C'est à base de quoi ?",
+      "pinyin": "seh ta BAHZ duh KWAH",
+      "pt": "¿A base de qué es?",
+      "tts": "C'est à base de quoi ?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i03-n04",
+      "bloco": "capsula",
+      "pt": "Fait maison tiene una definición legal: hecho en el local a partir de ingredientes crudos. Desde 2015 mostrar el logo es opcional, así que su ausencia no prueba nada."
+    },
+    {
+      "consulta": [
+        "mesa/comida",
+        "dieta/o-que-tem"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i03-p05",
+      "promptPt": "Te pica la curiosidad de si la cocina de detrás realmente cocina. Pregunta por el plato, no por el local. Habla ahora.",
+      "audioKey": "fr-i03-t05",
+      "es": "C'est fait maison ?",
+      "pinyin": "seh feh may-ZON",
+      "pt": "¿Está hecho aquí?",
+      "tts": "C'est fait maison ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i03-r03",
+      "receptivo": true,
+      "acao": "Que no haya logo en la carta tampoco es una respuesta en ningún sentido. La respuesta es la frase que acabas de conseguir al preguntar.",
+      "es": "Tout est fait ici, mais on n'affiche pas le logo.",
+      "pt": "Todo está hecho aquí, solo que no ponemos el logo.",
+      "tts": "Tout est fait ici, mais on n'affiche pas le logo."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i03-n05",
+      "pt": "Formule no tiene ninguna definición legal. Lo que esta casa entienda por ello es la definición de hoy, y por eso preguntas."
+    },
+    {
+      "consulta": [
+        "mesa/carta",
+        "pagar/pedir"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i03-p06",
+      "promptPt": "La pizarra pone FORMULE y un número, y nada más. Averigua qué compra ese número. Habla ahora.",
+      "audioKey": "fr-i03-t06",
+      "es": "Et la formule, c'est quoi exactement ?",
+      "pinyin": "ay la for-MYOOL, seh kwah eg-zakt-MON",
+      "pt": "Y la formule, ¿qué es exactamente?",
+      "tts": "Et la formule, c'est quoi exactement ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i03-r04",
+      "receptivo": true,
+      "acao": "Esa es la definición de esta casa, no una nacional. El siguiente local calle abajo puede trazar la línea en otro sitio.",
+      "es": "La formule, c'est entrée-plat ou plat-dessert, à vingt-deux euros.",
+      "pt": "La formule es entrante y principal, o principal y postre, a veintidós euros.",
+      "tts": "La formule, c'est entrée-plat ou plat-dessert, à vingt-deux euros."
+    },
+    {
+      "consulta": [
+        "mesa/comida",
+        "simpatia/elogiar-comida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "VOUS-AVEZ",
+      "encaixe": "une spécialité de la région",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i03-p07",
+      "promptPt": "Estás a cuatrocientos kilómetros de donde aterrizaste y quieres eso que solo existe aquí. Habla ahora.",
+      "audioKey": "fr-i03-t07",
+      "es": "Vous avez une spécialité de la région ?",
+      "pinyin": "voo za-VAY oon spay-sya-lee-TAY duh la ray-ZHYON",
+      "pt": "¿Tienen alguna especialidad de la región?",
+      "tts": "Vous avez une spécialité de la région ?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i03-n06",
+      "pt": "Entonces decídete. Ça, eso que acabas de oír describir, es un pedido completo — y es de lo que trata toda esta parte."
+    },
+    {
+      "consulta": [
+        "mesa/comida",
+        "pagar/pedir"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i03-p08",
+      "promptPt": "Han terminado de describirlo y esperan, bolígrafo en alto. Ciérralo en una frase corta. Habla ahora.",
+      "audioKey": "fr-i03-t08",
+      "es": "Alors je vais prendre ça.",
+      "pinyin": "a-LOR zhuh veh PRONDR sa",
+      "pt": "Entonces me llevo eso.",
+      "tts": "Alors je vais prendre ça."
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-i03-s01",
+      "es": "Vous avez un plat du jour ? C'est à base de quoi ? Alors je vais prendre ça.",
+      "pinyin": "voo za-VAY an pla dyoo ZHOOR. seh ta BAHZ duh KWAH. a-LOR zhuh veh PRONDR sa",
+      "pt": "Repite en sombra los tres movimientos que te sacan de la carta impresa y te llevan a la pizarra.",
+      "tts": "Vous avez un plat du jour ? C'est à base de quoi ? Alors je vais prendre ça.",
+      "molde": "VOUS-AVEZ"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i03-n07",
+      "bloco": "recap",
+      "pt": "I03 hecho. Plat du jour, en qué se basa, fait maison, y qué incluye realmente una formule aquí."
+    }
+  ],
+  "aprofundar": {
+    "titulo": "Tres palabras en la pizarra, y lo que vale cada una",
+    "secoes": [
+      {
+        "titulo": "Plat du jour es una línea regulada",
+        "corpo": "Pertenece a la lista corta de artículos cuyos precios deben exhibirse fuera, de forma legible, en caracteres de al menos un centímetro y medio — la misma lista que el café, la cerveza y el bocadillo. Por eso está en la pizarra de la acera: la casa está obligada a mostrarte el precio antes de que entres.",
+        "exemplos": [
+          {
+            "es": "Vous avez un plat du jour ?",
+            "pt": "¿Tienen plato del día?"
+          },
+          {
+            "es": "C'est quoi, le plat du jour ?",
+            "pt": "¿Qué es el plato del día?"
+          }
+        ]
+      },
+      {
+        "titulo": "Fait maison está definido, y es opcional",
+        "corpo": "La mención cubre un plato elaborado en el local a partir de productos crudos, con una lista corta y cerrada de insumos tolerados como pasta seca, pan, queso, embutidos y cobertura de chocolate; el logo es una cacerola con tejado y chimenea. Vale la pena llevarse dos límites: desde 2015 nadie está obligado a mostrarlo, así que una carta sin el logo no te dice nada; y es una afirmación sobre el trabajo hecho en el local, no sobre de dónde vino el ingrediente ni sobre lo bueno que es."
+      },
+      {
+        "titulo": "Formule es lo que ellos digan que es",
+        "corpo": "No se encontró ninguna definición legal de menu o formule. El uso común — menu como entrante, principal y postre a precio fijo, formule como dos de los tres — es convención comercial, y las casas trazan la línea de forma distinta. Una pregunta antes de pedir elimina toda la ambigüedad, y es una pregunta que la gente está acostumbrada a que le hagan."
+      },
+      {
+        "titulo": "La pregunta que abre un nombre",
+        "corpo": "C'est à base de quoi funciona con cualquier cosa: un nombre regional, un garabato de tiza, una palabra que reconoces a medias. Es más útil que preguntar si algo está bueno, porque la respuesta es concreta y puedes decidir a partir de ella."
+      }
+    ]
+  },
+  "slot": "I03",
+  "permissao": "Tienes permiso para pedir algo que no puedes imaginarte. Preguntar en qué se basa y luego decir que sí no es una apuesta que hagas por tu cuenta — es la secuencia que espera quien te atiende, y la razón por la que mencionó la pizarra en primer lugar.",
+  "permissaoAudioKey": "fr-i03-n06",
+  "espelho": "Cualquiera que haya comido en un sitio de su tierra con una pizarra de sugerencias y aun así haya pedido de la carta plastificada conoce este trueque. La carta impresa es segura porque es igual en todas partes, que es precisamente lo que tiene de malo.",
+  "fichasCulturais": [
+    {
+      "sinal": "No hay ningún logo de fait maison en toda la carta, así que supones que la cocina recalienta pedidos.",
+      "suaLeitura": "Sin logo, aquí no se cocina nada en el local.",
+      "oQueEAli": "La mención es opcional desde la reforma de 2015. Muchas cocinas que trabajan enteramente con productos crudos nunca lo muestran, y muchas cartas lo llevan en una sola línea, porque se aplica al plato y no a la casa.",
+      "oQueVoceFaz": "Pregunta por el plato que tienes delante en vez de buscar insignias en la carta: c'est fait maison, sobre este plato, hoy.",
+      "oQueMelhora": "Obtienes una frase clara en lugar de una deducción, y la respuesta suele llegar con detalles de cómo se hace la cosa.",
+      "ondeNaoVale": "No como prueba de calidad ni de origen aunque el logo esté ahí — certifica el trabajo hecho en el local, no de dónde vino el ingrediente. Y la lista cerrada de insumos tolerados significa que el pan, la pasta seca y los embutidos pueden comprarse hechos y el plato sigue cumpliendo.",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-i03-n04"
+      ]
+    },
+    {
+      "sinal": "Viste FORMULE 22 € en una pizarra ayer y te dieron tres platos, así que pides la formule hoy y te dan dos.",
+      "suaLeitura": "El segundo sitio le quitó un plato a una oferta estándar.",
+      "oQueEAli": "No se encontró ninguna definición legal de menu o formule. Cada casa fija la suya, y la convención extendida — formule como dos de los tres platos, menu como los tres — es uso comercial, no una regla que obligue a nadie.",
+      "oQueVoceFaz": "Pregunta qué incluye la formule antes de pedirla, en una frase, igual que preguntarías por cualquier otra cosa de la pizarra.",
+      "oQueMelhora": "El número de la pizarra se vuelve comparable entre dos sitios, cosa que no era antes de que preguntaras.",
+      "ondeNaoVale": "No para el plat du jour, que sí tiene rango normativo y debe aparecer con su precio en la exhibición de fuera — ahí la pizarra te está diciendo algo vinculante.",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-i03-n05"
+      ]
+    }
+  ]
+}

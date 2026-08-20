@@ -1,0 +1,353 @@
+{
+  "id": "i05",
+  "nivel": "intermediario",
+  "numero": 23,
+  "parte": "I05",
+  "titulo": "Las cinco preguntas que te harán toda la semana",
+  "subtitulo": "De dónde eres, cuánto te quedas, primera vez, qué tal tu francés — y la pregunta que respondes devolviéndola tal cual",
+  "cena": "Llevas cuatro minutos en la barra, el café ya está bebido, y la persona del taburete de al lado ha decidido averiguar quién eres.",
+  "moldura": "ganha",
+  "frasePiso": "Cinco respuestas preparadas una vez, y la charla deja de ser un examen que no repasaste.",
+  "decisao": "me quedo en la conversación o salgo de ella — y qué respondo cuando la pregunta me pide tomar partido sobre su país",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-i05-ef-epi",
+      "afirmacao": "En el EF English Proficiency Index 2025, Francia obtuvo 539 puntos y pasó del puesto 49 al 38 de entre 123 países, adelantando a España e Italia, sobre una base de 2,2 millones de personas evaluadas en 2024. El propio EF señala que la muestra es autoseleccionada y en línea, no una muestra estadísticamente válida de la población, así que respalda «Francia ha mejorado y se sitúa en la media europea baja» y no respalda ninguna afirmación sobre qué proporción de gente habla inglés.",
+      "fonte": "EF EPI 2025 — França 539 pontos, +15, da 49ª para a 38ª posição entre 123 países. Base: 2,2 M de testados em 2024",
+      "ano": 2025,
+      "revisarAte": "2027-08-05",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": [
+        "fr-i05-n05"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i05-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "Las mismas cinco preguntas te caen toda la semana. Contéstalas bien una vez y podrás dedicar la semana a la sexta."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i05-r01",
+      "receptivo": true,
+      "acao": "Pregunta uno, siempre. Responde con una ciudad y devuélvela.",
+      "es": "Vous êtes d'où, vous ?",
+      "pt": "¿De dónde eres, entonces?",
+      "tts": "Vous êtes d'où, vous ?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i05-n02",
+      "pt": "Responde con una ciudad, no con un país. Una ciudad les da algo que decir; un país cierra el intercambio."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-i05-t01",
+      "es": "Je viens de Londres, et vous ?",
+      "pinyin": "zhuh vyan duh LON-druh, ay VOO",
+      "pt": "Soy de Londres, ¿y tú?",
+      "tts": "Je viens de Londres, et vous ?"
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i05-p01",
+      "promptPt": "Ha caído la primera pregunta. Di tu ciudad y devuelve el turno en el mismo aliento. Habla ahora.",
+      "audioKey": "fr-i05-t01",
+      "es": "Je viens de Londres, et vous ?",
+      "pinyin": "zhuh vyan duh LON-druh, ay VOO",
+      "pt": "Soy de Londres, ¿y tú?",
+      "tts": "Je viens de Londres, et vous ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i05-r02",
+      "es": "Ah, Londres ! Et vous restez combien de temps ?",
+      "pt": "¡Ah, Londres! ¿Y cuánto te quedas?",
+      "tts": "Ah, Londres ! Et vous restez combien de temps ?"
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i05-p02",
+      "promptPt": "Pregunta dos. Da la duración del viaje en un número corto. Habla ahora.",
+      "audioKey": "fr-i05-t02",
+      "es": "Je reste cinq jours.",
+      "pinyin": "zhuh rest SANK ZHOOR",
+      "pt": "Me quedo cinco días.",
+      "tts": "Je reste cinq jours."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i05-n03",
+      "bloco": "corpo",
+      "pt": "La pregunta tres es si ya habías estado antes. Decir que es tu primera vez vale más que sonar con experiencia."
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i05-p03",
+      "promptPt": "Te preguntan si ya habías estado antes en este pueblo. Diles en qué punto estás. Habla ahora.",
+      "audioKey": "fr-i05-t03",
+      "es": "C'est la première fois que je viens ici.",
+      "pinyin": "seh la pruh-MYEHR FWA kuh zhuh vyan ee-SEE",
+      "pt": "Es mi primera vez aquí.",
+      "tts": "C'est la première fois que je viens ici."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i05-r03",
+      "receptivo": true,
+      "acao": "Esto es una invitación, no un examen. Acéptala: pregúntales qué harían con cinco días.",
+      "es": "La première fois ! Alors il faut qu'on vous dise où aller.",
+      "pt": "¡Primera vez! Entonces alguien tendrá que decirte adónde ir.",
+      "tts": "La première fois ! Alors il faut qu'on vous dise où aller."
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa",
+        "mesa/comida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i05-p04",
+      "promptPt": "Acaban de ofrecerse a orientarte hacia algún sitio. Acepta la oferta y conviértelos en guía. Habla ahora.",
+      "audioKey": "fr-i05-t04",
+      "es": "Qu'est-ce que vous me conseillez, vous ?",
+      "pinyin": "kess kuh voo muh kon-say-YAY, VOO",
+      "pt": "¿Qué me recomendarías tú personalmente?",
+      "tts": "Qu'est-ce que vous me conseillez, vous ?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i05-n04",
+      "bloco": "capsula",
+      "pt": "La pregunta cuatro es trabajo o vacaciones. Se hace para ubicarte, no para fiscalizarte, y una sola cláusula la responde."
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i05-p05",
+      "promptPt": "Quieren saber qué te ha traído. Di cuál de las dos es. Habla ahora.",
+      "audioKey": "fr-i05-t05",
+      "es": "Je suis là pour les vacances.",
+      "pinyin": "zhuh swee LA poor lay va-KONSS",
+      "pt": "Estoy aquí de vacaciones.",
+      "tts": "Je suis là pour les vacances."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i05-n05",
+      "pt": "La pregunta cinco es sobre tu francés. Francia puntúa mejor en inglés que antes, y la barra sigue funcionando en francés."
+    },
+    {
+      "consulta": [
+        "reparo/ingles",
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i05-p06",
+      "promptPt": "Te preguntan qué tal tu francés. Quítale importancia y di que va a alguna parte. Habla ahora.",
+      "audioKey": "fr-i05-t06",
+      "es": "Je parle très peu français, mais j'apprends.",
+      "pinyin": "zhuh parl treh puh fron-SEH, meh zha-PRON",
+      "pt": "Hablo muy poco francés, pero estoy aprendiendo.",
+      "tts": "Je parle très peu français, mais j'apprends."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i05-r04",
+      "receptivo": true,
+      "acao": "Esto es un ánimo, no una evaluación. Da las gracias y sigue en francés.",
+      "es": "Mais vous vous débrouillez très bien, hein !",
+      "pt": "¡Pero te apañas muy bien, eh!",
+      "tts": "Mais vous vous débrouillez très bien, hein !"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i05-n06",
+      "pt": "Ahora la sexta pregunta, la que te pide tomar partido. Tiene una buena respuesta, y no es una opinión."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i05-r05",
+      "receptivo": true,
+      "acao": "No estés de acuerdo ni discutas. Di lo que has visto hasta ahora y devuelve la pregunta.",
+      "es": "Paris, franchement, c'est plus la France. La vraie France, c'est ici.",
+      "pt": "París, sinceramente, ya no es Francia. La verdadera Francia está aquí.",
+      "tts": "Paris, franchement, c'est plus la France. La vraie France, c'est ici."
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i05-p07",
+      "promptPt": "Te invitan a jerarquizar dos partes de su país. Rechaza la clasificación sin rechazar la conversación. Habla ahora.",
+      "audioKey": "fr-i05-t07",
+      "es": "Je découvre encore, je ne peux pas comparer.",
+      "pinyin": "zhuh day-KOO-vruh on-KOR, zhuh nuh puh pa kom-pa-RAY",
+      "pt": "Todavía lo estoy descubriendo, no puedo comparar.",
+      "tts": "Je découvre encore, je ne peux pas comparer."
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i05-p08",
+      "promptPt": "Convierte la comparación en una pregunta sobre ellos, que es lo que estaban esperando de todos modos. Habla ahora.",
+      "audioKey": "fr-i05-t08",
+      "es": "Et vous, vous êtes d'ici ?",
+      "pinyin": "ay VOO, voo zet dee-SEE",
+      "pt": "¿Y tú, eres de aquí?",
+      "tts": "Et vous, vous êtes d'ici ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i05-r06",
+      "es": "Moi ? Non, je suis du Nord. Ça fait vingt ans que je suis là.",
+      "pt": "¿Yo? No, soy del Norte. Llevo veinte años aquí.",
+      "tts": "Moi ? Non, je suis du Nord. Ça fait vingt ans que je suis là."
+    },
+    {
+      "consulta": [
+        "chegar/sair",
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i05-p09",
+      "promptPt": "La conversación fue buena y te esperan en otro sitio. Ciérrala sin cortarla. Habla ahora.",
+      "audioKey": "fr-i05-t09",
+      "es": "Je dois y aller, mais c'était un plaisir.",
+      "pinyin": "zhuh dwa zee a-LAY, meh say-TEH tan play-ZEER",
+      "pt": "Tengo que irme, pero ha sido un placer.",
+      "tts": "Je dois y aller, mais c'était un plaisir."
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-i05-s01",
+      "es": "Je viens de Londres, et vous ? Je reste cinq jours. C'est la première fois que je viens ici.",
+      "pinyin": "zhuh vyan duh LON-druh, ay VOO. zhuh rest SANK ZHOOR. seh la pruh-MYEHR FWA kuh zhuh vyan ee-SEE",
+      "pt": "Repite en sombra las tres respuestas que abren cada conversación de la semana.",
+      "tts": "Je viens de Londres, et vous ? Je reste cinq jours. C'est la première fois que je viens ici."
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i05-n07",
+      "bloco": "recap",
+      "pt": "I05 hecho. De dónde, cuánto, primera vez, por qué aquí, qué tal el francés — y una sexta respuesta que rechaza la clasificación."
+    }
+  ],
+  "aprofundar": {
+    "titulo": "Cinco respuestas, y una negativa",
+    "secoes": [
+      {
+        "titulo": "Una ciudad gana a un país",
+        "corpo": "Je viens de Londres le da al otro un asidero — un recuerdo, un primo, un partido que vio. Je viens d'Angleterre le da un dato, y un dato cierra el turno. Luego añade et vous, que cuesta dos palabras y te lleva de estar en un interrogatorio a estar conversando.",
+        "exemplos": [
+          {
+            "es": "Je viens de Londres, et vous ?",
+            "pt": "Soy de Londres, ¿y tú?"
+          },
+          {
+            "es": "Et vous, vous êtes d'ici ?",
+            "pt": "¿Y tú, eres de aquí?"
+          }
+        ]
+      },
+      {
+        "titulo": "La primera vez es un activo",
+        "corpo": "C'est la première fois que je viens ici suele responderse con instrucciones: dónde comer, qué calle, qué día hay mercado. Aparentar una familiaridad que no tienes cierra esa puerta, y no hay nada al otro lado que valga la pena tener."
+      },
+      {
+        "titulo": "El cumplido es un continuador",
+        "corpo": "Vous vous débrouillez très bien se le dice a gente que ha producido cuatro palabras de francés. No es una evaluación ni es ironía — es el ánimo estándar para seguir. La única respuesta equivocada es pasarte al inglés justo en ese momento."
+      },
+      {
+        "titulo": "La pregunta que quiere un bando",
+        "corpo": "Tarde o temprano alguien enfrenta dos partes del país — la capital contra el resto, su región contra la de al lado — y espera. Digas lo que digas se convierte en el veredicto de un desconocido sobre su tierra. Je découvre encore, je ne peux pas comparer no es una escapatoria; es verdad, es amable, y le cede la palabra a quien sí tiene autoridad para hablar de ello."
+      },
+      {
+        "titulo": "Vete antes de agotarte",
+        "corpo": "Je dois y aller, mais c'était un plaisir cierra el intercambio mientras todavía va bien, que es la versión que recuerdan. Esperar a un hueco natural en un idioma que aún estás armando suele significar esperar más de la cuenta."
+      }
+    ]
+  },
+  "slot": "I05",
+  "permissao": "Tienes permiso para responder en cinco palabras. Nadie en esa barra espera un párrafo, las preguntas se hacen para ubicarte y no para examinarte, y una respuesta corta con una pregunta al final vale más que una larga sin nada al final.",
+  "permissaoAudioKey": "fr-i05-n01",
+  "espelho": "Cualquiera que haya sido el nuevo en una oficina conoce este set: de dónde eres, cuánto llevas aquí, qué te parece. Ya tienes un ritmo para eso en tu propio idioma — acortas, esquivas, devuelves la pregunta. Esta parte es ese mismo ritmo, en cinco frases de francés preparadas.",
+  "fichasCulturais": [
+    {
+      "sinal": "Alguien te dice, con sentimiento, que la capital no es el país de verdad y que donde estás parado sí lo es.",
+      "suaLeitura": "Me están pidiendo que esté de acuerdo, y estar de acuerdo es lo simpático.",
+      "oQueEAli": "Esa comparación es una discusión que pertenece a quienes la tienen, y lleva en marcha mucho más tiempo que tu viaje. El acuerdo de un visitante no tiene peso y puede repetirse después ante alguien que opina lo contrario.",
+      "oQueVoceFaz": "Di que aún estás descubriendo el lugar y no puedes comparar, y luego pregúntales por el suyo. Conservas toda la calidez y nada del veredicto.",
+      "oQueMelhora": "Consigues la respuesta larga y concreta sobre dónde estás — que es la mitad útil — en lugar de un tema que solo puede enfriar la conversación.",
+      "ondeNaoVale": "No cuando la pregunta es de verdad sobre tu itinerario — qué has visto, adónde vas después. Esa sí quiere respuesta, y darla es todo el sentido.",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-i05-n06"
+      ]
+    },
+    {
+      "sinal": "Produces cuatro palabras titubeantes de francés y te dicen que hablas muy bien.",
+      "suaLeitura": "Están siendo educados, o tomándote un poco el pelo, y lo honesto es pasarse al inglés.",
+      "oQueEAli": "Es el continuador estándar que sigue a cualquier intento en francés: un ánimo para seguir, ofrecido justo en el momento en que la mayoría de los visitantes se rinde. La puntuación de Francia en el principal índice internacional de inglés ha subido y ahora se sitúa en la media europea baja — lo cual no dice nada sobre la persona que tienes delante, y la barra en la que estás sigue funcionando en francés.",
+      "oQueVoceFaz": "Di merci y quédate en francés una frase más, aunque sea torpe. Si de verdad necesitas inglés, pídelo en vez de deslizarte hacia él.",
+      "oQueMelhora": "El intercambio se queda donde empezó, que es donde viven las recomendaciones, las correcciones y la pequeña ayuda extra.",
+      "ondeNaoVale": "No cuando la otra persona se ha pasado al inglés primero y está claramente más cómoda ahí — insistir en el francés entonces hace que la conversación gire en torno a ti y no a lo que necesitabas.",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-i05-n05"
+      ]
+    }
+  ]
+}

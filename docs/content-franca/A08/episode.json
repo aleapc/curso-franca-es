@@ -1,0 +1,327 @@
+{
+  "id": "a08",
+  "nivel": "avancado",
+  "numero": 36,
+  "parte": "A08",
+  "titulo": "El último minuto ante cada uno, y la tarjeta del bolsillo",
+  "subtitulo": "Nombra a la persona, nombra lo que hizo, nombra la estación en que vuelves — y luego las seis aperturas que sostuvieron todo el viaje",
+  "cena": "La última mañana: las mismas cuatro caras tras los mismos mostradores, y cosa de un minuto con cada una.",
+  "moldura": "ganha",
+  "frasePiso": "Agradece, nombra lo que fue, di cuándo. Tres frases al salir, un minuto por persona, y la puerta queda abierta.",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-a08-dyst",
+      "afirmacao": "Desde 2013 la cámara de comercio de París Île-de-France y el comité regional de turismo llevan una campaña llamada «Do You Speak Touriste ?», con edición 2026, que forma a comerciantes, camareros y personal de hotel franceses sobre cómo esperan ser recibidos los visitantes de cada mercado. Va dirigida al mostrador y no al viajero, y no mide nada sobre comportamiento ni resultados.",
+      "fonte": "Campanha «Do You Speak Touriste ?» — CCI Paris Île-de-France + CRT, desde 2013, edição 2026",
+      "ano": 2026,
+      "revisarAte": "2027-12-31",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-a08-n05",
+        "fr-a08-n06"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a08-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "Abriste este viaje saludando a la gente antes de querer nada. El último día es el mismo gesto, al revés."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a08-n02",
+      "bloco": "corpo",
+      "pt": "La despedida tiene tres partes: la persona, la cosa concreta, y cuándo vuelves. Sáltate la del medio y son solo modales."
+    },
+    {
+      "consulta": [
+        "simpatia/elogiar-comida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a08-p01",
+      "promptPt": "La mujer de la panadería te ha dado lo mismo cada mañana durante una semana, y este es el último. Habla ahora.",
+      "audioKey": "fr-a08-t01",
+      "es": "Merci pour tout, madame. C'était le meilleur pain du voyage.",
+      "pinyin": "mer-SEE poor TOO, ma-DAM · say-TEH luh may-YUHR pahn doo vwa-YAZH",
+      "pt": "Gracias por todo, señora. Fue el mejor pan del viaje.",
+      "tts": "Merci pour tout, madame. C'était le meilleur pain du voyage."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a08-r01",
+      "receptivo": true,
+      "acao": "Responde con una estación, nunca con un quizá. Esa es toda la diferencia aquí.",
+      "es": "Ah, c'est gentil ça. Vous revenez nous voir, hein ?",
+      "pt": "Ah, qué amable. Volverá a vernos, ¿verdad?",
+      "tts": "Ah, c'est gentil ça. Vous revenez nous voir, hein ?"
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a08-p02",
+      "promptPt": "Responde a la invitación con una estación y un compromiso, no con un vago algún día. Habla ahora.",
+      "audioKey": "fr-a08-t02",
+      "es": "L'année prochaine, au printemps. C'est promis.",
+      "pinyin": "la-NAY pro-SHEN, o pran-TAHN · seh pro-MEE",
+      "pt": "El año que viene, en primavera. Lo prometo.",
+      "tts": "L'année prochaine, au printemps. C'est promis."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a08-n03",
+      "pt": "Peut-être cierra la puerta con educación. Una estación y una promesa la dejan abierta, y la gente de verdad se acuerda."
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a08-p03",
+      "promptPt": "La familia que te tuvo a cenar te despide en su puerta. Habla ahora.",
+      "audioKey": "fr-a08-t03",
+      "es": "On n'oubliera pas ce dîner. Vous avez été adorables.",
+      "pinyin": "ohn noo-blee-RA pa suh dee-NAY · voo za-vay ay-TAY a-do-RA-bluh",
+      "pt": "No olvidaremos esa cena. Habéis sido encantadores.",
+      "tts": "On n'oubliera pas ce dîner. Vous avez été adorables."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a08-n04",
+      "pt": "Una cosa que conviene saber al salir: el otro lado del mostrador también ha estado pensando en este intercambio."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a08-r02",
+      "receptivo": true,
+      "acao": "Responde con una cosa concreta que te gustó. Très bien merci lo termina; un detalle lo mantiene vivo.",
+      "es": "Vous avez fait un bon séjour ? Ça nous fait plaisir.",
+      "pt": "¿Ha tenido una buena estancia? Nos alegra.",
+      "tts": "Vous avez fait un bon séjour ? Ça nous fait plaisir."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a08-n05",
+      "bloco": "capsula",
+      "pt": "Desde 2013 una campaña de París forma a comerciantes y personal de hotel sobre cómo esperan ser recibidos los visitantes."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a08-n06",
+      "pt": "Corre en un solo sentido, hacia el mostrador, y no mide nada. Lo que muestra es que ambos lados lo han estado intentando."
+    },
+    {
+      "consulta": [
+        "simpatia/elogiar-lugar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a08-p04",
+      "promptPt": "Dales el único detalle que de verdad recordarás dentro de un año, en vez de una respuesta general de cortesía. Habla ahora.",
+      "audioKey": "fr-a08-t04",
+      "es": "Le marché du samedi matin. Je n'oublierai jamais ça.",
+      "pinyin": "luh mar-SHAY doo sam-DEE ma-TAHN · zhuh noo-blee-uh-RAY zha-MEH sa",
+      "pt": "El mercado del sábado por la mañana. No lo olvidaré nunca.",
+      "tts": "Le marché du samedi matin. Je n'oublierai jamais ça."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a08-n07",
+      "pt": "Luego la tarjeta del bolsillo. Seis aperturas cargaron con todo el viaje, y cada una vino del primer módulo."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a08-r03",
+      "receptivo": true,
+      "acao": "Di estas seis en voz alta una vez antes de aterrizar la próxima. Responden a casi todo un día corriente.",
+      "es": "Bonjour. Vous avez une table ? Je peux payer par carte ? Où est la sortie ? Je voudrais un café. C'est combien ?",
+      "pt": "Hola. ¿Tienen mesa? ¿Puedo pagar con tarjeta? ¿Dónde está la salida? Querría un café. ¿Cuánto es?",
+      "tts": "Bonjour. Vous avez une table ? Je peux payer par carte ? Où est la sortie ? Je voudrais un café. C'est combien ?"
+    },
+    {
+      "consulta": [
+        "reparo/devagar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a08-p05",
+      "promptPt": "La respuesta volvió a toda velocidad y cazaste cerca de un tercio. Esta es la frase que rescata el resto. Habla ahora.",
+      "audioKey": "fr-a08-t05",
+      "es": "Pardon, je n'ai pas compris. Vous pouvez répéter ?",
+      "pinyin": "par-DOHN, zhuh nay pa kom-PREE · voo poo-vay ray-pay-TAY",
+      "pt": "Perdón, no lo he entendido. ¿Puede repetirlo?",
+      "tts": "Pardon, je n'ai pas compris. Vous pouvez répéter ?",
+      "molde": "PARDON",
+      "encaixe": "vous pouvez répéter"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a08-n08",
+      "pt": "Esa es el verdadero producto. El resto lo puedes buscar en el móvil; esta tiene que salir sin que la vayas a buscar."
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a08-p06",
+      "promptPt": "Devuelves la llave, y el hombre de recepción no cambió ni una vez al inglés contigo, por larga que fuera la frase. Habla ahora.",
+      "audioKey": "fr-a08-t06",
+      "es": "Merci de votre patience avec mon français.",
+      "pinyin": "mer-SEE duh vo-truh pa-see-AHNS a-vek mohn frahn-SEH",
+      "pt": "Gracias por su paciencia con mi francés.",
+      "tts": "Merci de votre patience avec mon français."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a08-r04",
+      "receptivo": true,
+      "acao": "No discutas con el cumplido. Acéptalo, y devuelve uno al instante.",
+      "es": "Mais vous vous débrouillez très bien ! Bon retour.",
+      "pt": "¡Pero si se apaña muy bien! Buen viaje de vuelta.",
+      "tts": "Mais vous vous débrouillez très bien ! Bon retour."
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a08-p07",
+      "promptPt": "Te acaban de desear buen viaje. Devuelve uno y de verdad. Habla ahora.",
+      "audioKey": "fr-a08-t07",
+      "es": "Merci, à vous aussi. Bonne continuation !",
+      "pinyin": "mer-SEE, a voo o-SEE · bon kon-tee-nwa-see-OHN",
+      "pt": "Gracias, igualmente. ¡Que le vaya muy bien!",
+      "tts": "Merci, à vous aussi. Bonne continuation !"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a08-n09",
+      "pt": "Bonne continuation es para alguien cuyo día sigue sin ti. Es cálido, y cierra limpio."
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a08-p08",
+      "promptPt": "Última frase del viaje, dicha en una puerta, a alguien que tienes toda la intención de volver a ver. Habla ahora.",
+      "audioKey": "fr-a08-t08",
+      "es": "À la prochaine, alors. Au revoir !",
+      "pinyin": "a la pro-SHEN, a-LOR · o ruh-VWAR",
+      "pt": "Hasta la próxima, entonces. ¡Adiós!",
+      "tts": "À la prochaine, alors. Au revoir !"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a08-s01",
+      "es": "Merci pour tout, madame. L'année prochaine, au printemps. C'est promis. À la prochaine !",
+      "pinyin": "mer-SEE poor TOO ma-DAM · la-NAY pro-SHEN o pran-TAHN seh pro-MEE · a la pro-SHEN",
+      "pt": "Repite en sombra las tres frases de la despedida: el agradecimiento, la estación, y la próxima vez.",
+      "tts": "Merci pour tout, madame. L'année prochaine, au printemps. C'est promis. À la prochaine !"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a08-n10",
+      "bloco": "recap",
+      "pt": "Ese es el curso. Seis aperturas, una frase de reparación, y una despedida con una fecha dentro. Bon voyage."
+    }
+  ],
+  "aprofundar": {
+    "titulo": "La tarjeta del bolsillo",
+    "secoes": [
+      {
+        "titulo": "Las seis aperturas",
+        "corpo": "Bonjour. Vous avez… ? Je peux… ? Où est… ? Je voudrais… C'est combien… ? Entre ellas abren el intercambio, comprueban qué tiene un sitio, piden permiso, encuentran una habitación o una calle, hacen un pedido y protegen tu dinero. Todo lo demás del curso cuelga de estas seis, y todas salieron del primer módulo.",
+        "exemplos": [
+          {
+            "es": "Pardon, je n'ai pas compris. Vous pouvez répéter ?",
+            "pt": "Perdón, no lo he entendido. ¿Puede repetirlo?"
+          },
+          {
+            "es": "À la prochaine, alors.",
+            "pt": "Hasta la próxima, entonces."
+          }
+        ]
+      },
+      {
+        "titulo": "La frase de reparación es el producto",
+        "corpo": "Je n'ai pas compris, vous pouvez répéter es la que tiene que ser automática, porque es lo que mantiene usables las seis aperturas cuando la respuesta vuelve a toda velocidad. Un viajero que sabe hacer una pregunta pero no sabe pedir que se la repitan tiene media herramienta. Esta es la frase que ensayar en el avión."
+      },
+      {
+        "titulo": "Tres frases, un minuto cada una",
+        "corpo": "Agradece a la persona, nombra la cosa concreta — el pan, la mesa junto a la ventana, las indicaciones del segundo día — y di cuándo vuelves. La frase del medio es la que marca la diferencia, porque prueba que te fijaste. Una estación y una promesa es suficiente compromiso: nadie te va a exigir una fecha, y la forma es lo que se espera."
+      },
+      {
+        "titulo": "Au revoir significa hasta que nos veamos de nuevo",
+        "corpo": "La despedida por defecto aquí lleva el regreso incorporado en la palabra, y las alternativas cotidianas mantienen la misma forma: à la prochaine, à bientôt, bonne continuation. Adieu, la que de verdad significa finalidad, casi ha desaparecido del uso corriente. Terminar en la forma abierta no es sentimentalismo — es simplemente la forma que la lengua ya tiene."
+      }
+    ]
+  },
+  "slot": "A08",
+  "permissao": "Tienes permiso para prometer un regreso del que no estás seguro. Nombrar una estación en vez de decir peut-être no es un contrato que nadie te vaya a exigir — es la forma que toma aquí la despedida, y es por lo que la persona tras ese mostrador te reconoce un año después.",
+  "espelho": "Cualquiera que haya dejado un sitio que amaba con un gesto de la mano, y luego haya pasado el vuelo de vuelta componiendo la frase que no dijo, sabe para qué sirve esta última parte. Cuesta un minuto por persona, y es el único tramo de un viaje que aún puedes mejorar al salir.",
+  "permissaoAudioKey": "fr-a08-n03",
+  "fichasCulturais": [
+    {
+      "sinal": "Alguien de un mostrador que usaste cada día te pregunta cuándo vuelves, y la respuesta honesta es que no tienes ni idea.",
+      "suaLeitura": "Decir una fecha que no puedo garantizar sería una pequeña mentira, así que peut-être es la respuesta verdadera.",
+      "oQueEAli": "La pregunta es la mitad de cierre de un ritual más que una petición de plan, y la respuesta esperada tiene una forma: una estación, a veces un año, y una palabra como promis. Nadie está reservando nada, y todos lo saben.",
+      "oQueVoceFaz": "Da una estación y una promesa — l'année prochaine, au printemps, c'est promis — y deja que sea tan laxa como obviamente es.",
+      "oQueMelhora": "El intercambio termina como ambos queríais, y el reconocimiento la próxima vez es real: los mostradores recuerdan a la gente que respondió bien a esa pregunta.",
+      "ondeNaoVale": "No con alguien a quien conociste una sola vez. De un desconocido la misma pregunta es charla trivial, y una promesa completa de vuelta cae como más peso del ofrecido.",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-a08-n03"
+      ]
+    },
+    {
+      "sinal": "El comerciante cambia a un inglés cuidadoso antes de que hayas terminado tu primera palabra.",
+      "suaLeitura": "Oyó mi acento y decidió que mi francés no valía la pena.",
+      "oQueEAli": "Desde 2013 una campaña de la cámara de comercio de la región de París, «Do You Speak Touriste ?», forma a la gente tras los mostradores sobre cómo esperan ser recibidos los visitantes de cada mercado. El inglés es preparación dirigida a ellos, no un veredicto dirigido a ti, y la campaña no mide nada sobre cómo se comporta nadie en realidad.",
+      "oQueVoceFaz": "Abre en francés igualmente — bonjour primero — y luego deja que el intercambio se asiente en el idioma que vaya más rápido. Cualquiera de los dos desenlaces es bueno.",
+      "oQueMelhora": "El cambio deja de registrarse como rechazo, que es la lectura que hace a los visitantes rendirse con el idioma hacia el tercer día.",
+      "ondeNaoVale": "No es una afirmación de que un mostrador concreto haya oído hablar de la campaña. Es una iniciativa comercial regional sin medida publicada de alcance, y la mayoría del inglés que encuentras es simplemente alguien siendo servicial.",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-a08-n05",
+        "fr-a08-n06"
+      ]
+    }
+  ]
+}

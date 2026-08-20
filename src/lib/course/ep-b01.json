@@ -1,0 +1,342 @@
+{
+  "id": "b01",
+  "nivel": "basico",
+  "numero": 1,
+  "parte": "B01",
+  "titulo": "Di menos de lo que ves",
+  "subtitulo": "El francés esconde el final de las palabras y pone el acento al final del grupo: seis gestos que hacen aterrizar las palabras que ya medio conoces",
+  "cena": "La cola de la panadería avanza rápido, tienes una palabra lista, y el final impreso en el cartel no es el final que sale de ninguna boca.",
+  "moldura": "ganha",
+  "frasePiso": "Corta la última consonante, mantén la mano plana y pon el golpe en la última sílaba del grupo. Con eso ya te entienden el primer día.",
+  "moldes": [],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b01-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "El francés esconde el final de las palabras y pone el golpe al final del grupo. Seis gestos, y las palabras que ya medio conoces empiezan a aterrizar."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b01-n02",
+      "gesto": 1,
+      "bloco": "corpo",
+      "pt": "Tu mano hace esto: plana y a nivel por todo el grupo, un solo toque abajo al final. Sin golpe por palabra; eso lo pone el inglés."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b01-n03",
+      "pt": "Gesto uno: la última consonante no se pronuncia. Córtala con la mano al decirla."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b01-t01",
+      "es": "Bonjour, un café, s'il vous plaît.",
+      "pinyin": "bon-ZHOOR, uhn ka-FAY, seel voo PLEH",
+      "pt": "Hola, un café, por favor. La s de vous y la t de plaît se escriben, no se dicen.",
+      "tts": "Bonjour, un café, s'il vous plaît."
+    },
+    {
+      "consulta": [
+        "chegar/entrar",
+        "mesa/bebida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b01-p01",
+      "promptPt": "En el mostrador, saluda primero a la mujer y luego pide un café. Habla ahora.",
+      "audioKey": "fr-b01-t01",
+      "es": "Bonjour, un café, s'il vous plaît.",
+      "pinyin": "bon-ZHOOR, uhn ka-FAY, seel voo PLEH",
+      "pt": "Hola, un café, por favor.",
+      "tts": "Bonjour, un café, s'il vous plaît."
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b01-p02",
+      "promptPt": "Te lo entrega. Dale las gracias y deja caer la p final. Habla ahora.",
+      "audioKey": "fr-b01-t02",
+      "es": "Merci beaucoup.",
+      "pinyin": "mair-SEE bo-KOO",
+      "pt": "Muchas gracias.",
+      "tts": "Merci beaucoup."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b01-n04",
+      "pt": "Gesto dos: la h nunca suena. Hôtel es o-TEL, heure es URR. La letra está en el cartel, no en la boca."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b01-t03",
+      "es": "À l'hôtel, s'il vous plaît.",
+      "pinyin": "ah lo-TEL, seel voo PLEH",
+      "pt": "Al hotel, por favor. Sin h delante, sin t al final de plaît.",
+      "tts": "À l'hôtel, s'il vous plaît."
+    },
+    {
+      "consulta": [
+        "taxi/destino"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_m",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b01-p03",
+      "promptPt": "Subes a un taxi con la dirección ya en el móvil. Dile adónde. Habla ahora.",
+      "audioKey": "fr-b01-t03",
+      "es": "À l'hôtel, s'il vous plaît.",
+      "pinyin": "ah lo-TEL, seel voo PLEH",
+      "pt": "Al hotel, por favor.",
+      "tts": "À l'hôtel, s'il vous plaît."
+    },
+    {
+      "consulta": [
+        "transporte/bilhete"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b01-p04",
+      "promptPt": "El panel acaba de cambiar y necesitas la nueva salida. Habla ahora.",
+      "audioKey": "fr-b01-t04",
+      "es": "À quelle heure ?",
+      "pinyin": "ah kel URR",
+      "pt": "¿A qué hora?",
+      "tts": "À quelle heure ?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b01-n05",
+      "pt": "Gesto tres: ou es oo. Pero la u sola es otro sonido: di ee y luego redondea los labios con fuerza sin mover la lengua."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b01-r01",
+      "receptivo": true,
+      "es": "tout — tu · dessous — dessus",
+      "pinyin": "TOO — TEW · duh-SOO — duh-SEW",
+      "pt": "Dos pares. El inglés los junta en un solo sonido; el francés los mantiene aparte, y son palabras distintas.",
+      "tts": "tout, tu. dessous, dessus.",
+      "acao": "Escucha dos veces antes de imitar. Di ee primero y luego adelanta los labios: ese es el segundo sonido de cada par."
+    },
+    {
+      "consulta": [
+        "compras/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b01-p05",
+      "promptPt": "En la panadería, pide una baguette. La primera palabra lleva el sonido redondeado. Habla ahora.",
+      "audioKey": "fr-b01-t05",
+      "es": "Une baguette, s'il vous plaît.",
+      "pinyin": "EWN ba-GET, seel voo PLEH",
+      "pt": "Una baguette, por favor.",
+      "tts": "Une baguette, s'il vous plaît."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b01-n06",
+      "bloco": "capsula",
+      "pt": "Gesto cuatro: un, vin, pain, bon no acaban en nada. Toda la vocal sale por la nariz y la n nunca llega."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b01-t06",
+      "es": "Un croissant, s'il vous plaît.",
+      "pinyin": "uhn krwa-SAHN, seel voo PLEH",
+      "pt": "Un cruasán, por favor. Dos nasales y ninguna t final.",
+      "tts": "Un croissant, s'il vous plaît."
+    },
+    {
+      "consulta": [
+        "compras/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_m",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b01-p06",
+      "promptPt": "Mismo mostrador, una cosa más. Pídelo con las dos vocales por la nariz. Habla ahora.",
+      "audioKey": "fr-b01-t06",
+      "es": "Un croissant, s'il vous plaît.",
+      "pinyin": "uhn krwa-SAHN, seel voo PLEH",
+      "pt": "Un cruasán, por favor.",
+      "tts": "Un croissant, s'il vous plaît."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b01-n07",
+      "pt": "Gesto cinco: el golpe cae en la última sílaba del grupo, nunca dentro de la palabra. Desliza plano y luego toca una vez."
+    },
+    {
+      "consulta": [
+        "compras/balcao",
+        "pagar/pedir"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b01-p07",
+      "promptPt": "Te pregunta si quieres algo más. Cierra el pedido en tres palabras. Habla ahora.",
+      "audioKey": "fr-b01-t07",
+      "es": "C'est tout, merci.",
+      "pinyin": "say TOO, mair-SEE",
+      "pt": "Eso es todo, gracias.",
+      "tts": "C'est tout, merci."
+    },
+    {
+      "consulta": [
+        "chegar/entrar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b01-p08",
+      "promptPt": "Estás dentro de un café y necesitas el fondo del local. Pregunta. Habla ahora.",
+      "audioKey": "fr-b01-t08",
+      "es": "Où sont les toilettes ?",
+      "pinyin": "oo son lay twa-LET",
+      "pt": "¿Dónde están los baños?",
+      "tts": "Où sont les toilettes ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b01-r02",
+      "es": "Au fond, à droite, après le bar.",
+      "pt": "Al fondo, a la derecha, pasado el bar.",
+      "tts": "Au fond, à droite, après le bar."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b01-n08",
+      "pt": "Gesto seis: las palabras se enganchan. Vous êtes sale como voo-ZET. Ese enganche es por qué desaparece el principio de las palabras."
+    },
+    {
+      "consulta": [
+        "compras/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b01-p09",
+      "promptPt": "La persiana está a medio subir y alguien se mueve dentro. Pregunta antes de entrar. Habla ahora.",
+      "audioKey": "fr-b01-t09",
+      "es": "Vous êtes ouvert ?",
+      "pinyin": "voo-ZET oo-VAIR",
+      "pt": "¿Están abiertos?",
+      "tts": "Vous êtes ouvert ?"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b01-s01",
+      "es": "Bonjour, un café, s'il vous plaît. Une baguette, s'il vous plaît. Où sont les toilettes ? Merci beaucoup.",
+      "pinyin": "bon-ZHOOR uhn ka-FAY seel voo PLEH · EWN ba-GET seel voo PLEH · oo son lay twa-LET · mair-SEE bo-KOO",
+      "pt": "Repite en sombra los seis gestos de una tirada. Mano plana, un toque al final de cada grupo.",
+      "tts": "Bonjour, un café, s'il vous plaît. Une baguette, s'il vous plaît. Où sont les toilettes ? Merci beaucoup."
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b01-n09",
+      "bloco": "recap",
+      "pt": "B01 hecho. Consonante final cortada, h muda, ou y u separadas, nasales por la nariz, golpe al final, palabras enganchadas."
+    }
+  ],
+  "aprofundar": {
+    "titulo": "El modelo de sonido que usa este curso",
+    "secoes": [
+      {
+        "titulo": "La ortografía es más antigua que el sonido",
+        "corpo": "El francés conservó las letras y dejó de pronunciar varias. Ahí está toda la dificultad de este par: medio vocabulario se parece al inglés, así que el ojo ofrece una pronunciación que el oído no acepta. El arreglo es restar, no esforzarse: di menos de lo que ves.",
+        "exemplos": [
+          {
+            "es": "beaucoup",
+            "pt": "bo-KOO — la p es muda"
+          },
+          {
+            "es": "petit",
+            "pt": "puh-TEE — la t es muda"
+          }
+        ]
+      },
+      {
+        "titulo": "ou y u son dos sonidos distintos",
+        "corpo": "El inglés tiene una vocal posterior redondeada y el francés tiene dos. Dessous es debajo y dessus es encima; tout es todo y tu es tú. El segundo sonido de cada par se hace diciendo ee y luego redondeando los labios sin mover la lengua.",
+        "exemplos": [
+          {
+            "es": "dessous / dessus",
+            "pt": "duh-SOO / duh-SEW — debajo / encima"
+          },
+          {
+            "es": "une rue",
+            "pt": "EWN REW — una calle"
+          }
+        ]
+      },
+      {
+        "titulo": "La vocal nasal no lleva consonante dentro",
+        "corpo": "En un, vin, pain y bon la n de la página es una instrucción, no un sonido. El aire pasa por la nariz durante la vocal misma y la palabra simplemente se detiene. El anglófono añade una n al final y la palabra llega como otra cosa."
+      },
+      {
+        "titulo": "El acento pertenece al grupo, no a la palabra",
+        "corpo": "El inglés marca una sílaba dentro de cada palabra. El francés recorre el grupo plano y pone un pequeño repunte en la última sílaba de la frase entera. Para eso es la mano: desliza a nivel, toca una vez al final. Es también por qué la liaison parece que reconecta las palabras: dentro de un grupo no hay huecos."
+      },
+      {
+        "titulo": "Permiso para sonar extranjero",
+        "corpo": "Una r uvular que no puedes hacer no es un problema de viaje. Cortar las consonantes finales, dejar caer la h y poner el golpe al final compran mucha más comprensión que fingir un acento. La meta es que te entiendan a la primera, no que te confundan con un local."
+      }
+    ]
+  },
+  "slot": "B01",
+  "permissao": "Tienes permiso para sonar extranjero. Nadie en ese mostrador te está calificando la r, ni espera una u perfecta. Corta los finales, pon el golpe al final del grupo, y la frase llega, que es todo el trabajo del primer día.",
+  "permissaoAudioKey": "fr-b01-n07",
+  "espelho": "El español hace el mismo truco en otra dirección: nadie pronuncia la h de huevo ni la de hora, y nadie lo considera difícil. Ya tienes el hábito de decir menos de lo que ves; esto solo lo traslada a otro conjunto de finales.",
+  "fichasCulturais": [
+    {
+      "sinal": "Dices una palabra de la que estás completamente seguro —croissant, menu, restaurant— y la persona espera un momento, o te responde en inglés.",
+      "suaLeitura": "Mi acento es tan malo que ni las palabras que compartimos funcionan.",
+      "oQueEAli": "Esas palabras entraron en tu idioma con las consonantes finales pronunciadas, las nasales convertidas en vocal más n y el acento movido al principio. Dichas así llegan como palabras que el que escucha no tiene, en vez de como una versión con acento de las que sí tiene.",
+      "oQueVoceFaz": "Dilo otra vez un poco más despacio, con el final cortado y el golpe en la última sílaba: krwa-SAHN, no KROY-sont.",
+      "oQueMelhora": "Los cientos de palabras francesas que ya conoces dejan de ser las primeras en fallar, y la conversación se queda en francés un poco más.",
+      "ondeNaoVale": "No en un mostrador de aeropuerto, una estación grande o una recepción acostumbrada a huéspedes internacionales, donde el personal descifra francés con acento todo el día y te entiende igual a la primera.",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b01-n03",
+        "fr-b01-n06"
+      ]
+    },
+    {
+      "sinal": "Sigues palabras sueltas en una tienda y luego alguien suelta una frase entera y no encuentras dónde empieza ninguna palabra.",
+      "suaLeitura": "Hablan demasiado rápido para mí.",
+      "oQueEAli": "La velocidad es solo una parte. Dentro de un grupo rítmico el francés enlaza el final de una palabra con el principio de la siguiente, así que vous êtes se vuelve un bloque y las costuras que buscas no están ahí. El hueco que rastreas nunca estuvo en la señal.",
+      "oQueVoceFaz": "Deja de buscar los bordes de las palabras y escucha el toque al final del grupo. Pide una repetición y deja que la segunda pasada halle la forma, no las palabras.",
+      "oQueMelhora": "Empiezas a captar la última palabra de cada grupo, que suele ser la que lleva la respuesta: el precio, el andén, la dirección.",
+      "ondeNaoVale": "No con números y direcciones, donde las piezas sí van separadas y pedir que te lo escriban funciona mejor que otra escucha.",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b01-n08"
+      ]
+    }
+  ]
+}

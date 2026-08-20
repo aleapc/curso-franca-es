@@ -1,0 +1,300 @@
+{
+  "id": "i07",
+  "nivel": "intermediario",
+  "numero": 25,
+  "parte": "I07",
+  "titulo": "El elogio que llega a la cocina, y la frase plana que hace que te lo cambien",
+  "subtitulo": "Nombra el plato y el elogio viaja; nombra el hecho y te cambian el plato, ambos en unas seis palabras",
+  "cena": "El pato estaba realmente magnífico, el plato de antes salió frío, y tienes diez segundos para hacer algo útil con cualquiera de los dos hechos.",
+  "moldura": "ganha",
+  "frasePiso": "Nombra la cosa. Un elogio con un sustantivo dentro llega a la cocina; una frase con un hecho dentro consigue que actúen.",
+  "decisao": "elogiar nombrando el plato y decir el hecho en voz calmada en el momento, en vez de decir «très bon» a todo y escribir una mala reseña del hotel",
+  "moldes": [],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i07-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "Dos frases, trabajos opuestos, una regla: nombra la cosa. El elogio vago se queda en la mesa."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i07-n02",
+      "bloco": "corpo",
+      "pt": "Primero el elogio. Très bon es ruido cortés. Nombra el plato y se vuelve un mensaje que alguien repite."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-i07-t01",
+      "es": "Le canard était excellent, mes compliments au chef.",
+      "pinyin": "luh ka-nar ay-tay ek-se-LAHN, may kohn-plee-mahn oh SHEF",
+      "pt": "El pato estaba excelente, mis felicitaciones al chef.",
+      "tts": "Le canard était excellent, mes compliments au chef."
+    },
+    {
+      "consulta": [
+        "conversa/elogiar",
+        "comer/pedido"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i07-p01",
+      "promptPt": "Un plato fue mejor que el resto. Elógialo por su nombre y hazlo llegar. Habla ahora.",
+      "audioKey": "fr-i07-t01",
+      "es": "Le canard était excellent, mes compliments au chef.",
+      "pinyin": "luh ka-nar ay-tay ek-se-LAHN, may kohn-plee-mahn oh SHEF",
+      "pt": "El pato estaba excelente, mis felicitaciones al chef.",
+      "tts": "Le canard était excellent, mes compliments au chef."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i07-r01",
+      "receptivo": true,
+      "acao": "Quédate sentado un momento. La respuesta es corta, y el elogio igual llega a la cocina.",
+      "es": "Je lui dirai, ça va lui faire plaisir.",
+      "pt": "Se lo diré, le va a alegrar.",
+      "tts": "Je lui dirai, ça va lui faire plaisir."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i07-n03",
+      "pt": "Délicieux, excellent, un régal. Las tres son palabras corrientes aquí y las tres superan a very good."
+    },
+    {
+      "consulta": [
+        "conversa/elogiar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i07-p02",
+      "promptPt": "Elogia la casa en vez del plato, al pasar junto a la barra. Habla ahora.",
+      "audioKey": "fr-i07-t02",
+      "es": "On mange très bien ici.",
+      "pinyin": "ohn mahnzh treh byan ee-SEE",
+      "pt": "Aquí se come muy bien.",
+      "tts": "On mange très bien ici."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i07-n04",
+      "bloco": "capsula",
+      "pt": "Ahora la otra. Excusez-moi, luego el hecho, y dejas de hablar. Sin historia, sin disculpa encima."
+    },
+    {
+      "consulta": [
+        "reparo/reclamar",
+        "comer/pedido"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i07-p03",
+      "promptPt": "El plato llegó frío. Di solo eso, con voz serena. Habla ahora.",
+      "audioKey": "fr-i07-t03",
+      "es": "Excusez-moi, c'est froid.",
+      "pinyin": "ek-skew-zay MWAH, say FRWAH",
+      "pt": "Disculpe, esto está frío.",
+      "tts": "Excusez-moi, c'est froid.",
+      "molde": "PARDON",
+      "encaixe": "c'est froid"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i07-r02",
+      "es": "Ah pardon, je vous le fais réchauffer tout de suite.",
+      "pt": "Ah, disculpe, se lo caliento enseguida.",
+      "tts": "Ah pardon, je vous le fais réchauffer tout de suite."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i07-n05",
+      "pt": "Funcionó porque tenía un hecho dentro. Rellenarlo con perdones no les da nada sobre lo que actuar."
+    },
+    {
+      "consulta": [
+        "reparo/reclamar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i07-p04",
+      "promptPt": "Aterrizó otro plato delante de ti. Nombra el que en realidad pediste. Habla ahora.",
+      "audioKey": "fr-i07-t04",
+      "es": "Excusez-moi, j'avais commandé le poisson.",
+      "pinyin": "ek-skew-zay MWAH, zha-vay ko-mahn-day luh pwa-SOHN",
+      "pt": "Disculpe, yo había pedido el pescado.",
+      "tts": "Excusez-moi, j'avais commandé le poisson.",
+      "molde": "PARDON",
+      "encaixe": "j'avais commandé le poisson"
+    },
+    {
+      "consulta": [
+        "reparo/reclamar",
+        "comer/pedido"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i07-p05",
+      "promptPt": "La copa tiene una muesca. Pide el cambio, sin explicación añadida. Habla ahora.",
+      "audioKey": "fr-i07-t05",
+      "es": "Vous pouvez me changer ça, s'il vous plaît ?",
+      "pinyin": "voo poo-vay muh shahn-zhay SA, seel voo PLEH",
+      "pt": "¿Me puede cambiar esto, por favor?",
+      "tts": "Vous pouvez me changer ça, s'il vous plaît ?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i07-n06",
+      "pt": "Excusez-moi va primero, siempre. Es el golpe en la puerta, y lo que le sigue aterriza como algo normal."
+    },
+    {
+      "consulta": [
+        "reparo/reclamar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i07-p06",
+      "promptPt": "Han pasado cuarenta minutos. Pregunta por la espera sin acusar a nadie. Habla ahora.",
+      "audioKey": "fr-i07-t06",
+      "es": "Excusez-moi, c'est encore long ?",
+      "pinyin": "ek-skew-zay MWAH, say tahn-kor LOHN",
+      "pt": "Disculpe, ¿todavía falta mucho?",
+      "tts": "Excusez-moi, c'est encore long ?",
+      "molde": "PARDON",
+      "encaixe": "c'est encore long"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i07-r03",
+      "receptivo": true,
+      "acao": "Dos minutos significa que el plato está en el pase. Quédate en la mesa.",
+      "es": "Ça arrive, deux minutes. On est un peu débordés ce soir.",
+      "pt": "Ya viene, dos minutos. Estamos un poco desbordados esta noche.",
+      "tts": "Ça arrive, deux minutes. On est un peu débordés ce soir."
+    },
+    {
+      "consulta": [
+        "conversa/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i07-p07",
+      "promptPt": "Lo resolvieron en un minuto. Cierra el círculo para que la mesa siga cálida. Habla ahora.",
+      "audioKey": "fr-i07-t07",
+      "es": "Merci beaucoup, c'est très gentil.",
+      "pinyin": "mair-see boh-KOO, say treh zhahn-TEE",
+      "pt": "Muchas gracias, es muy amable.",
+      "tts": "Merci beaucoup, c'est très gentil."
+    },
+    {
+      "consulta": [
+        "conversa/elogiar",
+        "conversa/despedir"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i07-p08",
+      "promptPt": "Al salir, di el elogio más fuerte que existe. Habla ahora.",
+      "audioKey": "fr-i07-t08",
+      "es": "On reviendra, c'est sûr.",
+      "pinyin": "ohn ruh-vyan-DRA, say SEWR",
+      "pt": "Volveremos, seguro.",
+      "tts": "On reviendra, c'est sûr."
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-i07-s01",
+      "es": "Le canard était excellent, mes compliments au chef. Excusez-moi, c'est froid. Merci beaucoup, c'est très gentil.",
+      "pinyin": "luh ka-nar ay-tay ek-se-LAHN, may kohn-plee-mahn oh SHEF. ek-skew-zay MWAH, say FRWAH. mair-see boh-KOO, say treh zhahn-TEE",
+      "pt": "Repite en sombra el elogio, el hecho, y el cierre que mantiene la sala cálida.",
+      "tts": "Le canard était excellent, mes compliments au chef. Excusez-moi, c'est froid. Merci beaucoup, c'est très gentil.",
+      "molde": "PARDON"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i07-n07",
+      "bloco": "recap",
+      "pt": "I07 hecho. Nombra el plato para elogiarlo, nombra el hecho para que te lo cambien, y cierra con calidez en ambos casos."
+    }
+  ],
+  "aprofundar": {
+    "titulo": "Ambas frases necesitan un sustantivo",
+    "secoes": [
+      {
+        "titulo": "Mes compliments au chef viaja",
+        "corpo": "Es una frase fija y hace lo que dice: la persona que sirve lo transmite. Nombrar el plato es lo que lo hace repetible — nadie puede llevar «todo estuvo encantador» a una cocina, pero sí pueden llevar «le canard».",
+        "exemplos": [
+          {
+            "es": "Le canard était excellent, mes compliments au chef.",
+            "pt": "El pato estaba excelente, mis felicitaciones al chef."
+          },
+          {
+            "es": "On mange très bien ici.",
+            "pt": "Aquí se come muy bien."
+          }
+        ]
+      },
+      {
+        "titulo": "Excusez-moi más el hecho",
+        "corpo": "C'est froid. J'avais commandé le poisson. C'est encore long ? Tres frases, sin adjetivos, sin relato de cómo te ha ido el día. Cuanto más corta es, más rápido se mueve el plato."
+      },
+      {
+        "titulo": "Por qué la disculpa excesiva sale mal",
+        "corpo": "Amontonar perdones sobre un hecho entierra la única información que la otra persona necesita, y señala que estás preparado para discutir. Una frase plana, cálida y factual se escucha como información en su lugar."
+      },
+      {
+        "titulo": "El elogio más fuerte es volver",
+        "corpo": "On reviendra supera a cualquier adjetivo. Una sala que alimenta al mismo barrio cada semana mide su trabajo en la gente que vuelve, no en lo que se teclea en un teléfono después."
+      }
+    ]
+  },
+  "slot": "I07",
+  "permissao": "Tienes permiso para decir que un plato está frío. Excusez-moi, c'est froid es una frase corriente en un comedor francés, se escucha como información y no como un ataque, y la versión en la que te lo comes frío y refunfuñas en el hotel no ayuda a nadie, y menos a ti.",
+  "permissaoAudioKey": "fr-i07-n04",
+  "espelho": "Cualquiera que se haya comido un pedido equivocado en casa en vez de decirlo, y luego se haya quejado en el coche, ya conoce este reflejo. No es sobre el francés — es la creencia de que decir algo te vuelve difícil, que es exactamente al revés.",
+  "fichasCulturais": [
+    {
+      "sinal": "Elogias un plato con calidez y recibes un breve «je lui dirai» y nada más — sin sonrisa sostenida, sin pregunta de seguimiento.",
+      "suaLeitura": "El elogio cayó mal, o no les importó.",
+      "oQueEAli": "En la mesa la respuesta al elogio suele ser breve y profesional; la parte que importa ocurre fuera de tu vista, en la cocina. La longitud de la respuesta no mide cómo se recibió el mensaje.",
+      "oQueVoceFaz": "Dilo una vez, nombra el plato, y deja que la respuesta corta sea toda la respuesta. No lo repitas más alto ni añadas una segunda versión.",
+      "oQueMelhora": "El elogio se transmite y el intercambio se queda del tamaño que debía tener, que es también lo que hace cómodo repetirlo la noche siguiente.",
+      "ondeNaoVale": "No cuando lo que en realidad quieres es un cambio en el plato — el elogio no lleva ninguna petición dentro, y la petición necesita su propia frase, empezando por excusez-moi.",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-i07-n02"
+      ]
+    },
+    {
+      "sinal": "Abres directamente con el problema — «esto está frío» — y la respuesta vuelve seca, aunque el hecho fuera cierto.",
+      "suaLeitura": "Les molesta que se lo digan, y quejarse aquí no vale la pena.",
+      "oQueEAli": "En la literatura de la pragmática, las fórmulas de apertura como bonjour y excusez-moi se describen como rituales que suavizan la entrada en el espacio de alguien; saltárselas empieza el intercambio sin ese paso, y la frialdad que sigue es por la apertura y no por el contenido.",
+      "oQueVoceFaz": "Pon excusez-moi delante de cada una de estas frases, luego el hecho, luego silencio. Seis palabras en total son una petición completa y bien formada.",
+      "oQueMelhora": "El mismo hecho recibe otra acogida, y dejas de leer un fallo de secuencia como hostilidad hacia ti.",
+      "ondeNaoVale": "No como afirmación de que la apertura garantiza una respuesta cálida — una sala genuinamente desbordada será brusca con todos, y eso es lo que te dice «on est un peu débordés».",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-i07-n06"
+      ]
+    }
+  ]
+}

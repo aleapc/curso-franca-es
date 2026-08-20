@@ -1,0 +1,96 @@
+{
+  "id": "q-b08",
+  "nivel": "basico",
+  "titulo": "Quiz — Où est, y la respuesta reducida",
+  "subtitulo": "Nombra el lugar y luego cierra la pregunta",
+  "introAudioKey": "fr-b08-q-i",
+  "introPt": "Un viajero pregunta por un lugar, recibe treinta palabras de vuelta y las hace encajar.",
+  "cenario": "A la salida de una estación, un nombre en el móvil y cuatro salidas.",
+  "dialogo": [
+    {
+      "audioKey": "fr-b08-q01",
+      "voz": "target_fr_f",
+      "es": "Pardon, où est la gare ?",
+      "pt": "Perdón, ¿dónde está la estación?",
+      "tts": "Pardon, où est la gare ?"
+    },
+    {
+      "audioKey": "fr-b08-q02",
+      "voz": "target_fr_m",
+      "es": "Vous prenez la deuxième à droite, puis c'est tout droit.",
+      "pt": "Tome la segunda a la derecha y luego todo recto.",
+      "tts": "Vous prenez la deuxième à droite, puis c'est tout droit."
+    },
+    {
+      "audioKey": "fr-b08-q03",
+      "voz": "target_fr_f",
+      "es": "C'est par là ? C'est loin ?",
+      "pt": "¿Es por ahí? ¿Está lejos?",
+      "tts": "C'est par là ? C'est loin ?"
+    },
+    {
+      "audioKey": "fr-b08-q04",
+      "voz": "target_fr_m",
+      "es": "Non, c'est à cinq minutes à pied.",
+      "pt": "No, está a cinco minutos a pie.",
+      "tts": "Non, c'est à cinq minutes à pied."
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "¿Qué es lo único que eliges después de où est?",
+      "opcoes": [
+        "El verbo",
+        "El lugar",
+        "El tiempo verbal",
+        "El nivel de cortesía"
+      ],
+      "correta": 1,
+      "explica": "Dos palabras delante, y el lugar es toda tu decisión."
+    },
+    {
+      "pergunta": "¿Qué lugar lleva où sont en vez de où est?",
+      "opcoes": [
+        "La sortie",
+        "L'entrée",
+        "Les toilettes",
+        "La gare"
+      ],
+      "correta": 2,
+      "explica": "Los baños son plural en francés, y es la única versión de esto que necesitas en el viaje."
+    },
+    {
+      "pergunta": "¿Por qué rematar con c'est par là?",
+      "opcoes": [
+        "Es más educado",
+        "Solo se puede responder con un sí, un no o un gesto de la mano",
+        "Suena más fluido",
+        "Pregunta por la distancia"
+      ],
+      "correta": 1,
+      "explica": "Una pregunta abierta compra una respuesta abierta; una cerrada compra algo que aún puedes retener en la esquina."
+    },
+    {
+      "pergunta": "¿Qué tres palabras vale la pena captar en cualquier serie de indicaciones?",
+      "opcoes": [
+        "Pardon, merci, bonjour",
+        "À droite, à gauche, tout droit",
+        "Ici, là-bas, voilà",
+        "Première, gare, sortie"
+      ],
+      "correta": 1,
+      "explica": "Derecha, izquierda, todo recto. El resto de la frase es relleno."
+    },
+    {
+      "pergunta": "Abres en inglés y el intercambio se vuelve seco. ¿Qué sugiere la literatura sobre la cortesía francesa que está pasando?",
+      "opcoes": [
+        "Un rechazo a hablar inglés",
+        "Te saltaste la fórmula de apertura que permite que empiece un intercambio",
+        "Aversión a los turistas",
+        "Allí nadie habla inglés"
+      ],
+      "correta": 1,
+      "explica": "Bonjour y pardon funcionan como rituales de apertura. Esa lectura es una interpretación de la literatura, no un hallazgo medido."
+    }
+  ]
+}

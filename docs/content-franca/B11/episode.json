@@ -1,0 +1,382 @@
+{
+  "id": "b11",
+  "nivel": "basico",
+  "numero": 11,
+  "parte": "B11",
+  "titulo": "Je voudrais — los cuatro sonidos que piden la primera ronda",
+  "subtitulo": "Una misma apertura pide un café, una jarra, la carta y la mesa de esta noche, y ya llega educada",
+  "cena": "Estás en un café con las mesas muy juntas, el camarero pasa rozándote el hombro con una bandeja y tienes unos tres segundos para decir lo que quieres.",
+  "moldura": "ganha",
+  "frasePiso": "Je voudrais, más la cosa. La cortesía ya va dentro de la palabra.",
+  "moldes": [
+    "JE-VOUDRAIS"
+  ],
+  "clique": {
+    "contagem": [
+      "la terraza del café",
+      "la barra",
+      "el restaurante tomando reservas para esta noche"
+    ],
+    "desconto": "Nadie te enseñó una frase distinta para el café, el agua, el vino y la mesa de esta noche. Mantuviste una sola apertura y cambiaste lo que venía después.",
+    "piso": "La próxima vez que tengas tres segundos y el hombro de un camarero pasando, no vas a señalar. Vas a abrir con je voudrais y terminar la frase."
+  },
+  "fatosDatados": [
+    {
+      "id": "fr-b11-affichage",
+      "afirmacao": "Los precios deben mostrarse de forma legible en el exterior de los cafés y bares franceses, en caracteres de al menos 1,5 cm de alto, para una lista fija de productos — café, cerveza, zumo de fruta, refresco, agua mineral, aperitivo, plat du jour y bocadillo. Dentro debe haber disponible un documento con la lista completa.",
+      "fonte": "Arrêté du 27 mars 1987 (Légifrance, consolidado, mod. 29/06/1990), art. 2 e art. 3",
+      "ano": 1987,
+      "revisarAte": "2028-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b11-n04"
+      ]
+    },
+    {
+      "id": "fr-b11-service-compris",
+      "afirmacao": "Los establecimientos que cobran servicio deben mostrar «Prix service compris» con la tarifa indicada entre paréntesis. El servicio va dentro del precio anunciado, no se añade después.",
+      "fonte": "Arrêté du 27 mars 1987 (Légifrance, consolidado, mod. 29/06/1990), art. 1º",
+      "ano": 1987,
+      "revisarAte": "2028-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b11-n05"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b11-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "La primera ronda es donde señalar deja de funcionar. Una sola apertura hace el pedido, y ya es la educada."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b11-n02",
+      "bloco": "molde",
+      "pt": "El molde es je voudrais, más la cosa. Yo querría — y luego un café, una jarra, la carta."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b11-t01",
+      "es": "Je voudrais un café, s'il vous plaît.",
+      "pinyin": "zhuh voo-DREH uhn ka-FAY, seel voo PLEH",
+      "pt": "Querría un café, por favor.",
+      "tts": "Je voudrais un café, s'il vous plaît."
+    },
+    {
+      "consulta": [
+        "mesa/bebida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "JE-VOUDRAIS",
+      "encaixe": "un café",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b11-p01",
+      "promptPt": "Estás en la barra, son las nueve de la mañana y es tu turno. Habla ahora.",
+      "audioKey": "fr-b11-t01",
+      "es": "Je voudrais un café, s'il vous plaît.",
+      "pinyin": "zhuh voo-DREH uhn ka-FAY, seel voo PLEH",
+      "pt": "Querría un café, por favor."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b11-r01",
+      "receptivo": true,
+      "es": "Un café, très bien. Vous êtes en terrasse ou à l'intérieur ?",
+      "pt": "Un café, muy bien. ¿En terraza o dentro?",
+      "tts": "Un café, très bien. Vous êtes en terrasse ou à l'intérieur ?",
+      "acao": "Esa pregunta es sobre dónde te vas a sentar, y el precio puede depender de eso. Contesta antes de elegir silla."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b11-n04",
+      "bloco": "corpo",
+      "pt": "Los precios están puestos fuera, en letras de al menos centímetro y medio. Puedes leer la ronda antes de sentarte."
+    },
+    {
+      "consulta": [
+        "mesa/mesa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "VOUS-AVEZ",
+      "encaixe": "une table pour deux",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b11-p02",
+      "promptPt": "Has leído la carta de fuera y decidido que la terraza vale la pena. Sois dos. Habla ahora.",
+      "audioKey": "fr-b11-t02",
+      "es": "Vous avez une table pour deux ?",
+      "pinyin": "voo za-VAY oon TABL poor DUH",
+      "pt": "¿Tienen una mesa para dos?",
+      "tts": "Vous avez une table pour deux ?"
+    },
+    {
+      "consulta": [
+        "mesa/carta"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "JE-VOUDRAIS",
+      "encaixe": "voir la carte",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b11-p03",
+      "promptPt": "Estás sentado en la terraza y todavía no te han dado nada. Habla ahora.",
+      "audioKey": "fr-b11-t03",
+      "es": "Je voudrais voir la carte, s'il vous plaît.",
+      "pinyin": "zhuh voo-DREH vwar la KART, seel voo PLEH",
+      "pt": "Querría ver la carta, por favor.",
+      "tts": "Je voudrais voir la carte, s'il vous plaît."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b11-n06",
+      "bloco": "capsula",
+      "pt": "Une carafe d'eau es agua del grifo, gratis, y pedirla es de lo más normal en cualquier mesa con servicio."
+    },
+    {
+      "consulta": [
+        "mesa/agua-pao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "JE-VOUDRAIS",
+      "encaixe": "une carafe d'eau",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b11-p04",
+      "promptPt": "Hace calor, y la única agua que ves en la carta viene en botella con precio. Habla ahora.",
+      "audioKey": "fr-b11-t04",
+      "es": "Je voudrais une carafe d'eau, s'il vous plaît.",
+      "pinyin": "zhuh voo-DREH oon ka-RAF DOH, seel voo PLEH",
+      "pt": "Querría una jarra de agua del grifo, por favor.",
+      "tts": "Je voudrais une carafe d'eau, s'il vous plaît."
+    },
+    {
+      "consulta": [
+        "mesa/bebida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "JE-VOUDRAIS",
+      "encaixe": "un verre de rouge",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b11-p05",
+      "promptPt": "De noche, en la terraza, y quieres la copa pequeña de la casa en vez de una botella. Habla ahora.",
+      "audioKey": "fr-b11-t05",
+      "es": "Je voudrais un verre de rouge.",
+      "pinyin": "zhuh voo-DREH uhn VEHR duh ROOZH",
+      "pt": "Querría una copa de tinto.",
+      "tts": "Je voudrais un verre de rouge."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b11-r02",
+      "receptivo": true,
+      "es": "Un ballon de rouge, ça marche. Et pour madame ?",
+      "pt": "Una copa de tinto, marcha. ¿Y para la señora?",
+      "tts": "Un ballon de rouge, ça marche. Et pour madame ?",
+      "acao": "Un ballon es la copa pequeña estándar. Ça marche significa que está pedido — el turno de la mesa ha avanzado."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b11-n03",
+      "pt": "Je voudrais también admite un verbo. Je voudrais réserver, je voudrais commander — mismo molde, más alcance."
+    },
+    {
+      "consulta": [
+        "mesa/mesa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "JE-VOUDRAIS",
+      "encaixe": "réserver une table pour ce soir",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b11-p06",
+      "promptPt": "Pasas por delante de un restaurante a mediodía y quieres asegurar un sitio antes de que se llene. Habla ahora.",
+      "audioKey": "fr-b11-t06",
+      "es": "Je voudrais réserver une table pour ce soir.",
+      "pinyin": "zhuh voo-DREH ray-zer-VAY oon TABL poor suh SWAR",
+      "pt": "Querría reservar una mesa para esta noche.",
+      "tts": "Je voudrais réserver une table pour ce soir."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b11-r03",
+      "receptivo": true,
+      "es": "Ce soir, c'est complet. Demain, vingt heures trente ?",
+      "pt": "Esta noche está completo. ¿Mañana, a las ocho y media?",
+      "tts": "Ce soir, c'est complet. Demain, vingt heures trente ?",
+      "acao": "Complet significa completo, y la alternativa llegó en la misma frase. Di que sí o pide otra noche."
+    },
+    {
+      "consulta": [
+        "mesa/comida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "VOUS-AVEZ",
+      "encaixe": "un plat du jour",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b11-p07",
+      "promptPt": "Hora de comer, y la pizarra de fuera la borraron antes de que pudieras leerla. Habla ahora.",
+      "audioKey": "fr-b11-t07",
+      "es": "Vous avez un plat du jour ?",
+      "pinyin": "voo za-VAY uhn PLA du ZHOOR",
+      "pt": "¿Tienen plato del día?",
+      "tts": "Vous avez un plat du jour ?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b11-n05",
+      "pt": "El servicio va dentro del precio por ley — prix service compris, tarifa entre paréntesis. No falta nada en el total."
+    },
+    {
+      "consulta": [
+        "mesa/carta"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "JE-VOUDRAIS",
+      "encaixe": "commander",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b11-p08",
+      "promptPt": "Decidiste hace cinco minutos y nadie ha vuelto. Aprovecha el próximo paso. Habla ahora.",
+      "audioKey": "fr-b11-t08",
+      "es": "Je voudrais commander, s'il vous plaît.",
+      "pinyin": "zhuh voo-DREH ko-mon-DAY, seel voo PLEH",
+      "pt": "Querría pedir, por favor.",
+      "tts": "Je voudrais commander, s'il vous plaît."
+    },
+    {
+      "consulta": [
+        "mesa/comida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "JE-VOUDRAIS",
+      "encaixe": "la même chose",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b11-p09",
+      "promptPt": "La persona que te acompaña acaba de pedir algo que sonó bien y tú quieres lo mismo. Habla ahora.",
+      "audioKey": "fr-b11-t09",
+      "es": "Je voudrais la même chose.",
+      "pinyin": "zhuh voo-DREH la mem SHOHZ",
+      "pt": "Querría lo mismo.",
+      "tts": "Je voudrais la même chose."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b11-n07",
+      "pt": "Bonjour va primero, luego el pedido. El saludo es la puerta; el pedido la cruza."
+    },
+    {
+      "consulta": [
+        "chegar/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b11-p10",
+      "promptPt": "Acabas de entrar y llegar a la barra. Abre el intercambio y luego pide dos de los pequeños y fuertes. Habla ahora.",
+      "audioKey": "fr-b11-t10",
+      "es": "Bonjour ! Deux cafés, s'il vous plaît.",
+      "pinyin": "bon-ZHOOR! duh ka-FAY, seel voo PLEH",
+      "pt": "¡Hola! Dos cafés, por favor.",
+      "tts": "Bonjour ! Deux cafés, s'il vous plaît."
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b11-s01",
+      "es": "Je voudrais un café, s'il vous plaît. Je voudrais voir la carte. Je voudrais réserver une table pour ce soir.",
+      "pinyin": "zhuh voo-DREH uhn ka-FAY, seel voo PLEH. zhuh voo-DREH vwar la KART. zhuh voo-DREH ray-zer-VAY oon TABL poor suh SWAR",
+      "pt": "Repite la misma apertura con una bebida, un objeto y una acción.",
+      "tts": "Je voudrais un café, s'il vous plaît. Je voudrais voir la carte. Je voudrais réserver une table pour ce soir.",
+      "molde": "JE-VOUDRAIS"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b11-n08",
+      "bloco": "recap",
+      "pt": "B11 hecho. Je voudrais pidió un café, una jarra, una copa, la carta y la mesa de esta noche."
+    }
+  ],
+  "aprofundar": {
+    "titulo": "Una sola apertura, toda la primera ronda",
+    "secoes": [
+      {
+        "titulo": "Je voudrais admite una cosa o una acción",
+        "corpo": "Después de je voudrais puedes poner un objeto — un café, une carafe d'eau, la même chose — o un verbo en su forma simple — voir la carte, réserver, commander. Nada cambia de forma delante, y por eso sobrevive a decirse rápido.",
+        "exemplos": [
+          {
+            "es": "Je voudrais une carafe d'eau, s'il vous plaît.",
+            "pt": "Querría una jarra de agua del grifo, por favor."
+          },
+          {
+            "es": "Je voudrais réserver une table pour ce soir.",
+            "pt": "Querría reservar una mesa para esta noche."
+          }
+        ]
+      },
+      {
+        "titulo": "Un café es el pequeño y fuerte",
+        "corpo": "Un café te da un espresso. Un café allongé es la versión más larga y suave; un noisette lleva una gota de leche; un crème es el grande con mucha leche de la mañana. Pedir un crème después de comer no es una regla que rompas — es simplemente una hora poco habitual para tomarlo."
+      },
+      {
+        "titulo": "La carta está fuera antes que dentro",
+        "corpo": "Una lista fija de productos tiene que estar con precio en el exterior del local, en caracteres de al menos 1,5 cm de alto, con la lista completa disponible dentro. Eso significa que toda la primera ronda se puede comprobar desde la acera, antes de comprometerte con una silla."
+      },
+      {
+        "titulo": "El servicio va en el precio",
+        "corpo": "Donde se cobra servicio, deben mostrarse las palabras prix service compris y la tarifa. El número de la carta es el número que debes, y lo que dejes por encima es aparte — otra conversación, más adelante en el curso."
+      }
+    ]
+  },
+  "slot": "B11",
+  "permissao": "Tienes derecho a tomarte los tres segundos enteros. Je voudrais, y luego la cosa, es un pedido completo en cualquier parte del país, y un camarero que ha atendido cuatrocientos hoy no está midiendo tu acento contra el de nadie.",
+  "permissaoAudioKey": "fr-b11-n02",
+  "espelho": "Cualquiera que se haya quedado en una barra concurrida en su país repasando el pedido mientras avanza la cola conoce esta presión exactamente. La única diferencia es que aquí el repaso dura cuatro sonidos y la parte educada ya viene incorporada.",
+  "fichasCulturais": [
+    {
+      "sinal": "Te sientas, sueltas tu petición en inglés, y el trato del camarero se vuelve seco el resto de la comida.",
+      "suaLeitura": "Ha decidido no hablarme en inglés.",
+      "oQueEAli": "Abrir un intercambio se vive como pisar el terreno de alguien, y bonjour es el pequeño ritual que pide permiso para pisarlo. Una petición que llega antes del saludo empieza a mitad de la secuencia, y el enfriamiento que sigue responde a la apertura ausente, no al idioma que usaste.",
+      "oQueVoceFaz": "Di bonjour, espera medio segundo a que te lo devuelvan, y luego di lo que sea — incluso en inglés. El orden importa más que el vocabulario.",
+      "oQueMelhora": "El mismo intercambio, con las mismas palabras después, tiende a ir más cálido, y pedir inglés cae como una petición en vez de una suposición.",
+      "ondeNaoVale": "Es una lectura respaldada por la literatura sobre rituales de saludo, no un efecto medido, y no es una promesa de que bonjour produzca servicio en inglés. Donde el personal te saluda primero, la puerta ya está abierta — solo responde.",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b11-n07"
+      ]
+    },
+    {
+      "sinal": "Pides agua y llega a la mesa una botella con precio.",
+      "suaLeitura": "Me han metido la botella cara porque sueno extranjero.",
+      "oQueEAli": "El agua en la mesa viene en dos versiones y solo una tiene un nombre que hay que decir. Une carafe d'eau es la del grifo y es algo de lo más normal de pedir; si solo dices agua, la botella con precio es la lectura razonable de la petición.",
+      "oQueVoceFaz": "Nómbrala: une carafe d'eau, s'il vous plaît. Si la botella ya llegó sin abrir, decirlo entonces todavía funciona.",
+      "oQueMelhora": "Consigues la jarra gratis que querías sin negociar, y la botella deja de sentirse como una trampa.",
+      "ondeNaoVale": "No en una barra ni en una ventanilla para llevar, donde no hay servicio de mesa que traiga una jarra, y no en el raro sitio que solo la sirve junto a un pedido — pedirla sigue siendo normal, solo que la respuesta es no.",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b11-n06"
+      ]
+    }
+  ]
+}

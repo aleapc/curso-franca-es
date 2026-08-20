@@ -1,0 +1,374 @@
+{
+  "id": "b12",
+  "nivel": "basico",
+  "numero": 12,
+  "parte": "B12",
+  "titulo": "Sans — la palabra que hace la carta editable",
+  "subtitulo": "Sin cebolla, sin hielo, la salsa aparte: el plato llega como lo querías, y solo tuviste que decir cuatro letras",
+  "cena": "El plato existe en la carta tal como lo escribió la cocina, el camarero sostiene la libreta, y hay un ingrediente que preferirías no encontrar.",
+  "moldura": "ganha",
+  "frasePiso": "Sans, más la cosa que no quieres — dicho al pedir, no cuando ya llegó.",
+  "moldes": [
+    "SANS"
+  ],
+  "clique": {
+    "contagem": [
+      "la mesa de la brasserie",
+      "el mostrador de bocadillos",
+      "el café en el desayuno"
+    ],
+    "desconto": "Nadie te dio una frase para cada plato que querías cambiar. Pusiste una palabra delante del ingrediente y el resto del pedido quedó como estaba.",
+    "piso": "La próxima vez que un plato esté casi bien, no vas a comer esquivándolo. Vas a decir la palabra antes de que lo cocinen."
+  },
+  "fatosDatados": [
+    {
+      "id": "fr-b12-fait-maison",
+      "afirmacao": "«Fait maison» tiene una definición legal en Francia: un plato preparado en el local a partir de productos crudos, con una lista cerrada de elementos procesados tolerados como pasta seca, pan, queso, charcutería y condimentos. Dos matices importan para un viajero: desde 2015 la mención es opcional, así que su ausencia no prueba nada, y se refiere a la transformación en el sitio, no al origen ni a la calidad del ingrediente.",
+      "fonte": "loi 2014-344 (Hamon), décret 2014-797 e arrêté de 11/07/2014, em vigor desde 15/07/2014, modificados pelo décret 2015-505 de 06/05/2015",
+      "ano": 2015,
+      "revisarAte": "2028-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b12-n05"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b12-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "Ya sabes pedir. Esta es la palabra que cambia lo que llega de verdad."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b12-n02",
+      "bloco": "molde",
+      "pt": "El molde es sans, más la cosa que no quieres. Una palabra delante de cebolla, hielo, salsa, azúcar."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b12-t01",
+      "es": "Sans oignon, s'il vous plaît.",
+      "pinyin": "son zo-NYON, seel voo PLEH",
+      "pt": "Sin cebolla, por favor.",
+      "tts": "Sans oignon, s'il vous plaît."
+    },
+    {
+      "consulta": [
+        "dieta/sem"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SANS",
+      "encaixe": "oignon",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b12-p01",
+      "promptPt": "En la mesa de la brasserie acabas de pedir la ensalada, y hay un ingrediente que no comes nunca. Habla ahora.",
+      "audioKey": "fr-b12-t01",
+      "es": "Sans oignon, s'il vous plaît.",
+      "pinyin": "son zo-NYON, seel voo PLEH",
+      "pt": "Sin cebolla, por favor."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b12-r01",
+      "receptivo": true,
+      "es": "Sans oignon, très bien. Je le note.",
+      "pt": "Sin cebolla, muy bien. Lo anoto.",
+      "tts": "Sans oignon, très bien. Je le note.",
+      "acao": "Je le note significa que llegó a la libreta. No hace falta nada más de tu parte."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b12-n03",
+      "bloco": "corpo",
+      "pt": "Sans va al final del pedido o va solo. Sans oignon es una frase completa en una mesa."
+    },
+    {
+      "consulta": [
+        "mesa/bebida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SANS",
+      "encaixe": "glace",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b12-p02",
+      "promptPt": "En el café del desayuno pides una cola y sabes que el vaso vendrá medio lleno de cubitos. Habla ahora.",
+      "audioKey": "fr-b12-t02",
+      "es": "Un coca sans glace, s'il vous plaît.",
+      "pinyin": "uhn ko-KA son GLASS, seel voo PLEH",
+      "pt": "Una cola sin hielo, por favor.",
+      "tts": "Un coca sans glace, s'il vous plaît."
+    },
+    {
+      "consulta": [
+        "dieta/sem"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SANS",
+      "encaixe": "sauce",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b12-p03",
+      "promptPt": "En el mostrador de bocadillos están a punto de coger el bote de salsa. Habla ahora.",
+      "audioKey": "fr-b12-t03",
+      "es": "Le sandwich sans sauce, s'il vous plaît.",
+      "pinyin": "luh sond-WEECH son SOSS, seel voo PLEH",
+      "pt": "El bocadillo sin salsa, por favor.",
+      "tts": "Le sandwich sans sauce, s'il vous plaît."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b12-n04",
+      "pt": "Dilo al pedir. Una vez montado el plato, la cocina puede mover cosas pero no deshacerlas."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b12-r02",
+      "receptivo": true,
+      "es": "La sauce est déjà dedans. Je peux vous en mettre à côté ?",
+      "pt": "La salsa ya está dentro. ¿Le pongo un poco aparte?",
+      "tts": "La sauce est déjà dedans. Je peux vous en mettre à côté ?",
+      "acao": "Eso no es una negativa, es una oferta. Acepta la versión aparte o di no, gracias."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b12-n06",
+      "bloco": "capsula",
+      "pt": "Avec es la otra mitad. Avec la sauce à côté significa aparte en vez de fuera."
+    },
+    {
+      "consulta": [
+        "mesa/comida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b12-p04",
+      "promptPt": "Acaba de ofrecerte una forma de dejarlo separado, y quieres aceptarla. Habla ahora.",
+      "audioKey": "fr-b12-t04",
+      "es": "Avec de la sauce à côté, s'il vous plaît.",
+      "pinyin": "a-VEK duh la SOSS a ko-TAY, seel voo PLEH",
+      "pt": "Con la salsa aparte, por favor.",
+      "tts": "Avec de la sauce à côté, s'il vous plaît."
+    },
+    {
+      "consulta": [
+        "mesa/bebida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SANS",
+      "encaixe": "sucre",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b12-p05",
+      "promptPt": "Por la mañana, café del desayuno, y pides el té como lo tomas en casa — solo. Habla ahora.",
+      "audioKey": "fr-b12-t05",
+      "es": "Un thé sans sucre, s'il vous plaît.",
+      "pinyin": "uhn TAY son SUKR, seel voo PLEH",
+      "pt": "Un té sin azúcar, por favor.",
+      "tts": "Un thé sans sucre, s'il vous plaît."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b12-n05",
+      "pt": "Fait maison es una declaración legal: cocinado en el sitio a partir de crudo. Desde 2015 la mención es opcional, así que su ausencia no prueba nada."
+    },
+    {
+      "consulta": [
+        "dieta/sem"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SANS",
+      "encaixe": "fromage",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b12-p06",
+      "promptPt": "De vuelta en la mesa de la brasserie, la ensalada que quieres tiene algo encima que preferirías saltarte. Habla ahora.",
+      "audioKey": "fr-b12-t06",
+      "es": "La salade sans fromage, s'il vous plaît.",
+      "pinyin": "la sa-LAD son fro-MAZH, seel voo PLEH",
+      "pt": "La ensalada sin queso, por favor.",
+      "tts": "La salade sans fromage, s'il vous plaît."
+    },
+    {
+      "consulta": [
+        "dieta/sem"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SANS",
+      "encaixe": "porc",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b12-p07",
+      "promptPt": "En el mostrador de bocadillos repasas una pizarra de rellenos y toda una familia queda descartada para ti. Habla ahora.",
+      "audioKey": "fr-b12-t07",
+      "es": "Sans porc, s'il vous plaît.",
+      "pinyin": "son POR, seel voo PLEH",
+      "pt": "Sin cerdo, por favor.",
+      "tts": "Sans porc, s'il vous plaît."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b12-r03",
+      "receptivo": true,
+      "es": "Alors pas le croque. Prenez plutôt le poulet, il est fait maison.",
+      "pt": "Entonces el croque no. Coja mejor el de pollo, es casero.",
+      "tts": "Alors pas le croque. Prenez plutôt le poulet, il est fait maison.",
+      "acao": "Te dieron un recambio, no una negativa. Acéptalo o pregunta qué más hay en la pizarra."
+    },
+    {
+      "consulta": [
+        "dieta/o-que-tem"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SANS",
+      "encaixe": "gluten",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b12-p08",
+      "promptPt": "No puedes comer trigo, cebada ni centeno. Señalas un plato y necesitas saberlo antes de pedirlo. Habla ahora.",
+      "audioKey": "fr-b12-t08",
+      "es": "C'est sans gluten ?",
+      "pinyin": "seh son glu-TEN",
+      "pt": "¿Es sin gluten?",
+      "tts": "C'est sans gluten ?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b12-n07",
+      "pt": "Encore un peu significa un poco más. Te consigue más pan sin construir una frase nueva."
+    },
+    {
+      "consulta": [
+        "mesa/agua-pao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b12-p09",
+      "promptPt": "La cesta de la mesa de la brasserie está vacía y todavía queda salsa en tu plato. Habla ahora.",
+      "audioKey": "fr-b12-t09",
+      "es": "Encore un peu de pain, s'il vous plaît.",
+      "pinyin": "on-KOR uhn PUH duh PAN, seel voo PLEH",
+      "pt": "Un poco más de pan, por favor.",
+      "tts": "Encore un peu de pain, s'il vous plaît."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b12-n08",
+      "pt": "Esto es preferencia, no alergia. Una alergia tiene su propia frase y su propia tarjeta escrita, en la próxima parte."
+    },
+    {
+      "consulta": [
+        "mesa/bebida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SANS",
+      "encaixe": "lactose",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b12-p10",
+      "promptPt": "En la barra del café quieres el que lleva leche, pero no con la leche que usan normalmente. Pregunta si se puede. Habla ahora.",
+      "audioKey": "fr-b12-t10",
+      "es": "Sans lactose, c'est possible ?",
+      "pinyin": "son lak-TOHZ, seh po-SEEBL",
+      "pt": "Sin lactosa, ¿es posible?",
+      "tts": "Sans lactose, c'est possible ?"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b12-s01",
+      "es": "Sans oignon, s'il vous plaît. Un coca sans glace. Un thé sans sucre.",
+      "pinyin": "son zo-NYON, seel voo PLEH. uhn ko-KA son GLASS. uhn TAY son SUKR",
+      "pt": "Repite la misma palabra delante de tres ingredientes distintos.",
+      "tts": "Sans oignon, s'il vous plaît. Un coca sans glace. Un thé sans sucre.",
+      "molde": "SANS"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b12-n09",
+      "bloco": "recap",
+      "pt": "B12 hecho. Sans quitó la cebolla, el hielo, la salsa, el azúcar y el queso — una palabra cada vez."
+    }
+  ],
+  "aprofundar": {
+    "titulo": "Restar en vez de describir",
+    "secoes": [
+      {
+        "titulo": "Sans más el ingrediente",
+        "corpo": "La palabra nunca cambia y el ingrediente va sin más, normalmente sin artículo: sans oignon, sans glace, sans sucre, sans gluten. Funciona pegado al pedido, solo como respuesta, o convertido en pregunta con c'est.",
+        "exemplos": [
+          {
+            "es": "Un coca sans glace, s'il vous plaît.",
+            "pt": "Una cola sin hielo, por favor."
+          },
+          {
+            "es": "C'est sans gluten ?",
+            "pt": "¿Es sin gluten?"
+          }
+        ]
+      },
+      {
+        "titulo": "Avec, à côté, encore un peu",
+        "corpo": "Los tres compañeros de sans. Avec añade, à côté mueve algo al lado del plato en vez de quitarlo, y encore un peu pide más de lo que ya hay. Entre los tres cubren casi cualquier ajuste que un viajero quiera hacer."
+      },
+      {
+        "titulo": "El momento gana a la frase",
+        "corpo": "La misma petición es fácil en el momento de pedir e incómoda una vez que el plato está delante de ti. Una cocina que trabaja desde crudo puede dejar fuera un ingrediente; un plato que llega ya montado normalmente solo permite mover cosas, no quitarlas."
+      },
+      {
+        "titulo": "Qué promete de verdad fait maison",
+        "corpo": "Significa que el plato se hizo en el local a partir de productos crudos, con una lista corta de excepciones toleradas como pasta seca, pan y queso. Mostrarlo es opcional, así que una carta sin el logo no te dice nada, y no dice nada sobre de dónde vinieron los ingredientes ni lo buenos que son."
+      }
+    ]
+  },
+  "slot": "B12",
+  "permissao": "Tienes derecho a cambiar el plato. Decir sans es una parte normal de pedir, no una exigencia ni una complicación, y quien lo apunta lo ha escrito cincuenta veces esta semana sin pensarlo ni una vez.",
+  "espelho": "Cualquiera que haya dicho sin pepinillos, la salsa aparte o sin hielo en una barra de su país ya ha hecho exactamente esto en su propio idioma. Lo único nuevo es que aquí todo el ajuste cabe en una sola palabra puesta delante del ingrediente.",
+  "permissaoAudioKey": "fr-b12-n02",
+  "fichasCulturais": [
+    {
+      "sinal": "Pides el plato sin un ingrediente y recibes un seco ce n'est pas possible, sin nada que lo suavice.",
+      "suaLeitura": "No tiene ganas, o ha decidido ponérmelo difícil.",
+      "oQueEAli": "Esa frase suele ser una afirmación sobre la cocina, no sobre ti. Un plato montado al momento con componentes crudos puede perder un ingrediente; uno que llega de una línea de preparación ya armado, o recalentado entero, físicamente no puede. La sequedad es el registro de un servicio en marcha, no un veredicto sobre la petición.",
+      "oQueVoceFaz": "Pregunta en el momento de pedir, y lleva contigo el recurso: à côté. Si quitarlo es imposible, aparte muchas veces sí se puede, y ofrecerlo tú mismo convierte un no en un arreglo.",
+      "oQueMelhora": "Te vas con el plato que querías, o con un recambio mejor, en vez de con un pulso por cuatro palabras.",
+      "ondeNaoVale": "Esto no se aplica a una alergia. Una alergia no es una preferencia, no admite un quizá, y no viaja sobre la palabra sans a solas — eso es otra conversación, con una tarjeta escrita, y es la próxima parte del curso.",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b12-n04"
+      ]
+    },
+    {
+      "sinal": "La carta marca algunos platos con el logo de la casita y no dice nada junto a los demás.",
+      "suaLeitura": "Los que no están marcados serán industriales, así que los marcados son los buenos.",
+      "oQueEAli": "El logo es una declaración legal sobre dónde ocurrió la cocina — en el sitio, a partir de productos crudos, con una lista corta de excepciones toleradas. Desde 2015 mostrarlo es opcional, así que su ausencia no prueba absolutamente nada, y certifica la transformación en el local, no el origen ni la calidad de lo que entró.",
+      "oQueVoceFaz": "Léelo como una señal entre varias, y pregunta qué lleva un plato en vez de fiarte o desconfiar de un símbolo. La pregunta que ya tienes — c'est sans…? — hace más trabajo que el logo.",
+      "oQueMelhora": "Dejas de ordenar restaurantes por una insignia que muchas cocinas honestas simplemente nunca solicitaron.",
+      "ondeNaoVale": "No es un sello de calidad: un plato fait maison puede estar cocinado en el sitio con ingredientes de supermercado perfectamente corrientes, y una cocina sin marcar al lado puede estar haciéndolo todo desde cero sin decirlo.",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-b12-n05"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,359 @@
+{
+  "id": "a06",
+  "nivel": "avancado",
+  "numero": 34,
+  "parte": "A06",
+  "titulo": "Once festivos, y el único que de verdad vacía la calle",
+  "subtitulo": "Una fecha roja en el calendario no cierra aquí las tiendas; el puente es una elección que hace cada sitio, y una pregunta la noche antes gana a cualquier lista que memorices",
+  "cena": "Un jueves de mayo: el hotel abierto, la panadería abierta, y el sitio que cruzaste la ciudad para ver tiene una tarjeta manuscrita pegada a la puerta.",
+  "moldura": "ganha",
+  "frasePiso": "Pregunta a la puerta, no al calendario. C'est ouvert demain, dicho la tarde antes, vale más que toda lista de festivos jamás impresa.",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-a06-feries",
+      "afirmacao": "La ley francesa enumera once jours fériés en el artículo L3133-1 del Code du travail. Solo el primero de mayo es obligatoriamente día libre y pagado; los otros diez son festivos que no son automáticamente días no laborables. El pont — unir un festivo al fin de semana — es opcional y lo decide cada empleador o convenio colectivo, por lo que los cierres en mayo son desiguales de calle a calle.",
+      "fonte": "Code du travail, article L3133-1 (Légifrance)",
+      "ano": 2026,
+      "revisarAte": "2028-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-a06-n02",
+        "fr-a06-n04"
+      ]
+    },
+    {
+      "id": "fr-a06-dimanche",
+      "afirmacao": "El descanso dominical es la norma general para el trabajo en comercio. La loi 2015-990 creó las Zones Touristiques Internationales, donde la apertura en domingo y el trabajo hasta medianoche son posibles con un convenio colectivo; París tiene doce — entre otras Champs-Élysées Montaigne, Haussmann, Le Marais, Les Halles, Maillot-Ternes y Montmartre — fijadas por el décret del 23/09/2015 y los arrêtés del 25/09/2015.",
+      "fonte": "Loi 2015-990 («Macron»); décret de 23/09/2015 e arrêtés de 25/09/2015 — 12 ZTI em Paris",
+      "ano": 2026,
+      "revisarAte": "2028-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-a06-n07",
+        "fr-a06-n08"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a06-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "Un festivo aquí no es un interruptor nacional. Existen once, y diez dejan la decisión a cada puerta."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a06-n02",
+      "bloco": "corpo",
+      "pt": "Solo el primero de mayo tiene que ser libre y pagado. Los otros diez no, y muchos sitios simplemente trabajan."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a06-r01",
+      "receptivo": true,
+      "acao": "Toma eso como la respuesta solo para esta tienda. La de al lado decidió aparte, así que pregúntale aparte.",
+      "es": "Demain c'est férié, mais nous on est ouverts. Comme d'habitude.",
+      "pt": "Mañana es festivo, pero nosotros abrimos. Como siempre.",
+      "tts": "Demain c'est férié, mais nous on est ouverts. Comme d'habitude."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a06-n03",
+      "pt": "Así que la pregunta útil nunca es qué dice el calendario. Es qué hace esta puerta en concreto mañana."
+    },
+    {
+      "consulta": [
+        "compras/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a06-p01",
+      "promptPt": "Estás en el mostrador de la panadería la víspera de una fecha roja, y quieres saber de la mañana siguiente. Habla ahora.",
+      "audioKey": "fr-a06-t01",
+      "es": "C'est ouvert demain ?",
+      "pinyin": "seh oo-VEHR duh-MAHN",
+      "pt": "¿Abre mañana?",
+      "tts": "C'est ouvert demain ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a06-r02",
+      "receptivo": true,
+      "acao": "Eso es el puente. Pregunta cuándo vuelven a abrir, y pon ese recado en otro sitio el viernes.",
+      "es": "Nous on fait le pont, du coup on ferme jusqu'à lundi.",
+      "pt": "Nosotros hacemos puente, así que cerramos hasta el lunes.",
+      "tts": "Nous on fait le pont, du coup on ferme jusqu'à lundi."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a06-n04",
+      "bloco": "capsula",
+      "pt": "Le pont es el día laborable atrapado entre un festivo y el fin de semana. Tomarlo es una elección, nunca una obligación."
+    },
+    {
+      "consulta": [
+        "compras/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a06-p02",
+      "promptPt": "Te acaban de decir que la persiana queda bajada cuatro días. Averigua cuándo vuelve a subir. Habla ahora.",
+      "audioKey": "fr-a06-t02",
+      "es": "Vous rouvrez quand ?",
+      "pinyin": "voo roo-VRAY KAHN",
+      "pt": "¿Cuándo vuelven a abrir?",
+      "tts": "Vous rouvrez quand ?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a06-n05",
+      "pt": "Una fecha se comporta como las guías prometen que se comportan todas. Esa fecha es el primero de mayo."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a06-r03",
+      "receptivo": true,
+      "acao": "Compra tu comida el día antes. En esa única fecha, planea como si no abriera absolutamente nada.",
+      "es": "Le premier mai, tout est fermé. Même la boulangerie.",
+      "pt": "El primero de mayo todo está cerrado. Hasta la panadería.",
+      "tts": "Le premier mai, tout est fermé. Même la boulangerie."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a06-n06",
+      "pt": "Compra el treinta de abril. Es la única fecha del año francés en torno a la que vale la pena planear un día."
+    },
+    {
+      "consulta": [
+        "quarto/pedir"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a06-p03",
+      "promptPt": "Es veintinueve de abril y estás en la recepción del hotel, pensando con dos días de antelación. Habla ahora.",
+      "audioKey": "fr-a06-t03",
+      "es": "Vous êtes ouverts le premier mai ?",
+      "pinyin": "voo zet oo-VEHR luh pruh-mee-AY MEH",
+      "pt": "¿Abren el primero de mayo?",
+      "tts": "Vous êtes ouverts le premier mai ?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a06-n07",
+      "pt": "El domingo es el otro patrón, y funciona por mapa. El descanso es la norma, y las excepciones se dibujan por calles."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a06-r04",
+      "receptivo": true,
+      "acao": "El comercio dominical sigue barrios, no ciudades. Comprueba la calle donde estás, no el pueblo en el que estás.",
+      "es": "Ici on est en zone touristique, donc on ouvre le dimanche.",
+      "pt": "Aquí estamos en zona turística, así que abrimos los domingos.",
+      "tts": "Ici on est en zone touristique, donc on ouvre le dimanche."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a06-n08",
+      "pt": "París tiene doce de esas zonas. Dos calles más allá, la misma cadena puede tener la persiana bajada todo el día."
+    },
+    {
+      "consulta": [
+        "compras/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a06-p04",
+      "promptPt": "Sábado por la tarde, y quieres saber cómo lleva la tienda el día siguiente. Pregunta por la hora. Habla ahora.",
+      "audioKey": "fr-a06-t04",
+      "es": "Le dimanche, vous ouvrez à quelle heure ?",
+      "pinyin": "luh dee-MAHNSH, voo zoo-VRAY a kel UHR",
+      "pt": "Los domingos, ¿a qué hora abren?",
+      "tts": "Le dimanche, vous ouvrez à quelle heure ?",
+      "molde": "A-QUELLE-HEURE",
+      "encaixe": "vous ouvrez le dimanche"
+    },
+    {
+      "consulta": [
+        "compras/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a06-p05",
+      "promptPt": "Tres persianas bajadas seguidas en la misma acera, y aún quieres desayunar. Pregunta a un transeúnte. Habla ahora.",
+      "audioKey": "fr-a06-t05",
+      "es": "Je cherche une boulangerie ouverte.",
+      "pinyin": "zhuh SHERSH oon boo-lahn-zhuh-REE oo-VEHRT",
+      "pt": "Busco una panadería abierta.",
+      "tts": "Je cherche une boulangerie ouverte."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a06-r05",
+      "receptivo": true,
+      "acao": "Esa tarjeta es el mes libre de un dueño, no del país. Lee la fecha de reapertura y camina dos puertas más allá.",
+      "es": "Fermeture annuelle du cinq au vingt-six août. Réouverture le vingt-sept.",
+      "pt": "Cierre anual del cinco al veintiséis de agosto. Reapertura el veintisiete.",
+      "tts": "Fermeture annuelle du cinq au vingt-six août. Réouverture le vingt-sept."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a06-n09",
+      "pt": "En un centro urbano en agosto te topas con unas cuantas de esas tarjetas. En la costa, esas mismas semanas son las de más ajetreo del año."
+    },
+    {
+      "consulta": [
+        "compras/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a06-p06",
+      "promptPt": "Quieres los puestos de comida, y no tienes ni idea de qué mañana toman la plaza. Pregunta. Habla ahora.",
+      "audioKey": "fr-a06-t06",
+      "es": "Où est le marché, le dimanche ?",
+      "pinyin": "oo eh luh mar-SHAY, luh dee-MAHNSH",
+      "pt": "¿Dónde está el mercado los domingos?",
+      "tts": "Où est le marché, le dimanche ?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a06-n10",
+      "pt": "Los mercados llevan su propio calendario, y a menudo funcionan justo las mañanas en que las tiendas tienen la persiana bajada."
+    },
+    {
+      "consulta": [
+        "compras/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a06-p07",
+      "promptPt": "Media tarde de una fecha roja, un recado pendiente, y prefieres no cruzar la ciudad para nada. Habla ahora.",
+      "audioKey": "fr-a06-t07",
+      "es": "C'est ouvert jusqu'à quelle heure ?",
+      "pinyin": "seh oo-VEHR zhoos-ka kel UHR",
+      "pt": "¿Hasta qué hora abre?",
+      "tts": "C'est ouvert jusqu'à quelle heure ?",
+      "molde": "A-QUELLE-HEURE",
+      "encaixe": "c'est ouvert jusqu'à"
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a06-p08",
+      "promptPt": "Un desconocido acaba de ahorrarte un viaje inútil por la ciudad. Ciérralo con calidez. Habla ahora.",
+      "audioKey": "fr-a06-t08",
+      "es": "Merci du renseignement. Bonne journée !",
+      "pinyin": "mer-SEE doo rahn-say-nyuh-MAHN · bon zhoor-NAY",
+      "pt": "Gracias por la información. ¡Buen día!",
+      "tts": "Merci du renseignement. Bonne journée !"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a06-s01",
+      "es": "C'est ouvert demain ? Vous rouvrez quand ? C'est ouvert jusqu'à quelle heure ?",
+      "pinyin": "seh oo-VEHR duh-MAHN · voo roo-VRAY KAHN · seh oo-VEHR zhoos-ka kel UHR",
+      "pt": "Repite en sombra las tres que cubren un calendario entero: mañana, otra vez, y hasta cuándo.",
+      "tts": "C'est ouvert demain ? Vous rouvrez quand ? C'est ouvert jusqu'à quelle heure ?",
+      "molde": "A-QUELLE-HEURE"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a06-n11",
+      "bloco": "recap",
+      "pt": "A06 hecho. Once fechas, una que de verdad para, un puente opcional, un mapa dominical. Pregunta a la puerta, la tarde antes."
+    }
+  ],
+  "aprofundar": {
+    "titulo": "Once fechas, una norma y un mapa",
+    "secoes": [
+      {
+        "titulo": "Once, y solo uno obligatorio",
+        "corpo": "El artículo L3133-1 del Code du travail enumera once jours fériés. Exactamente uno de ellos, el primero de mayo, tiene que ser día libre pagado. Los otros diez son festivos en el sentido de calendario: algunos centros de trabajo cierran, muchos no, y nada obliga a un café o a una boulangerie a bajar la persiana. Este es el punto que pilla a los visitantes, porque en la mayoría de los países las dos ideas van juntas.",
+        "exemplos": [
+          {
+            "es": "C'est ouvert demain ?",
+            "pt": "¿Abre mañana?"
+          },
+          {
+            "es": "Vous rouvrez quand ?",
+            "pt": "¿Cuándo vuelven a abrir?"
+          }
+        ]
+      },
+      {
+        "titulo": "Le pont, y por qué mayo es irregular",
+        "corpo": "Cuando un festivo cae en martes o jueves, el día laborable de al lado es el pont. Unirlo lo decide el empleador o un convenio colectivo, así que ocurre en un sitio y no en el siguiente. Mayo lleva varios festivos, por lo que una semana de mayo puede verse cerrada en un lado de la calle y normal en el otro. Nadie está siendo incoherente: simplemente se toman once pequeñas decisiones de once maneras distintas."
+      },
+      {
+        "titulo": "El domingo es un mapa, no una norma",
+        "corpo": "El descanso dominical es lo predeterminado para el trabajo en comercio, y la loi 2015-990 lo abrió dentro de las Zones Touristiques Internationales, donde el comercio y el trabajo hasta tarde son posibles con un convenio colectivo. París tiene doce — los Campos Elíseos, Haussmann, Le Marais, Les Halles, Montmartre y otras. En la práctica, esto significa que la compra en domingo es una pregunta sobre el barrio en el que estás, no sobre la ciudad."
+      },
+      {
+        "titulo": "Agosto, y lo que honestamente se sabe de él",
+        "corpo": "El famoso cierre de agosto es lo bastante real como para planear en torno a él, y ninguna estadística institucional actual mide su tamaño — así que nadie puede decirte honestamente cuánto de una calle se apaga. Lo que está claro es que corre en dirección opuesta según dónde estés: es un fenómeno urbano, y la costa y la montaña tienen sus semanas de más ajetreo del año justo en esos días. Una tarjeta de fermeture annuelle en un escaparate es el mes libre de un dueño con la fecha de reapertura escrita, no un evento nacional."
+      }
+    ]
+  },
+  "slot": "A06",
+  "permissao": "Tienes permiso para preguntar por los horarios cuantas veces quieras, con las palabras más sencillas que tengas. C'est ouvert demain es una pregunta de mostrador normal, hecha sin parar por quienes viven allí, precisamente porque la respuesta cambia tienda por tienda y nadie espera que lo hayas averiguado por tu cuenta.",
+  "espelho": "Cualquiera que haya conducido hasta un centro de jardinería un festivo en casa y haya encontrado el aparcamiento vacío ya conoce esta forma. La única diferencia es que aquí las once fechas se deciden localmente cada una, así que el viaje que te ahorras es el que preguntaste la tarde antes.",
+  "permissaoAudioKey": "fr-a06-n03",
+  "fichasCulturais": [
+    {
+      "sinal": "El calendario dice que mañana es festivo, y el café de abajo está abierto con las mesas ya fuera.",
+      "suaLeitura": "O mi calendario está mal o este sitio se salta una norma.",
+      "oQueEAli": "Once jours fériés se enumeran en el artículo L3133-1, y solo el primero de mayo tiene que ser día libre pagado. Los otros diez marcan la fecha sin obligar a nadie a parar, así que cafés, panaderías y comercios pequeños a menudo trabajan sin más.",
+      "oQueVoceFaz": "Deja de leer la fecha y empieza a preguntar a la puerta. Una pregunta la tarde antes — c'est ouvert demain — lo resuelve para el sitio que de verdad necesitas.",
+      "oQueMelhora": "Dejas de dar por perdidos días enteros y dejas de sorprenderte cuando un museo cierra un martes cualquiera en su lugar.",
+      "ondeNaoVale": "No el primero de mayo, donde la norma corre al revés y el cierre es la suposición segura. Y no en Alsacia-Mosela, que mantiene festivos locales adicionales sobre los once.",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-a06-n02",
+        "fr-a06-n05"
+      ]
+    },
+    {
+      "sinal": "Una tarjeta en un escaparate da dos fechas de agosto y una de reapertura, y la calle parece medio dormida.",
+      "suaLeitura": "Todo el país cierra en agosto, así que este viaje estuvo mal planeado.",
+      "oQueEAli": "No hay estadística institucional actual sobre los cierres de agosto, así que es un patrón muy repetido más que uno medido. Lo que sí puede decirse es que es un patrón urbano, que es de un negocio cada vez y no una fecha nacional, y que la tarjeta normalmente lleva el día de reapertura.",
+      "oQueVoceFaz": "Lee la línea de la réouverture, camina una manzana más, y deja que el mercado, y no las tiendas, lleve tu día.",
+      "oQueMelhora": "Agosto deja de ser un muro y se vuelve una redistribución: centros urbanos más tranquilos, y todo lo demás sucediendo en otro sitio.",
+      "ondeNaoVale": "Completamente invertido en la costa y la montaña, donde son las semanas más llenas del año y el problema es encontrar mesa en vez de una puerta abierta.",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-a06-n09"
+      ]
+    }
+  ]
+}

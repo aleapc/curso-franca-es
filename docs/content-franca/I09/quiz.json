@@ -1,0 +1,96 @@
+{
+  "id": "q-i09",
+  "nivel": "intermediario",
+  "titulo": "Quiz — Domingo, y las zonas donde las persianas siguen subidas",
+  "subtitulo": "El descanso es lo predeterminado y las excepciones están escritas",
+  "introAudioKey": "fr-i09-q-i",
+  "introPt": "Un domingo por la mañana en el mercado, y la pregunta que encuentra el barrio que abre.",
+  "cenario": "Un puesto de mercado antes del mediodía, persianas bajadas a lo largo del resto de la calle.",
+  "dialogo": [
+    {
+      "audioKey": "fr-i09-q01",
+      "voz": "target_fr_f",
+      "es": "Je cherche un marché. C'est ouvert le dimanche ?",
+      "pt": "Busco un mercado. ¿Abre los domingos?",
+      "tts": "Je cherche un marché. C'est ouvert le dimanche ?"
+    },
+    {
+      "audioKey": "fr-i09-q02",
+      "voz": "target_fr_m",
+      "es": "Le marché, c'est le dimanche matin. Ça ferme vers treize heures.",
+      "pt": "El mercado es el domingo por la mañana. Cierra hacia la una.",
+      "tts": "Le marché, c'est le dimanche matin. Ça ferme vers treize heures."
+    },
+    {
+      "audioKey": "fr-i09-q03",
+      "voz": "target_fr_f",
+      "es": "Et les boutiques ? C'est ouvert le dimanche ?",
+      "pt": "¿Y las tiendas? ¿Abren los domingos?",
+      "tts": "Et les boutiques ? C'est ouvert le dimanche ?"
+    },
+    {
+      "audioKey": "fr-i09-q04",
+      "voz": "target_fr_m",
+      "es": "Ici non. Mais dans le Marais, oui — c'est une zone touristique.",
+      "pt": "Aquí no. Pero en el Marais, sí — es zona turística.",
+      "tts": "Ici non. Mais dans le Marais, oui — c'est une zone touristique."
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "¿Por qué un barrio de París abre el domingo mientras el tuyo está cerrado?",
+      "opcoes": [
+        "Las tiendas de allí decidieron que valía la pena",
+        "Está dentro de una Zone Touristique Internationale, una excepción legal escrita",
+        "La apertura dominical rota cada semana entre distritos",
+        "Solo pasa en verano"
+      ],
+      "correta": 1,
+      "explica": "La loi 2015-990 creó las ZTI; París tiene doce, fijadas por décret del 23/09/2015 y arrêtés del 25/09/2015."
+    },
+    {
+      "pergunta": "¿Cuántas ZTI tiene París?",
+      "opcoes": [
+        "Cuatro",
+        "Doce",
+        "Veinticinco",
+        "Una por arrondissement"
+      ],
+      "correta": 1,
+      "explica": "Doce — entre ellas Champs-Élysées Montaigne, Haussmann, Marais, Les Halles, Maillot-Ternes y Montmartre."
+    },
+    {
+      "pergunta": "¿A qué hora conviene llegar a un mercado dominical?",
+      "opcoes": [
+        "A media tarde",
+        "Después de comer, cuando se llena",
+        "Por la mañana — los puestos se recogen hacia la una",
+        "A cualquier hora, funcionan todo el día"
+      ],
+      "correta": 2,
+      "explica": "«Ça ferme vers treize heures» es toda la regla de planificación de la mañana."
+    },
+    {
+      "pergunta": "Quieres probar un queso antes de comprar medio kilo. Dices:",
+      "opcoes": [
+        "Je peux goûter ?",
+        "Nada — coges tú mismo un trozo",
+        "Señalas y esperas",
+        "Lo compras y lo averiguas"
+      ],
+      "correta": 0,
+      "explica": "El marco de B07. El vendedor corta el trozo — tú señalas en vez de coger."
+    },
+    {
+      "pergunta": "¿Qué pregunta te consigue un plan real para la tarde?",
+      "opcoes": [
+        "¿Qué hay que ver por aquí?",
+        "¿Es este el mejor museo?",
+        "Vous faites quoi le dimanche ?",
+        "¿Adónde van los turistas?"
+      ],
+      "correta": 2,
+      "explica": "Pregunta por su día en vez de por tu itinerario, así que la respuesta vuelve con un lugar y una hora dentro."
+    }
+  ]
+}

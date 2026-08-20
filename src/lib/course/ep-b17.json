@@ -1,0 +1,389 @@
+{
+  "id": "b17",
+  "nivel": "basico",
+  "numero": 17,
+  "parte": "B17",
+  "titulo": "Farmacia, dolor y el número que funciona desde cualquier teléfono",
+  "subtitulo": "Di dónde te duele, deja que el mostrador elija la caja y ten claro el número que hay que marcar: 112",
+  "cena": "Domingo por la tarde, la persiana está bajada en la farmacia más cercana y hay una hoja impresa pegada por dentro del escaparate con direcciones.",
+  "moldura": "protege",
+  "frasePiso": "Di dónde te duele y deja que el mostrador elija. La farmacia cerrada aún te dice dónde está la abierta.",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-b17-112",
+      "afirmacao": "El 112 es el número único europeo de emergencias y el que hay que marcar en Francia; para quien llama en inglés es el que más probablemente se atienda en inglés. Francia también tiene el 15 para las urgencias médicas del SAMU, el 17 para policía y gendarmería, el 18 para bomberos, el 114, gratuito, que llega a los servicios de emergencia por vídeo, chat, SMS o fax para personas sordas y con dificultades auditivas, y el 196 para emergencias marítimas.",
+      "fonte": "Ministère de l'Intérieur, portal Ma Sécurité; Gendarmerie nationale",
+      "ano": 2026,
+      "revisarAte": "2028-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b17-n05"
+      ]
+    },
+    {
+      "id": "fr-b17-garde",
+      "afirmacao": "Fuera del horario de apertura, la farmacia de guardia del sector se encuentra de tres maneras: la lista pegada en el escaparate de cada farmacia, el sitio 3237.fr y RésoGardes, y el número 3237, disponible 24/7 y con coste de 0,35 € por minuto. El sistema se organiza por departamento, y en algunos el acceso nocturno pasa por el 15 o el 17.",
+      "fonte": "Ministère de l'Intérieur, portal Ma Sécurité; 3237.fr / RésoGardes",
+      "ano": 2026,
+      "revisarAte": "2027-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b17-n04"
+      ]
+    },
+    {
+      "id": "fr-b17-ghic",
+      "afirmacao": "La GHIC británica, y la EHIC que usan los viajeros neerlandeses y belgas, da acceso a la sanidad pública durante una estancia temporal en las mismas condiciones que un residente. No cubre clínicas ni hospitales privados, repatriación, tratamiento programado, cancelación, equipaje ni rescate en montaña, y no sustituye al seguro de viaje. La particularidad de Francia es que el sistema reembolsa por porcentaje, así que el ticket modérateur, del 20 al 30 por ciento, queda a cargo del viajero.",
+      "fonte": "NHSBSA (UK Global Health Insurance Card); Which?",
+      "ano": 2026,
+      "revisarAte": "2027-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b17-n06"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b17-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "Esta es la parte del módulo sobre el día que se tuerce. Léela ahora, mientras no pasa nada."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b17-n02",
+      "bloco": "molde",
+      "pt": "No traduzcas la enfermedad. Di dónde te duele y desde cuándo, y deja que el mostrador elija la caja."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b17-t01",
+      "es": "Je cherche une pharmacie ouverte.",
+      "pinyin": "zhuh SHERSH ewn far-ma-SEE oo-VAIRT",
+      "pt": "Busco una farmacia que esté abierta.",
+      "tts": "Je cherche une pharmacie ouverte."
+    },
+    {
+      "consulta": [
+        "saude/farmacia",
+        "cidade/onde"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "JE-CHERCHE",
+      "encaixe": "une pharmacie ouverte",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b17-p01",
+      "promptPt": "Domingo, ocho y media, la persiana está bajada y un hombre pasa paseando a su perro. Habla ahora.",
+      "audioKey": "fr-b17-t01",
+      "es": "Je cherche une pharmacie ouverte.",
+      "pinyin": "zhuh SHERSH ewn far-ma-SEE oo-VAIRT",
+      "pt": "Busco una farmacia que esté abierta.",
+      "tts": "Je cherche une pharmacie ouverte."
+    },
+    {
+      "consulta": [
+        "saude/farmacia",
+        "cidade/onde"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "OU-EST",
+      "encaixe": "la pharmacie de garde",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b17-p02",
+      "promptPt": "Asiente y dice que el barrio siempre tiene una abierta en algún sitio de noche. Pregúntale cuál. Habla ahora.",
+      "audioKey": "fr-b17-t02",
+      "es": "Où est la pharmacie de garde ?",
+      "pinyin": "oo eh la far-ma-SEE duh GARD",
+      "pt": "¿Dónde está la farmacia de guardia?",
+      "tts": "Où est la pharmacie de garde ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b17-r01",
+      "receptivo": true,
+      "es": "La liste est affichée sur la vitrine, à droite de la porte.",
+      "pt": "La lista está puesta en el escaparate, a la derecha de la puerta.",
+      "tts": "La liste est affichée sur la vitrine, à droite de la porte.",
+      "acao": "Vuelve a la farmacia cerrada y fotografía la hoja del escaparate antes de andar a ningún sitio."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b17-n04",
+      "bloco": "corpo",
+      "pt": "Cada farmacia pega en su escaparate el calendario de guardias del sector. También está el 3237, día y noche, con coste por minuto."
+    },
+    {
+      "consulta": [
+        "saude/sintoma",
+        "saude/farmacia"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "JE-CHERCHE",
+      "encaixe": "quelque chose pour la toux",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b17-p03",
+      "promptPt": "Estás en el mostrador de la abierta, a veinte minutos. Toses desde el vuelo. Habla ahora.",
+      "audioKey": "fr-b17-t03",
+      "es": "Je cherche quelque chose pour la toux.",
+      "pinyin": "zhuh SHERSH kel-kuh SHOZ poor la TOO",
+      "pt": "Busco algo para la tos.",
+      "tts": "Je cherche quelque chose pour la toux."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b17-r02",
+      "es": "Depuis quand ? Et vous toussez la nuit ?",
+      "pt": "¿Desde cuándo? ¿Y tose por la noche?",
+      "tts": "Depuis quand ? Et vous toussez la nuit ?"
+    },
+    {
+      "consulta": [
+        "saude/sintoma"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b17-p04",
+      "promptPt": "Acaba de preguntar un par de cosas a la vez. Responde la que quiere un número y nombra la parte dolorida. Habla ahora.",
+      "audioKey": "fr-b17-t04",
+      "es": "J'ai mal à la gorge depuis deux jours.",
+      "pinyin": "zhay mal a la GORZH duh-pwee duh ZHOOR",
+      "pt": "Me duele la garganta desde hace dos días.",
+      "tts": "J'ai mal à la gorge depuis deux jours."
+    },
+    {
+      "consulta": [
+        "saude/sintoma",
+        "reparo/apontar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b17-p05",
+      "promptPt": "No sabes la palabra de la parte que te duele. Ponle la mano encima y di tres palabras. Habla ahora.",
+      "audioKey": "fr-b17-t05",
+      "es": "J'ai mal ici.",
+      "pinyin": "zhay MAL ee-SEE",
+      "pt": "Me duele aquí.",
+      "tts": "J'ai mal ici."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b17-n03",
+      "bloco": "capsula",
+      "pt": "Sans es el mismo molde que usaste con la comida. Aquí mantiene lo que no quieres fuera de la caja."
+    },
+    {
+      "consulta": [
+        "saude/alergia",
+        "saude/farmacia"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SANS",
+      "encaixe": "ibuprofène",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b17-p06",
+      "promptPt": "Coge una caja. Hay un principio activo que tu médico en casa te dijo que evitaras. Habla ahora.",
+      "audioKey": "fr-b17-t06",
+      "es": "Sans ibuprofène, s'il vous plaît.",
+      "pinyin": "sahn zee-bew-proh-FEN, seel voo PLEH",
+      "pt": "Sin ibuprofeno, por favor.",
+      "tts": "Sans ibuprofène, s'il vous plaît."
+    },
+    {
+      "consulta": [
+        "saude/receita",
+        "saude/farmacia"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b17-p07",
+      "promptPt": "Pone dos cajas en el mostrador y no tienes ningún papel de ningún médico. Comprueba antes de que lo cobre. Habla ahora.",
+      "audioKey": "fr-b17-t07",
+      "es": "C'est sans ordonnance ?",
+      "pinyin": "seh sahn zor-doh-NAHNS",
+      "pt": "¿Eso es sin receta?",
+      "tts": "C'est sans ordonnance ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b17-r03",
+      "es": "Celui-là, oui. L'autre, non : sur ordonnance seulement.",
+      "pt": "Ese sí. El otro no: solo con receta.",
+      "tts": "Celui-là, oui. L'autre, non : sur ordonnance seulement."
+    },
+    {
+      "consulta": [
+        "saude/alergia",
+        "comer/restricao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b17-p08",
+      "promptPt": "Antes de que nada entre en una bolsa, di lo que tiene que constar. Está en la tarjeta de tu cartera. Habla ahora.",
+      "audioKey": "fr-b17-t08",
+      "es": "Je suis allergique à la pénicilline.",
+      "pinyin": "zhuh swee za-lair-ZHEEK a la pay-nee-see-LEEN",
+      "pt": "Soy alérgico a la penicilina.",
+      "tts": "Je suis allergique à la pénicilline."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b17-n06",
+      "pt": "Tu GHIC o EHIC te da sanidad pública, nunca privada, y una parte de cada factura queda a tu cargo. No es un seguro."
+    },
+    {
+      "consulta": [
+        "saude/medico",
+        "reparo/ingles"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "JE-CHERCHE",
+      "encaixe": "un médecin qui parle anglais",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b17-p09",
+      "promptPt": "La farmacéutica dice que esto ya no es cosa suya y que tendrás que verte con un médico. Di de qué tipo. Habla ahora.",
+      "audioKey": "fr-b17-t09",
+      "es": "Je cherche un médecin qui parle anglais.",
+      "pinyin": "zhuh SHERSH un may-DSAN kee parl ahn-GLEH",
+      "pt": "Busco un médico que hable inglés.",
+      "tts": "Je cherche un médecin qui parle anglais."
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b17-n05",
+      "pt": "Un número que guardar: 112. Funciona desde cualquier teléfono en Europa y es el que más probablemente te atienda en inglés."
+    },
+    {
+      "consulta": [
+        "saude/emergencia"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b17-p10",
+      "promptPt": "Alguien está en el suelo del vestíbulo y quien está más cerca del teléfono se ha quedado paralizado. Da la orden. Habla ahora.",
+      "audioKey": "fr-b17-t10",
+      "es": "Appelez le 112, s'il vous plaît.",
+      "pinyin": "a-play luh sahn DOOZ, seel voo PLEH",
+      "pt": "Llame al 112, por favor.",
+      "tts": "Appelez le 112, s'il vous plaît."
+    },
+    {
+      "consulta": [
+        "saude/emergencia",
+        "cidade/onde"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "OU-EST",
+      "encaixe": "l'hôpital le plus proche",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b17-p11",
+      "promptPt": "Vas en un taxi y necesitas que el conductor cambie de destino. Una pregunta corta. Habla ahora.",
+      "audioKey": "fr-b17-t11",
+      "es": "Où est l'hôpital le plus proche ?",
+      "pinyin": "oo eh loh-pee-TAL luh plew PROSH",
+      "pt": "¿Dónde está el hospital más cercano?",
+      "tts": "Où est l'hôpital le plus proche ?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b17-r04",
+      "receptivo": true,
+      "es": "Ne quittez pas, je vous passe le SAMU. Vous êtes où exactement ?",
+      "pt": "No cuelgue, le paso con el servicio de ambulancias. ¿Dónde está exactamente?",
+      "tts": "Ne quittez pas, je vous passe le SAMU. Vous êtes où exactement ?",
+      "acao": "Quédate en la línea y di el nombre de la calle y el número de la puerta más cercana."
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b17-s01",
+      "es": "Je cherche quelque chose pour la toux. J'ai mal ici. Où est la pharmacie de garde ?",
+      "pinyin": "zhuh SHERSH kel-kuh SHOZ poor la TOO. zhay MAL ee-SEE. oo eh la far-ma-SEE duh GARD",
+      "pt": "Repite las tres frases que más trabajo hacen en un mostrador.",
+      "tts": "Je cherche quelque chose pour la toux. J'ai mal ici. Où est la pharmacie de garde ?"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b17-n07",
+      "bloco": "recap",
+      "pt": "B17 hecho. Où est, je cherche, sans, j'ai mal y 112 — suficiente para que te atiendan sin una lengua en común."
+    }
+  ],
+  "aprofundar": {
+    "titulo": "El mostrador que diagnostica y la hoja del escaparate",
+    "secoes": [
+      {
+        "titulo": "J'ai mal más el lugar",
+        "corpo": "Toda la gramática del dolor aquí es una apertura y una parte del cuerpo: à la gorge, à la tête, au ventre, au dos. Si te falta la palabra, ici y una mano hacen el mismo trabajo, y nadie en un mostrador francés toma el señalar como un fracaso.",
+        "exemplos": [
+          {
+            "es": "J'ai mal à la gorge depuis deux jours.",
+            "pt": "Me duele la garganta desde hace dos días."
+          },
+          {
+            "es": "J'ai mal ici.",
+            "pt": "Me duele aquí."
+          }
+        ]
+      },
+      {
+        "titulo": "La hoja del escaparate",
+        "corpo": "Cuando una farmacia está cerrada, el calendario de las farmacias de guardia del sector está pegado en su propio escaparate, con las fechas. Fotografíalo en vez de leerlo a oscuras, y comprueba la columna de fechas antes de salir. La misma información está en 3237.fr y en el teléfono 3237, con coste de 0,35 € por minuto."
+      },
+      {
+        "titulo": "El 112 y los números que hay detrás",
+        "corpo": "El 112 es el número europeo y el que hay que marcar. Detrás están el 15 para el servicio de ambulancias, el 17 para la policía, el 18 para bomberos, y el 114 — gratuito, y accesible por vídeo, chat, SMS o fax para personas sordas y con dificultades auditivas. Algunos departamentos también encaminan el acceso nocturno a la farmacia por el 15 o el 17."
+      },
+      {
+        "titulo": "Lo que la GHIC no cubre",
+        "corpo": "Una GHIC o EHIC te consigue tratamiento en la sanidad pública en las mismas condiciones que un residente. Es un beneficio real y estrecho: no es sanidad privada, ni repatriación, ni tratamiento programado, ni cancelación, ni equipaje, ni rescate en montaña. Y como el sistema francés reembolsa por porcentaje, el ticket modérateur —del veinte al treinta por ciento— queda a tu cargo. El seguro de viaje es lo que cubre el resto, y la tarjeta no lo sustituye."
+      }
+    ]
+  },
+  "slot": "B17",
+  "permissao": "No necesitas el vocabulario de un examen médico. Una parte del cuerpo, un número de días y una mano en la zona dolorida son una presentación completa en el mostrador de una farmacia francesa, y quien está detrás está formado para tomarlo desde ahí.",
+  "permissaoAudioKey": "fr-b17-n02",
+  "espelho": "Cualquiera que haya estado en una farmacia en casa describiendo síntomas en lugar de nombrar un medicamento ya conoce este movimiento. Lo único nuevo es que aquí el mostrador está acostumbrado a ser la primera parada y no la última.",
+  "fichasCulturais": [
+    {
+      "sinal": "La farmacia más cercana tiene la persiana bajada y una hoja impresa pegada por dentro del escaparate.",
+      "suaLeitura": "Está cerrada, así que tendré que dar vueltas hasta encontrar una abierta.",
+      "oQueEAli": "Esa hoja es el calendario de guardias del sector para el mes: la dirección de la farmacia que está abierta ahora mismo, puesta justo para este momento. La misma información está en 3237.fr y en el teléfono 3237, día y noche, con coste de 0,35 € por minuto.",
+      "oQueVoceFaz": "Fotografía la hoja antes de andar a ningún sitio, luego lee la columna de fechas y ve a esa única dirección.",
+      "oQueMelhora": "Andas una vez, hacia la puerta correcta, en lugar de tres veces hacia tres cerradas.",
+      "ondeNaoVale": "El sistema se organiza departamento por departamento, y en algunos la ruta nocturna pasa por el 15 o el 17 en lugar de una dirección concreta. Si la hoja lo dice, sigue la hoja y no esta ficha.",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-b17-n04"
+      ]
+    }
+  ]
+}
